@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JIHYUNG PORTFOLIO | works</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+    <div class="header-left">
+        <a href="">jihyung yoo</a>
+    </div>
+
+    <div class="header-right">
+
+        <div class="menu">
+            <input id="menu" type="checkbox">
+
+            <label class="menu__face" for="menu">
+                <div class="menu__text">Portfolio</div>
+                <div class="menu__arrow"></div>
+            </label>
+
+            <ul class="menu__items">
+                <li>home</li>
+                <li>about</li>
+                <li>profile</li>
+                <li>software</li>
+                <li>works</li>
+                <li>vision</li>
+                <li>contact</li>
+            </ul>
+        </div>
+
+        <svg>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"/>
+                <feColorMatrix in="blur" result="goo" type="matrix"
+                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+                <feBlend in="SourceGraphic" in2="goo"/>
+            </filter>
+        </svg>
+
+    </div>
+
+</header>
+
+<main role="main">
+
+</main>
+
+<footer>
+
+    <div class="footer-left">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>profile</li>
+            <li>software</li>
+            <li>works</li>
+            <li>vision</li>
+            <li>contact</li>
+        </ul>
+
+    </div>
+
+    <div class="footer-right">
+        <p>Copyright 2025. Jihyung Yoo all rights reserved.</p>
+    </div>
+
+</footer>
+
+
+</body>
+</html>
