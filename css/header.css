@@ -1,11 +1,10 @@
 header {
     display: flex;
-    display: none;
-    font-style: normal;;
-    letter-spacing: 0.05em;
+    font-style: normal;
+    letter-spacing: 0.1em;
     font-optical-sizing: auto;
     justify-content: space-between;
-    font-family: "Libertinus Mono", monospace;
+    font-family: "PT Serif", serif;
 }
 
 .header-left,
@@ -14,7 +13,7 @@ header {
 }
 
 .header-left {
-    padding: 30px 30px 30px 50px;
+    padding: 30px;
 }
 
 .header-right {
@@ -22,22 +21,22 @@ header {
 }
 
 .header-left a {
-    width: 320px;
-    padding: 20px;
+    max-width: 400px;
+    padding: 20px 40px;
     display: block;
-    font-size: 32px;
+    font-size: 30px;
     position: relative;
     filter: url(#goo);
     border-radius: 30px;
     transition: all 3s;
     text-transform: capitalize;
     /*background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);*/
-    background: linear-gradient(75deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
+    background: linear-gradient(75deg, transparent, #f4f3f0, #faf8f6, #f8f6f3, transparent, #f3f0eb, #faf8f6, transparent, transparent, #f4f3f0);
 }
 
 .header-left a:hover {
-    border-radius: 30px 10px 20px 20px;
-    background: linear-gradient(75deg, transparent, #eee, #fff, #f1f1f1, #f1f1f1, #eee, transparent, transparent);
+    border-radius: 25px 10px 30px 20px;
+    background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);
     background-color: #000;
     transition-delay: .1s;
 }
@@ -124,8 +123,10 @@ svg {
     display: none;
 }
 
-
 @media screen and (max-width: 480px) {
-    header .header-left {
+    header .header-left a,
+    header .menu__face,
+    header .menu__items {
+        font-size: 24px;
     }
 }
