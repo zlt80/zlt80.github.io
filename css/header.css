@@ -131,12 +131,12 @@ svg {
     }
 
     .menu__face {
-        max-width: 160px;
+        max-width: 140px;
     }
 
     .menu__face,
     .menu__items, .header-left a {
-        padding: 5px 0 5px 20px;
+        padding: 5px 0 5px 10px;
     }
 
     header .header-left a,
@@ -151,7 +151,7 @@ svg {
     }
 
     .menu__items li {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .header-left a:hover {
@@ -162,7 +162,27 @@ svg {
 
     .menu__face,
     .menu__items {
-        border-radius: 50px;
+        border-radius: 0;
     }
 
+    .menu__arrow {
+        right: 20px;
+    }
+
+    .menu {
+        filter: none;
+    }
+
+    .menu__items::before {
+        display: none;
+    }
+
+    .menu input:checked ~ .menu__items {
+        top: 25px;
+        width: 100%;
+        max-width: 140px;
+        padding-top: 20px;
+        text-align: right;
+        padding-right: 20px;
+    }
 }
