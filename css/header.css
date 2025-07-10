@@ -131,18 +131,18 @@ svg {
     }
 
     .menu__face {
-        max-width: 180px;
+        max-width: 160px;
     }
 
     .menu__face,
     .menu__items, .header-left a {
-        padding: 10px 0 10px 20px;
+        padding: 5px 0 5px 20px;
     }
 
     header .header-left a,
     header .menu__face,
     header .menu__items {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .menu__items {
