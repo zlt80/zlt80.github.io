@@ -5,8 +5,8 @@ footer {
     font-size: 15px;
     padding: 30px 40px;
     letter-spacing: 0.05em;
-    font-family: "Red Hat Display", serif;
     justify-content: space-between;
+    font-family: "Libre Caslon Text", serif;
 }
 
 .footer-left,
