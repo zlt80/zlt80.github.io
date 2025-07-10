@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    padding: 30px;
+    font-family: "Libertinus Mono", monospace;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-left,
+.footer-right {
+    width: 50%;
+}
+
+.footer-left li {
+    list-style: none;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    display: block;
+    height: 100%;
+    align-content: end;
+}
