@@ -22,12 +22,12 @@ header {
 }
 
 .header-left a {
-    max-width: 400px;
-    padding: 20px 40px;
     display: block;
     font-size: 30px;
-    position: relative;
+    max-width: 400px;
     filter: url(#goo);
+    padding: 20px 40px;
+    position: relative;
     border-radius: 30px;
     transition: all 3s;
     text-transform: capitalize;
@@ -36,10 +36,10 @@ header {
 }
 
 .header-left a:hover {
-    border-radius: 25px 10px 30px 20px;
-    background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);
     background-color: #000;
     transition-delay: .1s;
+    border-radius: 25px 10px 30px 20px;
+    background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);
 }
 
 .menu {
@@ -58,8 +58,8 @@ header {
     color: #fff;
     padding: 20px;
     font-size: 26px;
-    border-radius: 20px 25px 35px 35px;
     background: #000;
+    border-radius: 20px 25px 35px 35px;
 }
 
 .menu__face {
@@ -70,10 +70,10 @@ header {
 }
 
 .menu__items {
-    opacity: 0;
     right: 0;
     top: 50%;
     margin: 0;
+    opacity: 0;
     z-index: -1;
     line-height: 2;
     list-style: none;
@@ -152,6 +152,17 @@ svg {
 
     .menu__items li {
         font-size: 14px;
+    }
+
+    .header-left a:hover {
+        background: transparent;
+        transition-delay: 0s;
+        border-radius: 50%;
+    }
+
+    .menu__face,
+    .menu__items {
+        border-radius: 50px;
     }
 
 }
