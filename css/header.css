@@ -2,10 +2,11 @@ header {
     width: 100%;
     display: flex;
     font-style: normal;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.4em;
     font-optical-sizing: auto;
     justify-content: space-between;
-    font-family: "PT Serif", serif;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 600;
 }
 
 .header-left,
@@ -23,14 +24,14 @@ header {
 
 .header-left a {
     display: block;
-    font-size: 30px;
+    font-size: 32px;
     max-width: 400px;
+    text-transform: capitalize;
     filter: url(#goo);
     padding: 20px 40px;
     position: relative;
     border-radius: 30px;
     transition: all 3s;
-    text-transform: capitalize;
     /*background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);*/
     background: linear-gradient(75deg, transparent, #f4f3f0, #faf8f6, #f8f6f3, transparent, #f3f0eb, #faf8f6, transparent, transparent, #f4f3f0);
 }
@@ -56,17 +57,25 @@ header {
 .menu__face,
 .menu__items {
     color: #fff;
+    font-weight: 100;
     padding: 20px;
     font-size: 26px;
     background: #000;
+    letter-spacing: 0.2em;
     border-radius: 20px 25px 35px 35px;
 }
 
+.menu__text {
+    font-size: 30px;
+    padding-right: 40px;
+}
+
 .menu__face {
-    width: 320px;
+    width: 4vw;
+    min-width: 30px;
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding: 20px 120px 20px 40px;
 }
 
 .menu__items {
@@ -79,6 +88,7 @@ header {
     list-style: none;
     position: absolute;
     visibility: hidden;
+    letter-spacing: 0.1em;
     padding: 25px 32px 28px 38px;
     justify-content: space-between;
     transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
@@ -100,13 +110,13 @@ header {
 
 .menu__arrow {
     top: 48%;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 14px;
     right: 40px;
     position: absolute;
     transform-origin: right;
-    border-right: 1px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 4px solid #fff;
     transform: rotate(45deg) translateY(-50%);
 }
 
@@ -126,12 +136,22 @@ svg {
 
 @media screen and (max-width: 480px) {
 
-    .header-left, .header-right {
-        padding: 20px
+    .header-left,
+    .header-right {
+        padding: 20px 0 0 0;
+    }
+
+    .header-left {
+        padding-left: 20px;
+    }
+
+    .header-right {
+        padding-right: 20px;
     }
 
     .menu__face {
-        max-width: 140px;
+        width: 140px;
+        min-width: unset;
     }
 
     .menu__face,
@@ -142,16 +162,22 @@ svg {
     header .header-left a,
     header .menu__face,
     header .menu__items {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .menu__items {
-        padding-bottom: 30px;
         top: 80%;
     }
 
     .menu__items li {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .header-left a {
+        width: 140px;
+        transition: none;
+        padding-left: 10px;
+        background: transparent;
     }
 
     .header-left a:hover {
@@ -179,10 +205,10 @@ svg {
 
     .menu input:checked ~ .menu__items {
         top: 25px;
-        width: 100%;
-        max-width: 140px;
-        padding-top: 20px;
-        text-align: right;
-        padding-right: 20px;
+        padding: 10px 20px;
+        width: 140px;
+        background: #f6f6f5;
+        border: 1px solid #000;
+        color: #000
     }
 }
