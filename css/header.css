@@ -163,7 +163,7 @@ svg {
     header .header-left a,
     header .menu__face,
     header .menu__items {
-        width: 120px;
+        /*width: 120px;*/
         font-size: 18px;
         letter-spacing: 0.1em;
     }
