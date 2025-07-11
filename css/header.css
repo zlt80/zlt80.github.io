@@ -206,6 +206,8 @@ svg {
 
     .menu {
         filter: none;
+        justify-content: end;
+        display: flex;
     }
 
     .menu__arrow img {
