@@ -164,7 +164,7 @@ svg {
     header .menu__face,
     header .menu__items {
         width: 120px;
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: 0.1em;
     }
 
@@ -198,7 +198,7 @@ svg {
     }
 
     .menu__text {
-        font-size: 16px;
+        font-size: 18px;
         padding: 3px 0;
     }
 
