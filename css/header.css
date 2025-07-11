@@ -76,6 +76,7 @@ header {
     min-width: 30px;
     display: flex;
     position: relative;
+    justify-content: space-around;
 }
 
 .menu__items {
@@ -154,13 +155,15 @@ svg {
     }
 
     .menu__face,
-    .menu__items, .header-left a {
-        padding: 5px 0 5px 10px;
+    .menu__items,
+    .header-left a {
+        padding: 0
     }
 
     header .header-left a,
     header .menu__face,
     header .menu__items {
+        width: 120px;
         font-size: 12px;
         letter-spacing: 0.2em;
     }
@@ -192,15 +195,20 @@ svg {
     }
 
     .menu__arrow {
-        right: 20px;
     }
 
     .menu__text {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 3px 0;
     }
 
     .menu {
         filter: none;
+    }
+
+    .menu__arrow img {
+        margin-right: 0;
+        width: 12px;
     }
 
     .menu__items::before {
@@ -209,10 +217,9 @@ svg {
 
     .menu input:checked ~ .menu__items {
         top: 25px;
+        color: #000;
         padding: 10px 20px;
-        width: 140px;
         background: #f6f6f5;
         border: 1px solid #000;
-        color: #000
     }
 }

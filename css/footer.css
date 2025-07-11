@@ -31,9 +31,9 @@ footer {
 @media screen and (max-width: 500px) {
     footer {
         display: block;
+        font-size: 12px;
         text-align: center;
         padding-bottom: 30px;
-        font-size: 13px;
     }
 
     .footer-left,
