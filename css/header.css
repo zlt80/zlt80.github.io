@@ -153,6 +153,9 @@ svg {
         width: 70%;
         min-width: unset;
         padding-right: 0;
+        color: #000;
+        background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
+        border: 1px solid #bbb;
     }
 
     .menu__face,
@@ -213,6 +216,7 @@ svg {
     .menu__arrow img {
         margin-right: 0;
         width: 15px;
+        filter: none;
     }
 
     .menu__items::before {
@@ -224,8 +228,8 @@ svg {
         width: 70%;
         color: #000;
         padding: 10px 25px;
-        background: #f6f6f5;
-        border: 1px solid #000;
+        background: linear-gradient(181deg, transparent, #f7f6f6, #f8f6f3, #fff, #f8f6f3, #faf8f6, transparent, #f1f1f1, #f2f2f2);
+        border: 1px solid #bbb;
         border-top: none;
     }
 }
