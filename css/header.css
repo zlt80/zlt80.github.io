@@ -146,12 +146,13 @@ svg {
     }
 
     .header-right {
-        padding-right: 0;
+        padding-right: 20px;
     }
 
     .menu__face {
-        width: 90%;
+        width: 70%;
         min-width: unset;
+        padding-right: 0;
     }
 
     .menu__face,
@@ -218,7 +219,7 @@ svg {
 
     .menu input:checked ~ .menu__items {
         top: 30px;
-        width: 90%;
+        width: 70%;
         color: #000;
         padding: 10px 25px;
         background: #f6f6f5;
