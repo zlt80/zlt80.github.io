@@ -216,9 +216,10 @@ svg {
     }
 
     .menu input:checked ~ .menu__items {
-        top: 25px;
+        top: 30px;
+        width: 100%;
         color: #000;
-        padding: 10px 20px;
+        padding: 10px 25px;
         background: #f6f6f5;
         border: 1px solid #000;
     }
