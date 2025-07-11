@@ -152,7 +152,6 @@ svg {
     .menu__face {
         width: 100%;
         min-width: unset;
-        background: linear-gradient(45deg, black, transparent);
     }
 
     .menu__face,
@@ -211,7 +210,6 @@ svg {
     .menu__arrow img {
         margin-right: 0;
         width: 15px;
-        filter: none;
     }
 
     .menu__items::before {
