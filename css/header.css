@@ -78,15 +78,16 @@ header {
     min-width: 30px;
     display: flex;
     position: relative;
+    transition: 3s;
     justify-content: space-around;
 }
 
 .menu__face:hover {
-    color: #818181
+    color: #fff
 }
 
 .menu__face:hover img {
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .menu__items {
@@ -108,10 +109,11 @@ header {
 
 .menu__items li {
     font-size: 16px;
+    transition: 1s;
 }
 
 .menu__items li:hover {
-    color: #818181;
+    color: #fff;
 }
 
 .menu__items::before {
@@ -134,6 +136,7 @@ header {
     width: 20px;
     opacity: 0.8;
     margin-right: 10px;
+    transition: 0.4s;
 }
 
 .menu input {
@@ -235,7 +238,7 @@ svg {
         top: 30px;
         width: 80%;
         color: #000;
-        padding: 10px 25px;
+        padding: 15px 25px 10px;
         background: linear-gradient(181deg, transparent, #f7f6f6, #f8f6f3, #fff, #f8f6f3, #faf8f6, transparent, #f1f1f1, #f2f2f2);
         /*border: 1px solid #bbb;*/
         border-top: none;
