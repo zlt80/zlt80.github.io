@@ -82,14 +82,6 @@ header {
     justify-content: space-around;
 }
 
-.menu__face:hover {
-    color: #fff
-}
-
-.menu__face:hover img {
-    opacity: 0;
-}
-
 .menu__items {
     right: 0;
     top: 50%;
@@ -110,10 +102,6 @@ header {
 .menu__items li {
     font-size: 16px;
     transition: 1s;
-}
-
-.menu__items li:hover {
-    color: #fff;
 }
 
 .menu__items::before {
@@ -154,6 +142,26 @@ svg {
     display: none;
 }
 
+@media screen and (min-width: 481px) {
+
+    .menu__face:hover {
+        color: #fff
+    }
+
+    .menu__face:hover img {
+        opacity: 0.1;
+    }
+
+    .menu__items li:hover a {
+        color: #fff;
+    }
+
+    .menu__items li a {
+        transition: all 0.7s;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .header-left,
@@ -174,6 +182,7 @@ svg {
         min-width: unset;
         padding-right: 0;
         color: #000;
+        transition: all 0s;
         background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
     }
 
