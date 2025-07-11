@@ -58,10 +58,11 @@ header {
 
 .menu__face,
 .menu__items {
-    color: #fff;
+    /*color: #fff;*/
     padding: 10px 20px;
     font-size: 14px;
     background: #000;
+    background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
     letter-spacing: 0.2em;
     border-radius: 20px 25px 35px 35px;
 }
@@ -70,6 +71,7 @@ header {
     font-size: 20px;
     padding: 5px 40px 5px 20px;
     text-align: center;
+    letter-spacing: 0.2em
 }
 
 .menu__face {
@@ -107,7 +109,9 @@ header {
     height: 40px;
     bottom: 100%;
     background: #000;
+    background: linear-gradient(300deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
     position: absolute;
+    border-radius: 30px;
 }
 
 .menu__arrow {
@@ -116,7 +120,7 @@ header {
 
 .menu__arrow img {
     width: 20px;
-    filter: invert(1);
+    /*filter: invert(1);*/
     margin-right: 10px;
 }
 
@@ -155,7 +159,6 @@ svg {
         padding-right: 0;
         color: #000;
         background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
-        /*border: 1px solid #bbb;*/
     }
 
     .menu__face,
@@ -196,6 +199,7 @@ svg {
 
     .menu__text {
         padding: 3px 0;
+        letter-spacing: 0.05em;
     }
 
     .menu {
