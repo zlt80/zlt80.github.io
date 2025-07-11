@@ -150,7 +150,7 @@ svg {
     }
 
     .menu__face {
-        width: 140px;
+        width: 100%;
         min-width: unset;
     }
 
