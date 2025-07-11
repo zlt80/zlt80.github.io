@@ -5,8 +5,7 @@ header {
     letter-spacing: 0.4em;
     font-optical-sizing: auto;
     justify-content: space-between;
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 600;
+    font-family: "Lateef", serif;
 }
 
 .header-left,
@@ -19,28 +18,31 @@ header {
 }
 
 .header-right {
-    padding: 35px 30px;
+    padding: 30px;
 }
 
 .header-left a {
+    height: 100%;
     display: block;
-    font-size: 32px;
-    max-width: 400px;
-    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 280px;
+    line-height: 2;
     filter: url(#goo);
-    padding: 20px 40px;
+    padding: 10px 30px;
     position: relative;
     border-radius: 30px;
     transition: all 3s;
+    text-transform: capitalize;
     /*background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);*/
-    background: linear-gradient(75deg, transparent, #f4f3f0, #faf8f6, #f8f6f3, transparent, #f3f0eb, #faf8f6, transparent, transparent, #f4f3f0);
+    background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);
 }
 
 .header-left a:hover {
     background-color: #000;
     transition-delay: .1s;
     border-radius: 25px 10px 30px 20px;
-    background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);
+    /*background: linear-gradient(75deg, transparent, #f4f3f0, #faf8f6, #f8f6f3, transparent, #f3f0eb, #faf8f6, transparent, transparent, #f4f3f0);*/
 }
 
 .menu {
@@ -57,25 +59,23 @@ header {
 .menu__face,
 .menu__items {
     color: #fff;
-    font-weight: 100;
-    padding: 20px;
-    font-size: 26px;
+    padding: 10px 20px;
+    font-size: 14px;
     background: #000;
     letter-spacing: 0.2em;
     border-radius: 20px 25px 35px 35px;
 }
 
 .menu__text {
-    font-size: 30px;
-    padding-right: 40px;
+    font-size: 20px;
+    padding: 5px 40px 5px 20px;
+    text-align: center;
 }
 
 .menu__face {
-    width: 4vw;
     min-width: 30px;
-    display: block;
+    display: flex;
     position: relative;
-    padding: 20px 120px 20px 40px;
 }
 
 .menu__items {
@@ -89,13 +89,14 @@ header {
     position: absolute;
     visibility: hidden;
     letter-spacing: 0.1em;
-    padding: 25px 32px 28px 38px;
+    padding: 30px 30px 35px 30px;
+    text-transform: capitalize;
     justify-content: space-between;
     transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
 }
 
 .menu__items li {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .menu__items::before {
@@ -109,15 +110,13 @@ header {
 }
 
 .menu__arrow {
-    top: 48%;
-    width: 12px;
-    height: 14px;
-    right: 40px;
-    position: absolute;
-    transform-origin: right;
-    border-right: 2px solid #fff;
-    border-bottom: 4px solid #fff;
-    transform: rotate(45deg) translateY(-50%);
+    display: contents;
+}
+
+.menu__arrow img {
+    width: 20px;
+    filter: invert(1);
+    margin-right: 10px;
 }
 
 .menu input {
@@ -162,7 +161,8 @@ svg {
     header .header-left a,
     header .menu__face,
     header .menu__items {
-        font-size: 17px;
+        font-size: 12px;
+        letter-spacing: 0.2em;
     }
 
     .menu__items {
@@ -193,6 +193,10 @@ svg {
 
     .menu__arrow {
         right: 20px;
+    }
+
+    .menu__text {
+        font-size: 14px;
     }
 
     .menu {
