@@ -2,5 +2,36 @@ main {
     min-height: 100vh;
 }
 
-body {
+h1 {
+    font-family: "Lateef", serif;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+.software {
+    padding: 5% 25%;
+    --min: 100px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.software .item {
+    width: fit-content;
+    text-align: center;
+}
+
+.software .item img {
+    width: 60px;
+    display: inline-block;
+}
+
+.software .item p {
+    font-size: 0.7rem;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 60%;
+    letter-spacing: 0.1em;
 }
