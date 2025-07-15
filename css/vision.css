@@ -1,0 +1,122 @@
+.vision {
+    max-width: unset;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.vision .top {
+    padding: 5% 15% 7%;
+    /*background: linear-gradient(0deg, #fff, #f3f7f8, #f7fbfa, #fff);*/
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.vision .bottom {
+    /*background: linear-gradient(0deg, #fff, #fdfbf9, #fffdf8, #fff);*/
+    padding: 0 12% 5%;
+}
+
+.vision:after,
+.vision:before {
+    display: none;
+}
+
+.vision span {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.3rem !important;
+    letter-spacing: 0.16em;
+    line-height: 1.6;
+    padding-bottom: 17px;
+}
+
+
+.part1 {
+    padding: 5% 10% 0;
+}
+
+.part2 {
+    padding: 7% 5% 0 0;
+}
+
+.part3 {
+    padding: 0 13%;
+    text-align: right;
+}
+
+.part4 {
+    padding: 5% 55% 15% 10%;
+}
+
+/*.part1 {*/
+/*    background: linear-gradient(0deg, #eeee, #b1aead, #3e4036 50%, #000);*/
+/*}*/
+
+.carousel {
+    margin: auto;
+}
+
+#smallCarousel {
+    width: fit-content;
+    padding: 26px 10px 20px 13px;
+    background-image: url("../assets/vision/2/back.png");
+    background-size: 150%;
+    background-position: center;
+}
+
+#smallCarousel .item img {
+    height: 260px;
+    object-fit: cover;
+    filter: brightness(1.2) contrast(0.8);
+    object-position: bottom;
+}
+
+#bigCarousel {
+    width: fit-content;
+    padding: 10px 14px 6px 15px;
+    background-image: url("../assets/vision/2/back.png");
+}
+
+.carousel-control {
+    background: none !important;
+    text-shadow: none;
+}
+
+.carousel-control {
+    top: 42%;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 35px;
+}
+
+.carousel-control.left {
+    left: -20px;
+}
+
+.carousel-control.right {
+    right: -20px;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #000;
+}
+
+.num {
+    z-index: 2;
+    color: #fff;
+    width: 40px;
+    font-size: 12px;
+    padding: 2px 4px;
+    line-height: 1.3;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+    background: linear-gradient(45deg, #cfcfcf, #b8b7b5, rgba(197, 197, 197, 0.56));
+}
+
+#smallCarousel .num {
+    background: linear-gradient(45deg, #cfcfcf, rgba(140, 142, 123, 0.67), rgba(197, 197, 197, 0.56));
+}

@@ -1,37 +1,45 @@
-var totalItems = $('#workCarousel .item').length;
-var currentIndex = $('#workCarousel div.active').index() + 1;
+var totalItems = $('#bigCarousel .item').length;
+var currentIndex = $('#bigCarousel div.active').index() + 1;
 
-$('#workCarousel .num').html('' + currentIndex + '/' + totalItems + '');
+$('#bigCarousel').carousel({
+    interval: 4000,
+})
 
-$('#workCarousel').bind('slid', function () {
-    currentIndex = $('#workCarousel div.active').index() + 1;
-    $('#workCarousel .num').html('' + currentIndex + '/' + totalItems + '');
+$('#smallCarousel').carousel({
+    interval: 5000
+})
+
+$('#bigCarousel .num').html('' + currentIndex + '/' + totalItems + '');
+
+$('#bigCarousel').bind('slid', function () {
+    currentIndex = $('#bigCarousel div.active').index() + 1;
+    $('#bigCarousel .num').html('' + currentIndex + '/' + totalItems + '');
 });
 
-$('#workCarousel').on('slide.bs.carousel', function () {
-    currentIndex = $('#workCarousel div.active').index() + 1;
-    $('#workCarousel .num').html('' + currentIndex + '/' + totalItems + '');
+$('#bigCarousel').on('slide.bs.carousel', function () {
+    currentIndex = $('#bigCarousel div.active').index() + 1;
+    $('#bigCarousel .num').html('' + currentIndex + '/' + totalItems + '');
 });
 
-// $('#workCarousel').carousel({
+// $('#bigCarousel').carousel({
 //     interval: 2000
 // });
 
-var totalItems2 = $('#brandCarousel .item').length;
-var currentIndex2 = $('#brandCarousel div.active').index() + 1;
+var totalItems2 = $('#smallCarousel .item').length;
+var currentIndex2 = $('#smallCarousel div.active').index() + 1;
 
-$('#brandCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
+$('#smallCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
 
-$('#brandCarousel').bind('slid', function () {
-    currentIndex2 = $('#brandCarousel div.active').index() + 1;
-    $('#brandCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
+$('#smallCarousel').bind('slid', function () {
+    currentIndex2 = $('#smallCarousel div.active').index() + 1;
+    $('#smallCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
 });
 
-$('#brandCarousel').on('slide.bs.carousel', function () {
-    currentIndex2 = $('#brandCarousel div.active').index() + 1;
-    $('#brandCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
+$('#smallCarousel').on('slide.bs.carousel', function () {
+    currentIndex2 = $('#smallCarousel div.active').index() + 1;
+    $('#smallCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
 });
 
-// $('#brandCarousel').carousel({
+// $('#smallCarousel').carousel({
 //     interval: 2000
 // });

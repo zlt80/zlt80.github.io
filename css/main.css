@@ -32,7 +32,8 @@ h1 {
     display: inline-block;
 }
 
-.software .item p {
+.software .item p,
+.vision p {
     font-size: 0.7rem;
     font-family: "DM Sans", sans-serif;
     margin-bottom: 60%;
