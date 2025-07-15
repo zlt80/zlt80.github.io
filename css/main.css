@@ -35,3 +35,18 @@ h1 {
     margin-bottom: 60%;
     letter-spacing: 0.1em;
 }
+
+@media screen and (max-width: 780px) {
+    h1 {
+        padding: 30% 0 0;
+    }
+
+    .software {
+        --min: 50px;
+        padding: 15% 15% 40%;
+    }
+
+    .software .item img {
+        width: 40px;
+    }
+}
