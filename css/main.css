@@ -11,8 +11,11 @@ h1 {
     padding: 50px 0 10px;
 }
 
-.software {
+.container {
     padding: 5% 25%;
+}
+
+.software {
     --min: 100px;
     display: grid;
     grid-gap: 1rem;
@@ -36,14 +39,57 @@ h1 {
     letter-spacing: 0.1em;
 }
 
+.profile__info {
+    text-align: center;
+}
+
+h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    padding: 15% 0;
+}
+
+h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    padding: 5% 0;
+}
+
+.profile .timeline p.timeline__item {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    line-height: 2;
+}
+
+.profile .timeline {
+    padding-bottom: 10%;
+}
+
 @media screen and (max-width: 780px) {
     h1 {
-        padding: 30% 0 0;
+        padding: 20% 0 0;
+    }
+
+    h2 {
+        font-size: 0.6rem;
+        padding: 35% 0 15%;
+    }
+
+    h3 {
+        padding: 30% 0 20%;
+    }
+
+    .container {
+        padding: 15% 15% 40%;
     }
 
     .software {
         --min: 50px;
-        padding: 15% 15% 40%;
     }
 
     .software .item img {
