@@ -1,6 +1,13 @@
+.part1,
+.part2,
+.part3,
+.part4 {
+    padding: 5% 25% 2% 25%;
+}
 
-.profile .timeline {
-    padding-bottom: 10%;
+.profile .part1 {
+    padding-top: 10%;
+    text-align: center;
 }
 
 .profile .timeline p.timeline__item {

@@ -1,11 +1,10 @@
 .vision {
     max-width: unset;
     width: unset;
-    padding: 5% 0;
 }
 
 .vision .top {
-    padding: 0 5%;
+    padding: 5% 5% 0;
     display: grid;
     grid-template-columns: 7fr 3fr;
     align-items: center;
