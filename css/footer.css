@@ -2,11 +2,14 @@ footer {
     width: 100%;
     display: flex;
     line-height: 2;
-    font-size: 15px;
-    padding: 30px 40px;
-    letter-spacing: 0.05em;
+    font-size: 18px;
+    padding: 80px 40px 30px;
+    letter-spacing: 0.15em;
     justify-content: space-between;
     font-family: "Lateef", serif;
+    /*background: linear-gradient(180deg, transparent, #f8f8f8, #e6e6e6);*/
+    background: linear-gradient(180deg, transparent, #fffdfa, #f4f1f0, #ddd)
+    /*color: #fff;*/
 }
 
 .footer-left,
@@ -16,6 +19,10 @@ footer {
 
 .footer-left li {
     list-style: none;
+}
+
+.footer-left li a {
+    /*color: #fff;*/
 }
 
 .footer-right {

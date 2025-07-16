@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 4fr 5fr;
     align-items: center;
-    background: linear-gradient(15deg, rgba(250, 248, 246, 0.92), rgb(250, 248, 246), rgba(247, 250, 246, 0.78), #fff, transparent);
+    /*background: linear-gradient(15deg, rgba(250, 248, 246, 0.92), rgb(250, 248, 246), rgba(247, 250, 246, 0.78), #fff, transparent);*/
     margin-top: 2%;
 }
 
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 5fr 4fr;
     align-items: center;
-    background: linear-gradient(15deg, rgba(247, 246, 250, 0.92), rgb(250, 246, 246), rgba(250, 248, 246, 0.91), rgba(250, 248, 246, 0.92));
+    /*background: linear-gradient(15deg, rgba(247, 246, 250, 0.92), rgb(250, 246, 246), rgba(250, 248, 246, 0.91), rgba(250, 248, 246, 0.92));*/
 }
 
 .about .bottom {
@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: end;
-    background: linear-gradient(10deg, transparent, #fff, rgb(250, 246, 250), rgba(247, 246, 250, 0.94), rgba(246, 246, 250, 0.94));
+    /*background: linear-gradient(10deg, transparent, #fff, rgb(250, 246, 250), rgba(247, 246, 250, 0.94), rgba(246, 246, 250, 0.94));*/
 }
 
 .about .bottom span {

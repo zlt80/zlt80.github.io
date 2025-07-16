@@ -6,6 +6,7 @@ header {
     font-optical-sizing: auto;
     justify-content: space-between;
     font-family: "Lateef", serif;
+    background: linear-gradient(0deg, transparent, #fffffc, #f8f7f4, #ddd)
 }
 
 .header-left,
