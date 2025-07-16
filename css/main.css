@@ -6,7 +6,7 @@ h1 {
     font-family: "Lateef", serif;
     font-weight: 200;
     letter-spacing: 0.3em;
-    font-size: 1.5em;
+    font-size: 32px;
     text-align: center;
     padding: 50px 0 10px;
 }
@@ -75,6 +75,7 @@ h3 {
 @media screen and (max-width: 780px) {
     h1 {
         padding: 20% 0 0;
+        font-size: 20px;
     }
 
     h2 {
