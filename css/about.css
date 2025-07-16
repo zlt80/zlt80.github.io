@@ -1,7 +1,7 @@
 .about {
     max-width: unset;
     width: unset;
-    padding: 0;
+    /*padding: 0;*/
 }
 
 .about .top {
@@ -22,7 +22,7 @@
 }
 
 .about .bottom {
-    padding: 12% 15%;
+    padding: 10% 15%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: end;

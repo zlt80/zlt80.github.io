@@ -1,81 +1,73 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* reset end */
+
 main {
     min-height: 100vh;
 }
 
-h1 {
-    font-family: "Lateef", serif;
-    font-weight: 200;
-    letter-spacing: 0.3em;
-    font-size: 32px;
-    text-align: center;
-    padding: 50px 0 10px;
-}
-
 .container {
-    padding: 5% 25%;
+    padding: 17% 0;
 }
 
-.software {
-    --min: 100px;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-}
-
-.software .item {
-    width: fit-content;
+h1 {
+    font-size: 32px;
+    font-weight: 200;
     text-align: center;
-    margin: 0 auto;
-}
-
-.software .item img {
-    width: 60px;
-    display: inline-block;
-}
-
-.software .item p,
-.vision p {
-    font-size: 0.7rem;
-    font-family: "DM Sans", sans-serif;
-    margin-bottom: 60%;
-    letter-spacing: 0.1em;
-}
-
-.profile__info {
-    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: "Lateef", serif;
 }
 
 h2 {
-    font-family: "DM Sans", sans-serif;
+    padding: 15% 0;
     font-weight: 300;
     font-size: 0.8rem;
     letter-spacing: 0.2em;
-    padding: 15% 0;
+    font-family: "DM Sans", sans-serif;
 }
 
 h3 {
-    font-family: "DM Sans", sans-serif;
+    padding: 5% 0;
     font-weight: 400;
     font-size: 0.8rem;
     letter-spacing: 0.2em;
-    padding: 5% 0;
-}
-
-.profile .timeline p.timeline__item {
     font-family: "DM Sans", sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    line-height: 2;
 }
 
-.profile .timeline {
-    padding-bottom: 10%;
-}
 
 @media screen and (max-width: 780px) {
+
+    .container {
+        padding: 15% 15% 40%;
+    }
+
     h1 {
-        padding: 20% 0 0;
         font-size: 20px;
+        padding: 20% 0 0;
     }
 
     h2 {
@@ -87,15 +79,4 @@ h3 {
         padding: 30% 0 20%;
     }
 
-    .container {
-        padding: 15% 15% 40%;
-    }
-
-    .software {
-        --min: 50px;
-    }
-
-    .software .item img {
-        width: 40px;
-    }
 }

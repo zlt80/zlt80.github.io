@@ -3,12 +3,14 @@ footer {
     display: flex;
     line-height: 2;
     font-size: 18px;
-    padding: 80px 40px 30px;
     letter-spacing: 0.15em;
-    justify-content: space-between;
+    padding: 80px 40px 30px;
     font-family: "Lateef", serif;
-    /*background: linear-gradient(180deg, transparent, #f8f8f8, #e6e6e6);*/
-    background: linear-gradient(180deg, transparent, #fffdfa, #f4f1f0, #ddd)
+    justify-content: space-between;
+    background: linear-gradient(180deg, transparent, #fff, rgba(241, 240, 238, 0.6), #ececec);
+    background: linear-gradient(182deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
+    /*background: linear-gradient(45deg, #3a3938, #000);*/
+    /*background: #f9f9f7;*/
     /*color: #fff;*/
 }
 
@@ -19,6 +21,7 @@ footer {
 
 .footer-left li {
     list-style: none;
+    text-transform: capitalize;
 }
 
 .footer-left li a {

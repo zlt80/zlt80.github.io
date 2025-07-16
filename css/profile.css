@@ -1,0 +1,15 @@
+
+.profile .timeline {
+    padding-bottom: 10%;
+}
+
+.profile .timeline p.timeline__item {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    line-height: 2;
+}
+
+.profile__info {
+    text-align: center;
+}

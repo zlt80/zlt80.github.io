@@ -23,6 +23,13 @@
     /*background: rgba(250, 248, 246, 0.68);*/
 }
 
+.vision p {
+    font-size: 0.7rem;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 60%;
+    letter-spacing: 0.1em;
+}
+
 .vision:after,
 .vision:before {
     display: none;
