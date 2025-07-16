@@ -43,3 +43,18 @@ $('#smallCarousel').on('slide.bs.carousel', function () {
 // $('#smallCarousel').carousel({
 //     interval: 2000
 // });
+
+var totalItems2 = $('#midCarousel .item').length;
+var currentIndex2 = $('#midCarousel div.active').index() + 1;
+
+$('#midCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
+
+$('#midCarousel').bind('slid', function () {
+    currentIndex2 = $('#midCarousel div.active').index() + 1;
+    $('#midCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
+});
+
+$('#midCarousel').on('slide.bs.carousel', function () {
+    currentIndex2 = $('#midCarousel div.active').index() + 1;
+    $('#midCarousel .num').html('' + currentIndex2 + '/' + totalItems2 + '');
+})
