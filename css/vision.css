@@ -1,7 +1,7 @@
 .vision {
     max-width: unset;
-    padding-left: 15%;
-    padding-right: 15%;
+    width: unset;
+    padding: 5% 0;
 }
 
 .vision .top {
@@ -49,7 +49,7 @@
 }
 
 .part4 {
-    padding: 3% 10% 5%;
+    padding: 3% 30% 5%;
 }
 
 .part1 {
