@@ -1,16 +1,15 @@
 .about {
     max-width: unset;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 0;
 }
 
 .about .top {
-    padding: 10% 20% 5% 10%;
+    padding: 5% 20% 5% 10%;
     display: grid;
     grid-template-columns: 4fr 5fr;
     align-items: center;
-    background: rgba(247, 250, 246, 0.56);
-    margin-bottom: 5px
+    background: linear-gradient(15deg, rgba(250, 248, 246, 0.92), rgb(250, 248, 246), rgba(247, 250, 246, 0.78), #fff, transparent);
+    margin-top: 2%;
 }
 
 .about .middle {
@@ -18,15 +17,15 @@
     display: grid;
     grid-template-columns: 5fr 4fr;
     align-items: center;
-    background: rgba(250, 248, 246, 0.81);
+    background: linear-gradient(15deg, rgba(247, 246, 250, 0.92), rgb(250, 246, 246), rgba(250, 248, 246, 0.91), rgba(250, 248, 246, 0.92));
 }
 
 .about .bottom {
     padding: 12% 15%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: end;
-    background: rgba(247, 246, 250, 0.81);
+    background: linear-gradient(10deg, transparent, #fff, rgb(250, 246, 250), rgba(247, 246, 250, 0.94), rgba(246, 246, 250, 0.94));
 }
 
 .about .bottom span {
@@ -48,9 +47,12 @@
     padding-bottom: 10px;
 }
 
-.part1,
+.part1 {
+    padding: 10% 0% 10% 25%;
+}
+
 .part2 {
-    padding: 10% 0;
+    padding: 10% 20% 10% 5%;
 }
 
 .part1 {
@@ -59,7 +61,7 @@
 }
 
 .part3 {
-    padding: 0 5% 0 10%;
+    padding: 0 5% 0 25%;
     text-align: center;
 }
 
@@ -68,11 +70,11 @@
 }
 
 .part5 {
-    padding-left: 5%;
+    padding: 0 10% 0 5%;
 }
 
 .part6 {
-    padding-right: 25%;
+    padding-right: 60%;
 }
 
 
@@ -82,7 +84,7 @@
 
 #smallCarousel {
     width: fit-content;
-    padding: 10px 9px 30px 7px;
+    padding: 10px 9px 50px 7px;
     background-image: url("../assets/about/1/back.png");
     background-size: 150%;
     background-position: center;
@@ -110,14 +112,17 @@
 
 #midCarousel {
     width: fit-content;
-    padding: 3px 22px 4px 15px;
-    background-image: url("../assets/about/3/back.webp");
+    padding: 14px 6px 45px 9px;
+    background-image: url("../assets/about/3/back.png");
     background-size: cover;
+    background-position: center;
 }
 
 #midCarousel .item img {
-    object-fit: cover;
-    filter: saturate(0.8);
+    object-fit: contain;
+    object-position: bottom;
+    max-height: 200px;
+    filter: saturate(1.2) brightness(1.2) contrast(0.9) hue-rotate(15deg) sepia(0.3);
     /*height: 170px;*/
 }
 
@@ -134,20 +139,20 @@
 }
 
 .carousel-control.left {
-    left: -25px;
+    left: -35px;
 }
 
 .carousel-control.right {
-    right: -25px;
+    right: -35px;
 }
 
 
 #midCarousel .carousel-control.left {
-    left: -45px;
+    left: -55px;
 }
 
 #midCarousel .carousel-control.right {
-    right: -45px;
+    right: -55px;
 }
 
 .carousel-control:hover,
@@ -173,8 +178,12 @@
 }
 
 #bigCarousel .num {
-    background: rgba(250, 255, 223, 0.78);
+    background: rgba(255, 242, 223, 0.78);
     margin-top: 10px;
+}
+
+#midCarousel .num {
+    background: #fff;
 }
 
 @media screen and (max-width: 780px) {
@@ -184,40 +193,50 @@
 
     .about span {
         padding-bottom: 17px;
-        text-align: left;
+        text-align: center;
         overflow-wrap: break-word;
     }
 
-    .about .top {
+    .about .top,
+    .about .middle,
+    .about .bottom {
         display: block;
+        padding: 15% 7%;
         border-bottom: 1px solid #e6e4e0;
     }
 
-    .about .top,
+    .about .top {
+        background: linear-gradient(15deg, rgba(241, 250, 238, 0.47), #fff, rgba(248, 241, 236, 0.5), rgba(247, 250, 246, 0.78), #fff, transparent);
+    }
+
+    .about .middle {
+        background: linear-gradient(15deg, rgb(239, 231, 223), #fff, #fffff9, #fff);
+    }
+
     .about .bottom {
-        padding: 7% 0 15%;
-        margin: 10%;
-        background: transparent;
+        background: linear-gradient(250deg, rgba(237, 240, 248, 0.76), rgba(253, 255, 246, 0.68), rgba(247, 246, 250, 0.94), rgba(255, 250, 245, 0.86));
     }
 
     .part1,
     .part3,
     .part2,
-    .part4 {
-        padding: 5% 10%;
-    }
-
-    .part2 {
-        padding: 5% 25%;
+    .part4,
+    .part5,
+    .part6 {
+        padding: 10%;
+        margin-top: 10%;
+        margin-bottom: 15%;
     }
 
     #bigCarousel {
-        margin: 0;
-        padding: 4px 5px 2px 15px;
+        margin: 0 auto;
     }
 
-    #bigCarousel .num {
-        color: #fff;
-        background: linear-gradient(45deg, rgba(113, 126, 113, 0.3), rgba(99, 79, 43, 0.51));
+    #midCarousel .carousel-control.left {
+        left: -35px;
+    }
+
+    #midCarousel .carousel-control.right {
+        right: -35px;
     }
 }
