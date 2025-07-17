@@ -47,10 +47,8 @@
 .profile .timeline p.timeline__item {
     display: flex;
     line-height: 2;
-    font-size: 12px;
     margin-bottom: 5%;
     align-items: center;
-    letter-spacing: 0.7px;
     font-family: "DM Sans", sans-serif;
 }
 
