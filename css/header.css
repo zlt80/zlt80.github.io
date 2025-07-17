@@ -46,12 +46,10 @@ header {
     /*background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);*/
 }
 
+
 .header-left a:hover {
-    color: #000;
-    transition-delay: .1s;
-    background-color: #666;
-    border-radius: 25px 10px 30px 20px;
-    /*background: linear-gradient(75deg, transparent, #f4f3f0, #faf8f6, #f8f6f3, transparent, #f3f0eb, #faf8f6, transparent, transparent, #f4f3f0);*/
+    background: transparent;
+    transition-delay: 0s;
 }
 
 .menu {
@@ -183,9 +181,13 @@ svg {
 
 @media screen and (max-width: 480px) {
 
+    header {
+        background: linear-gradient(166deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
+    }
+
     .header-left,
     .header-right {
-        padding: 20px 0 0 0;
+        padding: 10px 0;
     }
 
     .header-left {
@@ -214,8 +216,8 @@ svg {
     header .header-left a,
     header .menu__face,
     header .menu__items {
-        /*width: 120px;*/
-        font-size: 18px;
+        text-align: left;
+        font-size: 16px;
         letter-spacing: 0.1em;
     }
 
@@ -228,6 +230,12 @@ svg {
         font-size: 16px;
     }
 
+    .menu__items li a {
+        color: #000;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
     .header-left a {
         width: 140px;
         transition: none;
@@ -235,15 +243,12 @@ svg {
         background: transparent;
     }
 
-    .header-left a:hover {
-        background: transparent;
-        transition-delay: 0s;
-        border-radius: 50%;
-    }
 
     .menu__text {
         padding: 3px 0;
+        font-size: 16px;
         letter-spacing: 0.1em;
+        font-weight: 400;
     }
 
     .menu {

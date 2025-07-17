@@ -53,7 +53,8 @@ h3 {
     padding: 5% 0;
     font-weight: 400;
     font-size: 0.8rem;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     font-family: "DM Sans", sans-serif;
 }
 

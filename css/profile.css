@@ -12,8 +12,8 @@
 
 .profile .timeline p.timeline__item {
     font-family: "DM Sans", sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
+    font-size: 12px;
+    letter-spacing: 0.7px;
     line-height: 2;
 }
 

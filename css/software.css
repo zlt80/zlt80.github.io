@@ -1,7 +1,8 @@
-.software {
+.software .grid {
     --min: 100px;
     display: grid;
     grid-gap: 1rem;
+    padding: 10% 25% 5%;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
@@ -26,8 +27,9 @@
 
 @media screen and (max-width: 780px) {
 
-    .software {
+    .software .grid {
         --min: 50px;
+        padding: 25% 0 0;
     }
 
     .software .item img {
