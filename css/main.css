@@ -49,9 +49,12 @@ h2 {
 }
 
 h3 {
-    font-size: 13px;
+    font-size: 24px;
     font-weight: 200;
     letter-spacing: 2px;
+    background: linear-gradient(to left, #854621 30%, #a7c4ff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -75,6 +78,10 @@ h3 {
     h3 {
         font-size: 11px;
         padding: 30% 0 20%;
+        font-weight: 300;
+        background: linear-gradient(to right, #fdfbce 15%, #384263 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
 }
