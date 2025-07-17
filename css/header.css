@@ -85,9 +85,9 @@ header {
 }
 
 .menu__face {
+    margin: 0;
     display: flex;
     min-width: 30px;
-    margin: 0;
     position: relative;
     transition-delay: 3s;
     justify-content: space-around;
@@ -111,11 +111,11 @@ header {
 }
 
 .menu__items li a {
-    font-size: 19px;
-    letter-spacing: 0.1em;
-    transition: 1s;
     color: #fff;
+    transition: 1s;
+    font-size: 19px;
     font-weight: 300;
+    letter-spacing: 0.1em;
 }
 
 .menu__items::before {
@@ -124,10 +124,10 @@ header {
     width: 20px;
     height: 40px;
     bottom: 100%;
-    background: linear-gradient(300deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
     background: #000;
     position: absolute;
     border-radius: 30px;
+    background: linear-gradient(300deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
 }
 
 .menu__arrow {
@@ -136,25 +136,22 @@ header {
 
 .menu__arrow img {
     width: 14px;
-    opacity: 0.9;
-    margin-right: 10px;
+    opacity: 0.8;
     transition: 0.4s;
     filter: invert(1);
+    margin-right: 10px;
 }
 
-.menu input {
+.header-right input,
+.header-right svg {
     display: none;
 }
 
 .menu input:checked ~ .menu__items {
     opacity: 1;
+    text-align: right;
     visibility: visible;
     top: calc(100% + 25px);
-    text-align: right;
-}
-
-svg {
-    display: none;
 }
 
 
@@ -167,9 +164,12 @@ svg {
         transform: scale(0.94);
     }
 
-    /*.menu__face:hover img {*/
-    /*    opacity: 0.1;*/
-    /*}*/
+    .menu__face:hover img {
+        opacity: 0.2;
+        transition: all 3s;
+        transform: scale(0.5);
+    }
+
     .menu__items li:hover a {
         color: #000;
     }
