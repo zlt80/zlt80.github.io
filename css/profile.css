@@ -20,3 +20,9 @@
 .profile__info {
     text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+    .part1, .part2, .part3, .part4 {
+        padding: 0;
+    }
+}
