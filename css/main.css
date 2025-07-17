@@ -49,13 +49,10 @@ h2 {
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 40px;
     opacity: 0.4;
     font-weight: 200;
     letter-spacing: 2px;
-    background: linear-gradient(to left, #854621 30%, #a7c4ff 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-family: "DM Sans", sans-serif;
 }
 
