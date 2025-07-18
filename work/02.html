@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link href="../css/reset.css" rel="stylesheet">
+
     <link href="../css/header.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
@@ -65,27 +65,28 @@
 <main role="main">
 
     <div class="part1">
-        <div class="carousel slide" id="bigCarousel">
-            <div class="num"></div>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="phone-frame work2-01">
-                        <div class="phone-screen">
-                            <img alt="preview" class="preview" src="../assets/work/02/screen1.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="phone-frame work2-02">
-                        <div class="phone-screen">
-                            <img alt="work" src="../assets/work/02/screen2.png"/>
-                        </div>
+        <div carousel class="carousel data-ride="
+        " id="bigCarousel">
+        <div class="num"></div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="phone-frame work2-01">
+                    <div class="phone-screen">
+                        <img alt="preview" src="../assets/work/02/screen1.png">
                     </div>
                 </div>
             </div>
-            <a class="left carousel-control" data-slide="prev" href="#bigCarousel">‹</a>
-            <a class="right carousel-control" data-slide="next" href="#bigCarousel">›</a>
+            <div class="item">
+                <div class="phone-frame work2-02">
+                    <div class="phone-screen">
+                        <img alt="work" src="../assets/work/02/screen2.png"/>
+                    </div>
+                </div>
+            </div>
         </div>
+        <a class="left carousel-control" data-slide="prev" href="#bigCarousel">‹</a>
+        <a class="right carousel-control" data-slide="next" href="#bigCarousel">›</a>
+    </div>
     </div>
 
     <div class="part2">
@@ -95,19 +96,20 @@
     </div>
 
     <div class="part4">
-        <div class="carousel slide" id="smallCarousel">
-            <div class="num"></div>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img class="brand" src="../assets/work/02/brand1.png"/>
-                </div>
-                <div class="item">
-                    <img class="brand" src="../assets/work/02/brand2.png"/>
-                </div>
+        <div carousel class="carousel data-ride="
+        " id="smallCarousel">
+        <div class="num"></div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="brand" src="../assets/work/02/brand1.png"/>
             </div>
-            <a class="left carousel-control" data-slide="prev" href="#smallCarousel">‹</a>
-            <a class="right carousel-control" data-slide="next" href="#smallCarousel">›</a>
+            <div class="item">
+                <img class="brand" src="../assets/work/02/brand2.png"/>
+            </div>
         </div>
+        <a class="left carousel-control" data-slide="prev" href="#smallCarousel">‹</a>
+        <a class="right carousel-control" data-slide="next" href="#smallCarousel">›</a>
+    </div>
     </div>
 
 </main>
@@ -134,7 +136,7 @@
 </footer>
 
 
-<script src="../js/work.js"></script>
+
 
 </body>
 </html>
