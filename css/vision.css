@@ -83,7 +83,7 @@
     padding: 6px 40px 5px 10px;
     margin: 0 22% 3%;
     width: fit-content;
-    background-image: url("../assets/vision/222/back.webp");
+    background-image: url("../assets/vision/2/back.webp");
 }
 
 #bigCarousel .item img {
@@ -91,7 +91,6 @@
     filter: brightness(0.98) hue-rotate(12deg);
     padding: 0;
 }
-
 
 .carousel-control {
     background: none !important;
