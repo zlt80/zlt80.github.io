@@ -1,59 +1,36 @@
 .profile {
-    max-width: unset;
     width: unset;
-    /*padding: 0;*/
+    max-width: unset;
 }
 
-.profile .top {
-    padding: 0 10% 5% 10%;
-    display: grid;
-    grid-template-columns: 4fr 5fr;
-    align-items: center;
-}
-
-.profile .middle {
-    width: fit-content;
+.part1,
+.part2,
+.part3,
+.part4,
+.part5,
+.part6 {
     margin: 0 auto;
 }
 
+.profile .top,
+.profile .middle,
 .profile .bottom {
-    padding: 0 20% 5% 20%;
-    display: grid;
-    grid-template-columns: 5fr 3fr;
-    align-items: center;
+    padding: 15% 20% 0
 }
 
 .profile h3 {
-    z-index: -1;
-    padding: 15% 0 5%;
-}
-
-.profile h3:nth-child(2) {
-    background: linear-gradient(to right, #9ed3ed, #697cff, #dff3e8, #24282c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.profile h3:nth-child(4) {
-    background: linear-gradient(to right, #ffabbb, #33b1ff, #c3b5c5, #ff9b80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.profile h3:nth-child(6) {
-    background: linear-gradient(to left, #0f1904, #e8e4dd, #80acea);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 10%;
+    align-items: center;
 }
 
 .profile h3 span {
-    padding: 0 10px;
+    padding: 0 20px 0 0;
 }
 
 .profile .timeline img {
     width: auto;
     height: 22px;
-    margin-bottom: 10px
+    margin-bottom: 15px
 }
 
 .profile .timeline .sb {
@@ -83,8 +60,10 @@
 .profile .timeline p.timeline__item {
     display: flex;
     line-height: 2;
+    font-size: 14px;
     margin-bottom: 10%;
     align-items: center;
+    letter-spacing: 1px;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -96,27 +75,14 @@
     text-align: center;
 }
 
-.part1,
-.part5 {
-    /*margin: 0 auto;*/
-    /*width: fit-content;*/
-}
-
-.part4 {
-    padding: 10% 20% 10% 0;
-}
-
-.part2 {
-    padding: 5% 10% 0;
-}
-
 .carousel {
-    margin: auto;
+    margin: 20% auto;
 }
 
 .go-button {
     text-align: center;
-    padding: 20px 0 0;
+    padding: 8% 0 0;
+    display: none;
 }
 
 .go-button:hover {
@@ -124,7 +90,8 @@
 }
 
 .go-button a {
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
     text-transform: uppercase;
     font-family: "DM Sans", sans-serif;
     transition: all 1s ease;
@@ -137,10 +104,9 @@
 #smallCarousel {
     max-width: 280px;
     width: fit-content;
-    background-size: 220%;
-    padding: 10px 7px 28px 9px;
+    background-size: 100%;
+    padding: 12px 7px 32px 6px;
     background-image: url("../assets/profile/1/back.png");
-    box-shadow: 5px 1px 8px rgba(185, 185, 189, 0.78);
     background-position: center;
 }
 
@@ -164,15 +130,14 @@
 
 #midCarousel {
     width: fit-content;
-    padding: 18px 10px 65px 12px;
-    background-image: url("../assets/profile/3/back.png");
+    padding: 8px 5px 24px 7px;
+    background-image: url("../assets/profile/3/back.jpg");
     background-size: cover;
     background-position: center;
-    box-shadow: 2px 1px 6px rgba(195, 184, 180, 0.78);
 }
 
 #midCarousel .item img {
-    max-height: 320px; /*height: 170px;*/
+    max-height: 280px; /*height: 170px;*/
 }
 
 .carousel-control {
@@ -195,44 +160,17 @@
     right: -45px;
 }
 
-
 .carousel-control:hover,
 .carousel-control:focus {
     color: #000;
 }
 
-.num {
-    z-index: 2;
-    color: #666;
-    font-size: 11px;
-    padding: 1px 8px;
-    line-height: 1.3;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: -45px;
-    position: absolute;
-    text-align: center;
-    border-radius: 15px;
-    letter-spacing: 0.1em;
-    font-family: "DM Sans", sans-serif;
-    background: rgba(255, 255, 255, 0.27);
-}
-
-#bigCarousel .num {
-    background: rgba(255, 242, 223, 0.78);
-    margin-top: 10px;
-}
-
-#midCarousel .num {
-    background: rgba(248, 246, 238, 0.91);
-}
-
 @media screen and (max-width: 480px) {
     .profile h3 {
         display: grid;
-        font-size: 15px;
+        font-size: 21px;
         letter-spacing: 2px;
-        margin: 30% 0 0;
+        margin: 0;
         justify-content: end;
         text-align: right;
     }
@@ -270,21 +208,4 @@
         margin-top: 20%;
     }
 
-    .profile h3:nth-child(2) {
-        background: linear-gradient(to left, #00188e 15%, #0a5a07 5%, #8990df 70%, #0b064e 10%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .profile h3:nth-child(4) {
-        background: linear-gradient(to left, #00188e 15%, #b8004d 5%, #8990df 70%, #0b064e 10%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .profile h3:nth-child(6) {
-        background: linear-gradient(to left, #898e00 15%, #e85100 5%, #8990df 70%, #0b064e 10%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
