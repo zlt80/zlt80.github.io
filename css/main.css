@@ -48,14 +48,6 @@ h2 {
     font-family: "DM Sans", sans-serif;
 }
 
-h3 {
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-    font-family: "Lateef", sans-serif;
-}
-
 
 @media screen and (max-width: 780px) {
 

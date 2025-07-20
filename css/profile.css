@@ -15,22 +15,81 @@
 .profile .top,
 .profile .middle,
 .profile .bottom {
-    padding: 15% 20% 0
+    padding: 5%;
+}
+
+.profile .top,
+.profile .bottom {
+    margin: 5% 15%;
+    display: grid;
+    grid-template-columns: 1fr 3fr
+}
+
+.part1,
+.part5 {
+    padding: 6% 0 0;
+}
+
+.part2 {
+    width: -webkit-fill-available;
+}
+
+.profile .middle {
+    margin: 5% 15%;
+}
+
+#bigCarousel {
+    padding: 12px 7px 40px 6px;
+    background-image: url("../assets/profile/1/back.jpg");
+    background-size: 100%;
+    margin: auto;
+    width: 200px;
+}
+
+#bigCarousel .item img {
+    width: fit-content;
+    object-fit: cover;
+    height: 150px;
+}
+
+.profile .logo {
+    text-align: right;
 }
 
 .profile h3 {
-    margin-bottom: 10%;
-    align-items: center;
+    margin: 0 0 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
 }
 
-.profile h3 span {
-    padding: 0 20px 0 0;
+.profile h3 {
+    color: #2e2e2e;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.profile .time {
+    width: 200px;
+    text-align: right;
 }
 
 .profile .timeline img {
     width: auto;
     height: 22px;
-    margin-bottom: 15px
+    margin: 0 0 20px;
+}
+
+.profile box {
+    gap: 5%;
+    display: grid;
+    margin-bottom: 5%;
+    align-items: start;
+    grid-template-columns: 1fr 9fr;
+}
+
+.part1 .time {
+    padding-top: 3px;
 }
 
 .profile .timeline .sb {
@@ -43,32 +102,39 @@
 }
 
 .profile .timeline .ba {
-    height: 40px;
-    margin-top: 20px;
+    height: 36px;
+    margin-top: 10px;
 }
 
 .profile .timeline .pi {
-    height: 55px;
-    margin-top: 10px
+    height: 42px;
 }
 
 .profile .timeline .ew {
     height: 24px;
-    margin-top: 8px;
 }
 
-.profile .timeline p.timeline__item {
+.profile .timeline p {
     display: flex;
-    line-height: 2;
+    line-height: 1.4;
     font-size: 14px;
     margin-bottom: 10%;
     align-items: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
     font-family: "DM Sans", sans-serif;
 }
 
-.profile .timeline p.timeline__item:last-child {
-    margin-bottom: 0;
+.profile .timeline p.timeline__item.time {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.profile .timeline p.timeline__item:nth-child(2),
+.profile .timeline p.timeline__item:nth-child(5),
+.profile .timeline p.timeline__item:nth-child(8) {
+    margin-bottom: 10px;
 }
 
 .profile__info {
@@ -79,58 +145,10 @@
     margin: 20% auto;
 }
 
-.go-button {
-    text-align: center;
-    padding: 8% 0 0;
-    display: none;
-}
-
-.go-button:hover {
-    cursor: pointer;
-}
-
-.go-button a {
-    font-size: 14px;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    font-family: "DM Sans", sans-serif;
-    transition: all 1s ease;
-}
-
-.go-button a:hover {
-    color: #d1d8da;
-}
-
-#smallCarousel {
-    max-width: 280px;
-    width: fit-content;
-    background-size: 100%;
-    padding: 12px 7px 32px 6px;
-    background-image: url("../assets/profile/1/back.png");
-    background-position: center;
-}
-
-#smallCarousel .item img {
-    max-height: 320px;
-    object-fit: cover;
-    object-position: bottom;
-}
-
-#bigCarousel {
-    width: fit-content;
-    padding: 6px 8px 24px 7px;
-    margin: 0 0 3% 10%;
-}
-
-#bigCarousel .item img {
-    width: max-content;
-    object-fit: cover;
-    height: 300px;
-}
-
 #midCarousel {
+    margin: 0 5%;
     width: fit-content;
-    padding: 8px 5px 24px 7px;
+    padding: 12px 5px 40px 7px;
     background-image: url("../assets/profile/3/back.jpg");
     background-size: cover;
     background-position: center;
@@ -153,11 +171,11 @@
 }
 
 .carousel-control.left {
-    left: -45px;
+    left: -35px;
 }
 
 .carousel-control.right {
-    right: -45px;
+    right: -35px;
 }
 
 .carousel-control:hover,
@@ -175,7 +193,7 @@
         text-align: right;
     }
 
-    .profile h3 span {
+    .profile h3 {
         padding: 5px 0;
     }
 
