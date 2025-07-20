@@ -1,33 +1,24 @@
 header {
     width: 100%;
     display: flex;
-    font-style: normal;
+    filter: url(#goo);
+    padding: 15px 20px;
     letter-spacing: 0.15em;
     font-optical-sizing: auto;
     justify-content: space-between;
     font-family: "Lateef", serif;
     position: relative;
-    z-index: 3;
-    /*background: linear-gradient(359deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(221, 221, 221, 0.58), #eee);*/
-    background: linear-gradient(298deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
+    /*background: linear-gradient(30deg, #fff, #ddd, transparent, rgba(236, 236, 236, 0.25), #fffffc, rgba(248, 247, 244, 0.53), rgba(221, 221, 221, 0.58), #eee);*/
+    background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
     /*background: linear-gradient(300deg, #ddd, transparent, #ffffff, rgba(251, 249, 247, 0.88), transparent, rgba(232, 230, 228, 0.76));*/
-    /*background: linear-gradient(260deg, transparent, #fff, #f8f6f3, #eee, #faf8f6, #fff, #fff, #f8f6f3, transparent);*/
-    filter: url(#goo);
     /*border-bottom: 1px solid #eee;*/
 }
 
 .header-left,
 .header-right {
+    z-index: 3;
     width: 50%;
-}
-
-.header-left {
-    padding: 15px 20px;
-}
-
-.header-right {
     display: grid;
-    padding: 15px 20px;
     align-items: center;
 }
 
@@ -35,23 +26,25 @@ header {
     display: block;
     font-size: 24px;
     font-weight: 400;
+    height: 45px;
+    line-height: 45px;
     max-width: 280px;
-    line-height: 2.6;
     letter-spacing: 0.17em;
-    /*filter: url(#goo);*/
+    filter: url(#goo);
     position: relative;
     transition: all 2s;
-    padding: 5px 25px 5px 25px;
+    padding: 1px 0 1px 35px;
     text-transform: capitalize;
     text-shadow: 5px 1px 13px #fff;
-    border-radius: 35px 40px 30px 50px;
-    /*background: linear-gradient(75deg, transparent, #fff, #f8f6f3, #fff, #fff, #faf8f6, #eee, transparent, #fff, transparent);*/
+    border-radius: 35px 45px 40px 50px;
+    /*background: linear-gradient(75deg, #ddd, #fff, #f8f6f3, transparent, rgba(250, 248, 246, 0.63), rgba(238, 238, 238, 0.46), #fff, transparent, #c5c1c1);*/
+    background: linear-gradient(300deg, #ddd, transparent, #ffffff, rgba(251, 249, 247, 0.88), transparent, rgba(232, 230, 228, 0.76));
 }
 
 
 .header-left a:hover {
-    background: transparent;
-    transition-delay: 0s;
+    transition: 3s all;
+    color: #ddd;
 }
 
 .menu {
@@ -59,7 +52,6 @@ header {
     position: relative;
     justify-items: end;
     margin-right: 25px;
-    z-index: 3;
 }
 
 .menu label:hover,
@@ -69,19 +61,40 @@ header {
 
 .menu__face,
 .menu__items {
+    z-index: 5;
+    text-align: right;
+    position: relative;
     color: #fff;
-    padding: 5px 20px;
     font-size: 14px;
-    background-color: rgba(66, 67, 71, 0.85);
-    /*background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);*/
-    background: linear-gradient(45deg, #302f2d, #000);
+    font-weight: 400;
+    filter: url(#goo);
     letter-spacing: 0.1em;
-    border-radius: 45px 30px 35px 32px;
+    padding: 0 20px 0 40px;
+    border-radius: 35px 50px 50px 40px;
+    background-color: rgba(66, 67, 71, 0.85);
+}
+
+.menu__face {
+    margin: 0;
+    height: 40px;
+    display: flex;
+    min-width: 30px;
+    line-height: 1.3;
+    position: relative;
+    transition-delay: 3s;
+    justify-content: space-around;
+    border-radius: 55px 65px 20px 54px;
+    transition: all 2s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+    background: linear-gradient(125deg, transparent, #787878, #5e5e5e, #272727, #000, transparent);
+    /*background: linear-gradient(230deg, transparent, rgba(255, 255, 255, 0.71), rgba(108, 105, 103, 0.25), transparent, #ddd, #292828, #000, #272727, rgba(29, 25, 32, 0.42), transparent);*/
+    /*background: linear-gradient(260deg, transparent, rgba(255, 255, 255, 0.16), rgba(44, 36, 25, 0.67), transparent, #000, #4f4b4bc2, #272727, #292828, rgba(29, 25, 32, 0.42), #fff, transparent);*/
+    /*background: linear-gradient(85deg, transparent, rgba(255, 255, 255, 0.71), rgb(184 183 182 / 46%), #2324276b, #130e0cc4, #292828, #000, #2d2d2dad, rgba(29, 25, 32, 0.42), transparent);*/
+
 }
 
 .menu__text {
     font-size: 24px;
-    font-weight: 200;
+    filter: url(#goo);
     text-align: center;
     letter-spacing: 0.15em;
     padding: 5px 40px 5px 20px;
@@ -99,26 +112,32 @@ header {
 
 .menu__items {
     right: 0;
-    top: 50%;
+    top: 55%;
     margin: 0;
     opacity: 0;
     z-index: -1;
-    line-height: 2;
+    line-height: 2.4;
     list-style: none;
     position: absolute;
     visibility: hidden;
-    letter-spacing: 0.1em;
-    padding: 30px 20px 40px 30px;
+    transition: all 1s;
+    border-radius: 20px;
+    padding: 20px 30px 30px 30px;
     justify-content: space-between;
-    transition: all 0.7s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+    /*background: linear-gradient(45deg, #302f2d, #000);*/
+    /*background: linear-gradient(20deg, transparent, #000, #333332, rgba(120, 120, 120, 0.35), rgba(63, 66, 71, 0.82), #272727, #000, transparent);*/
+    background: linear-gradient(320deg, transparent, #000, rgba(48, 44, 46, 0.2), rgba(22, 32, 22, 0.57), rgb(36 33 33 / 42%), #000, #272727, transparent);
+    /*background: linear-gradient(45deg, #302f2d, #000);*/
+    /*background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);*/
+    /*background: linear-gradient(20deg, rgba(41, 33, 33, 0.41), #939292, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);*/
 }
 
 .menu__items li a {
     color: #fff;
     transition: 1s;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 300;
-    letter-spacing: 0.1em;
+    letter-spacing: 3px;
 }
 
 .menu__items::before {
@@ -127,10 +146,13 @@ header {
     width: 20px;
     height: 40px;
     bottom: 100%;
-    background: #000;
     position: absolute;
     border-radius: 30px;
-    background: linear-gradient(300deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);
+    transition-delay: 0.2s;
+    transition: all 5s;
+    background: linear-gradient(205deg, rgba(108, 101, 101, 0.36), #000, #302f2d, #000);
+    /*background: linear-gradient(20deg, transparent, #000, #333332, rgb(36 33 33 / 42%), rgba(63, 66, 71, 0.82), #272727, #000, transparent);*/
+    /*background: linear-gradient(20deg, #939292, rgba(41, 33, 33, 0.41), rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), transparent);*/
 }
 
 .menu__arrow {
@@ -138,11 +160,10 @@ header {
 }
 
 .menu__arrow img {
-    width: 14px;
-    opacity: 0.8;
+    width: 12px;
     transition: 0.4s;
     filter: invert(1);
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .header-right input,
@@ -152,7 +173,7 @@ header {
 
 .menu input:checked ~ .menu__items {
     opacity: 1;
-    text-align: right;
+    text-align: center;
     visibility: visible;
     top: calc(100% + 25px);
 }
@@ -161,16 +182,15 @@ header {
 @media screen and (min-width: 481px) {
 
     .menu__face:hover {
-        color: #000;
-        background: #fff;
-        background: linear-gradient(125deg, transparent, #787878, #5e5e5e, #272727, #000, transparent);
-        transform: scale(0.94);
+        transition: 3s all;
+        transform: scale(0.95);
+        background-color: #fff;
     }
 
     .menu__face:hover img {
-        opacity: 0.2;
-        transition: all 3s;
-        transform: scale(0.5);
+        opacity: 0.8;
+        transition: all 7s;
+        transform: scale(0.8);
     }
 
     .menu__items li:hover a {
