@@ -121,15 +121,17 @@ header {
     position: absolute;
     visibility: hidden;
     transition: all 1s;
-    border-radius: 20px;
-    padding: 20px 30px 30px 30px;
+    border-radius: 40px 50px 40px 20px;
+    padding: 20px 40px 30px 40px;
     justify-content: space-between;
     /*background: linear-gradient(45deg, #302f2d, #000);*/
     /*background: linear-gradient(20deg, transparent, #000, #333332, rgba(120, 120, 120, 0.35), rgba(63, 66, 71, 0.82), #272727, #000, transparent);*/
-    background: linear-gradient(320deg, transparent, #000, rgba(48, 44, 46, 0.2), rgba(22, 32, 22, 0.57), rgb(36 33 33 / 42%), #000, #272727, transparent);
+    /*background: linear-gradient(320deg, transparent, #000, rgba(48, 44, 46, 0.2), rgba(22, 32, 22, 0.57), rgb(36 33 33 / 42%), #000, #272727, transparent);*/
     /*background: linear-gradient(45deg, #302f2d, #000);*/
     /*background: linear-gradient(125deg, transparent, #f1f1f1, #f8f8f8, #ffffff, transparent, #eee);*/
-    /*background: linear-gradient(20deg, rgba(41, 33, 33, 0.41), #939292, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);*/
+    /*background: linear-gradient(20deg, rgba(41, 33, 33, 0.41), #939292, transparent, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);*/
+    background: linear-gradient(120deg, rgba(41, 33, 33, 0.41), #000000, #fffcfc0d, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);
+
 }
 
 .menu__items li a {
