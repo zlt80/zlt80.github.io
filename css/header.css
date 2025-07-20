@@ -85,10 +85,10 @@ header {
     justify-content: space-around;
     border-radius: 55px 65px 20px 54px;
     transition: all 2s cubic-bezier(0.93, 0.88, 0.1, 0.8);
-    background: linear-gradient(125deg, transparent, #787878, #5e5e5e, #272727, #000, transparent);
+    /*background: linear-gradient(125deg, transparent, #787878, #5e5e5e, #272727, #000, transparent);*/
     /*background: linear-gradient(230deg, transparent, rgba(255, 255, 255, 0.71), rgba(108, 105, 103, 0.25), transparent, #ddd, #292828, #000, #272727, rgba(29, 25, 32, 0.42), transparent);*/
     /*background: linear-gradient(260deg, transparent, rgba(255, 255, 255, 0.16), rgba(44, 36, 25, 0.67), transparent, #000, #4f4b4bc2, #272727, #292828, rgba(29, 25, 32, 0.42), #fff, transparent);*/
-    /*background: linear-gradient(85deg, transparent, rgba(255, 255, 255, 0.71), rgb(184 183 182 / 46%), #2324276b, #130e0cc4, #292828, #000, #2d2d2dad, rgba(29, 25, 32, 0.42), transparent);*/
+    background: linear-gradient(85deg, transparent, rgba(255, 255, 255, 0.71), rgb(184 183 182 / 46%), #2324276b, #130e0cc4, #292828, #000, #2d2d2dad, rgba(29, 25, 32, 0.42), transparent);
 
 }
 
@@ -152,9 +152,9 @@ header {
     border-radius: 30px;
     transition-delay: 0.2s;
     transition: all 5s;
-    background: linear-gradient(205deg, rgba(108, 101, 101, 0.36), #000, #302f2d, #000);
+    /*background: linear-gradient(205deg, rgba(108, 101, 101, 0.36), #000, #302f2d, #000);*/
     /*background: linear-gradient(20deg, transparent, #000, #333332, rgb(36 33 33 / 42%), rgba(63, 66, 71, 0.82), #272727, #000, transparent);*/
-    /*background: linear-gradient(20deg, #939292, rgba(41, 33, 33, 0.41), rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), transparent);*/
+    background: linear-gradient(20deg, #939292, rgba(41, 33, 33, 0.41), rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), transparent);
 }
 
 .menu__arrow {
@@ -193,6 +193,10 @@ header {
         opacity: 0.8;
         transition: all 7s;
         transform: scale(0.8);
+    }
+
+    .menu__items {
+        box-shadow: 5px 2px 20px rgba(104, 104, 104, 0.25);
     }
 
     .menu__items li:hover a {
