@@ -1,9 +1,10 @@
 .vision {
     width: unset;
-    margin: 10% 15%;
+    margin: 10% 15% 0;
+    padding-bottom: 2%;
     max-width: unset;
     background-size: 100%;
-    background-image: linear-gradient(65deg, rgba(233, 246, 233, 0.41), rgba(251, 255, 251, 0.78), rgba(255, 255, 255, 0.8), rgba(235, 247, 255, 0.65)), url(../assets/vision/b.jpg);
+    background-image: linear-gradient(65deg, rgba(233, 246, 233, 0.41), rgba(251, 255, 252, 0.8), rgba(251, 255, 253, 0.78), rgba(255, 255, 255, 0.8), rgba(235, 247, 255, 0.65)), url(../assets/vision/b.jpg);
 }
 
 .sticker {
@@ -23,7 +24,7 @@
 
 .vision .top {
     gap: 20%;
-    margin: 10%;
+    margin: 10% 10% 0;
     padding: 0 10%;
     display: grid;
     align-items: center;
@@ -35,9 +36,13 @@
 }
 
 .vision .bottom {
-    margin: 20% 15%;
+    margin: 15%;
     text-align: center;
     align-items: center;
+}
+
+.vision .bottom .part4 {
+    margin-top: 5%;
 }
 
 .vision p {
