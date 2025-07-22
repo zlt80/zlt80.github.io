@@ -2,61 +2,66 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background-size: 100%;
+    background-size: cover;
     padding-bottom: 20%;
+    background: linear-gradient(175deg, #fff, rgba(250, 255, 255, 0.5), rgba(255, 249, 254, 0.73), #fff), url(../assets/vision/b.jpg);
+
     /*background-image: linear-gradient(2deg, #fff, rgba(253, 247, 244, 0.74), #fff), url(../assets/vision/b.jpg);*/
-    background: linear-gradient(175deg, #fff, rgba(231, 249, 255, 0.62), rgba(255, 255, 255, 0.5)), url(../assets/vision/b.jpg);
+    /*background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.5), rgba(255, 250, 246, 0.66), rgba(255, 254, 244, 0.56), #fff), url(../assets/vision/back.jpg);*/
 }
 
 .sticker {
     z-index: 2;
-    width: 80px;
-    margin-left: 30%;
+    width: 65px;
+    margin-left: 36%;
     position: relative;
-    filter: saturate(1.2);
-    margin-top: -30%
+    rotate: 270deg;
+    filter: opacity(0.9) saturate(1.5);
+    margin-top: -12%;
 }
 
 .top .sticker:first-child {
-    width: 130px;
+    width: 150px;
     z-index: 3;
-    margin-bottom: -130%;
-    margin-left: -25%;
+    margin-bottom: -120%;
+    margin-left: -15%;
     rotate: 30deg;
-    filter: opacity(0.9) saturate(1.3) brightness(1.2) contrast(0.9);
+    filter: opacity(0.9) saturate(1.3) brightness(1);
 }
 
 .bottom .sticker {
-    width: 70px;
+    width: 90px;
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: -12%;
+    rotate: 0deg;
+    margin-bottom: -22%;
     filter: saturate(1.2) brightness(1.15) contrast(0.9);
 }
 
 .vision .top {
-    gap: 25%;
-    margin: 5% 20% 1%;
-    padding: 6% 150px;
+    gap: 20%;
+    margin: 5% 20% 50px;
+    padding: 150px;
     display: grid;
     align-items: center;
-    grid-template-columns: 7fr 5fr;
-    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.45));
+    grid-template-columns: 7fr 6fr;
+    background: rgba(255, 255, 255, 0.38);
+    /*background: linear-gradient(180deg, #ffffff3d, rgba(255, 251, 237, 0.84), transparent)*/
     /*background-image: linear-gradient(5deg, #000, rgba(63, 66, 60, 0.53), rgba(22, 23, 27, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/vision/back.avif);*/
     /*background: linear-gradient(175deg, rgba(231, 249, 255, 0.62), rgba(255, 255, 255, 0.5)), url(../assets/vision/b.jpg);*/
 }
 
 .vision .bottom {
-    padding: 10% 100px;
+    padding: 200px 150px;
     margin: 0 20% 5%;
     text-align: center;
     align-items: center;
-    background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.48));
-    /*background: linear-gradient(5deg, rgba(178, 207, 167, 0.3), rgba(232, 237, 216, 0.42), rgba(251, 245, 245, 0.51), rgba(255, 255, 255, 0.5)), url(../assets/vision/b.jpg);*/
+    background: rgba(255, 255, 255, 0.38);
+    /*background: linear-gradient(5deg, rgba(178, 207, 167, 0.3), rgba(242, 248, 233, 0.42), rgba(251, 245, 245, 0.55), rgba(255, 255, 255, 0.65)), url(../assets/vision/b.jpg);*/
 }
 
 .vision .bottom .part3 {
-    padding: 0 25%;
+    padding: 0 24%;
 }
 
 .vision .bottom .part4 {
@@ -80,8 +85,12 @@
     line-height: 1.8;
     padding-bottom: 26px;
     letter-spacing: 0.2px;
-    font-size: 15px !important;
+    font-size: 13px !important;
     font-family: "DM Sans", sans-serif;
+}
+
+.vision-english span {
+    font-size: 14px !important;
 }
 
 .carousel {
@@ -95,13 +104,12 @@
     background-size: 150%;
     padding: 10px 6px 45px 6px;
     background-position: center;
-    box-shadow: 1px 1px 17px rgb(0, 0, 0);
     background-image: url("../assets/vision/1/back.png");
 }
 
 #smallCarousel .item img {
     padding: 3px;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
     object-position: bottom;
     background: rgba(220, 227, 244, 0.26);
@@ -111,8 +119,8 @@
 }
 
 #bigCarousel {
-    margin: 5% 25%;
-    padding: 6px 40px 5px 10px;
+    margin: 10% 17% 5%;
+    padding: 6px 50px 5px 10px;
     background-image: url("../assets/vision/2/back.jpg");
 }
 
