@@ -52,7 +52,6 @@ header {
     filter: url(#goo);
     position: relative;
     justify-items: end;
-    margin-right: 25px;
 }
 
 .menu label:hover,

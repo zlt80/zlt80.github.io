@@ -1,34 +1,77 @@
 .works {
+    margin: 0;
     width: unset;
     max-width: unset;
-    /*background-image: linear-gradient(313deg, rgba(238, 238, 238, 0.73), rgba(255, 255, 255, 0.48), rgba(254, 254, 254, 0.35), rgb(255 255 255 / 81%), #ffffffd6, rgba(236, 236, 236, 0.46)), url(../assets/works/back.png);*/
-    background-size: cover;
-    margin: 0;
+    background-size: 100%;
+    /*background: linear-gradient(0deg, #fff, transparent, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0.73), rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87), #fff), url(../assets/work/back-.jpg);*/
+
 }
 
 .top {
-    height: 60vh
+    width: 25%;
+    height: 380px;
+    display: grid;
+    margin: 4% auto;
+    background: #000;
+    align-items: center;
+    background-size: 100%;
 }
 
-.works marquee {
-    width: 100%;
-    height: 106px;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    border-top: 10px solid #f5fdff;
-    border-bottom: 10px solid #f6f9ff;
+.top ul {
+    line-height: 2.6;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
-.works marquee img {
-    height: 60px;
+.top ul li {
+}
+
+.top ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    background: #fff;
+    padding: 3px 28px;
+    transition: all 1s;
+    letter-spacing: 0.7px;
+    background-size: cover;
+    font-family: "DM Sans", sans-serif;
+}
+
+.top ul li:first-child {
+    rotate: 1deg;
+}
+
+.top ul li:nth-child(2) {
+    margin: 1px 0 0;
+}
+
+.top ul li:nth-child(3) {
+    rotate: 1deg;
+}
+
+.top ul li:nth-child(5) {
+    rotate: 1deg;
+    margin: 2px 0;
+}
+
+.top ul li a:hover {
+    color: #eee;
+    content: "";
+    transition: all 1s;
+    transition-delay: 0.01s;
+    background: transparent;
+}
+
+.sticker {
+    z-index: 2;
+    width: 150px;
+    margin-top: 5%;
+    margin-left: 20%;
+    position: absolute;
+}
+
+.sticker:first-child {
     width: 200px;
-    object-fit: cover;
-    object-position: center;
-    margin-right: -5px;
-    filter: saturate(1.1); /*filter: saturate(0) invert(1) contrast(2) brightness(0.9);*/
-}
-
-.works marquee img.filter {
-    filter: hue-rotate(120deg) saturate(0.4) brightness(1.2);
+    margin-left: 0;
+    margin-top: -10%;
 }
