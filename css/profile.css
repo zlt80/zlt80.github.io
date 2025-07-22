@@ -1,7 +1,7 @@
 .profile {
     width: unset;
     max-width: unset;
-    background-image: linear-gradient(0deg, #fff, rgba(244, 243, 255, 0.68), rgba(243, 253, 255, 0.46), rgb(245 233 233 / 52%), #fffefec2, #fff), url(../assets/profile/1/-back.png);
+    background-image: linear-gradient(0deg, #fff, rgba(244, 243, 255, 0.68), rgba(243, 253, 255, 0.46), rgb(245 233 233 / 52%), #fafcfff0, #fff), url(../assets/profile/1/-back.png);
     background-size: cover;
     margin: 0;
 }
@@ -19,14 +19,14 @@
 
 .profile .top {
     margin-top: 5%;
-    border-bottom: 2px solid rgba(221, 221, 221, 0.66);
+    border-bottom: 12px solid rgba(221, 221, 221, 0.3);
 }
 
 .profile .middle {
     padding: 8%;
     margin: 0 20% 0;
     background: rgba(255, 255, 255, 0.85);
-    border-bottom: 2px solid rgba(221, 221, 221, 0.66);
+    border-bottom: 12px solid rgba(221, 221, 221, 0.3);
 }
 
 .profile .middle .part4 {
@@ -226,7 +226,7 @@
 }
 
 .profile #midCarousel {
-    margin: 0 5%;
+    margin: -5% 0 0 10%;
     width: fit-content;
     padding: 52px 5px 10px 7px;
     background-image: linear-gradient(242deg, rgb(199 183 162 / 17%), rgb(231 212 212 / 25%), rgb(169 160 149 / 18%)), url(../assets/profile/3/back.png);
