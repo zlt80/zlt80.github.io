@@ -10,13 +10,14 @@
 
 .works-wrapper {
     margin: 10% 20%;
+    padding-top: 2%;
     background: #fff;
     /*background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.47), rgba(247, 250, 253, 0.62), rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.51), #fff), url(../assets/work/background.jpg);*/
 }
 
 .works-grid {
-    padding: 5% 10% 20%;
     margin: 0 15% 20%;
+    padding: 5% 10% 20%;
 }
 
 .works h3 {
@@ -33,42 +34,41 @@
 }
 
 .works h3:first-child {
-    padding-top: 15%;
     font-size: 18px;
+    padding-top: 15%;
 }
 
 .description {
-    padding: 7%;
+    padding: 4% 7%;
     display: block;
     margin: 3% auto;
     width: fit-content;
     filter: url(#goo);
     background-size: 100%;
     background: linear-gradient(200deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.57), rgba(247, 250, 253, 0.56), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.51), #fff, transparent), url(../assets/work/background.jpg);
-
 }
 
 .sticker {
-    width: 110px;
-    position: relative;
-    margin-left: 62%;
-    margin-bottom: -12%;
     z-index: 3;
+    width: 110px;
     rotate: 180deg;
+    margin-left: 62%;
+    position: relative;
+    margin-bottom: -12%;
 }
 
 .works p,
 .works a {
-    font-size: 13px;
-    line-height: 2.2;
-    letter-spacing: 1.8px;
+    font-size: 14px;
+    line-height: 2.4;
     font-weight: 500;
+    letter-spacing: 1.8px;
     font-family: "DM Sans", sans-serif;
     text-shadow: 2px 1px 15px #fff;
 }
 
 .works item {
-    gap: 20px;
+    gap: 25px;
     width: 100%;
     display: grid;
     font-weight: 500;
@@ -86,17 +86,13 @@
     text-transform: capitalize;
 }
 
-.works item p:first-child {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: center;
-    display: block;
-    align-self: center;
-}
-
 .works item p {
-    letter-spacing: 3px;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    align-self: center;
+    letter-spacing: 1px;
 }
 
 .works item a:hover {
