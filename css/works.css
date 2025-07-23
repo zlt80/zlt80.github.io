@@ -9,15 +9,15 @@
 }
 
 .works-wrapper {
-    margin: 10% 20%;
+    margin: 10% 22%;
     padding-top: 2%;
     background: #fff;
     /*background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.47), rgba(247, 250, 253, 0.62), rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.51), #fff), url(../assets/work/background.jpg);*/
 }
 
 .works-grid {
-    margin: 0 15% 20%;
-    padding: 5% 10% 20%;
+    margin: 0 10% 20%;
+    padding: 2% 10% 20%;
 }
 
 .works h3 {
@@ -41,7 +41,7 @@
 .description {
     padding: 4% 7%;
     display: block;
-    margin: 3% auto;
+    margin: 5% auto 3%;
     width: fit-content;
     filter: url(#goo);
     background-size: 100%;
@@ -54,21 +54,21 @@
     rotate: 180deg;
     margin-left: 62%;
     position: relative;
-    margin-bottom: -12%;
+    margin-bottom: -14%;
 }
 
 .works p,
 .works a {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2.4;
     font-weight: 500;
     letter-spacing: 1.8px;
-    font-family: "DM Sans", sans-serif;
     text-shadow: 2px 1px 15px #fff;
+    font-family: "DM Sans", sans-serif;
 }
 
 .works item {
-    gap: 25px;
+    gap: 40px;
     width: 100%;
     display: grid;
     font-weight: 500;
@@ -90,12 +90,13 @@
     display: block;
     font-size: 15px;
     font-weight: 500;
-    text-align: center;
+    text-align: right;
     align-self: center;
     letter-spacing: 1px;
 }
 
 .works item a:hover {
+    opacity: 0.3;
     cursor: pointer;
     font-weight: 500;
     letter-spacing: 3px;
