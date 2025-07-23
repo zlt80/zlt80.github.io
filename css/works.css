@@ -2,76 +2,104 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background-size: 100%;
-    /*background: linear-gradient(0deg, #fff, transparent, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0.73), rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87), #fff), url(../assets/work/back-.jpg);*/
-
-}
-
-.top {
-    width: 25%;
-    height: 380px;
-    display: grid;
-    margin: 4% auto;
-    background: #000;
-    align-items: center;
-    background-size: 100%;
-}
-
-.top ul {
-    line-height: 2.6;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.top ul li {
-}
-
-.top ul li a {
-    font-size: 15px;
-    font-weight: 500;
-    background: #fff;
-    padding: 3px 28px;
-    transition: all 1s;
-    letter-spacing: 0.7px;
     background-size: cover;
+    background: linear-gradient(0deg, #fff, transparent, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.51), #fff), url(../assets/work/background.jpg);
+}
+
+.works-wrapper {
+    background: #fff;
+    margin: 0 20% 20%;
+    background: linear-gradient(180deg, transparent, rgba(238, 238, 238, 0.4), rgba(255, 255, 252, 0.34), rgba(250, 247, 244, 0.68), #fff);
+}
+
+.works-grid {
+    margin: 0 15%;
+    padding: 10% 5% 20%;
+}
+
+.works h3 {
+    width: 100%;
+    padding: 10% 0 5%;
+    display: block;
+    margin-top: 5%;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 2px 1px 15px #fff;
     font-family: "DM Sans", sans-serif;
 }
 
-.top ul li:first-child {
-    rotate: 1deg;
-}
-
-.top ul li:nth-child(2) {
-    margin: 1px 0 0;
-}
-
-.top ul li:nth-child(3) {
-    rotate: 1deg;
-}
-
-.top ul li:nth-child(5) {
-    rotate: 1deg;
-    margin: 2px 0;
-}
-
-.top ul li a:hover {
-    color: #eee;
-    content: "";
-    transition: all 1s;
-    transition-delay: 0.01s;
-    background: transparent;
+.description {
+    padding: 7%;
+    display: block;
+    margin: 0 auto 3%;
+    width: fit-content;
+    filter: url(#goo);
+    background-size: 100%;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.09);
+    background: linear-gradient(30deg, rgba(126, 125, 143, 0.07), #fff, rgba(253, 254, 255, 0.82), rgba(252, 251, 255, 0.62)), url(../assets/work/back-.webp);
 }
 
 .sticker {
-    z-index: 2;
-    width: 150px;
-    margin-top: 5%;
-    margin-left: 20%;
-    position: absolute;
+    width: 120px;
+    position: relative;
+    margin-left: 60%;
+    margin-top: -10%;
+    margin-bottom: -10%;
+    z-index: 3;
+    rotate: 180deg;
 }
 
-.sticker:first-child {
-    width: 200px;
-    margin-left: 0;
-    margin-top: -10%;
+.works p {
+    font-size: 13px;
+    line-height: 2.2;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+}
+
+.works box {
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    padding: 5% 0;
+    transition: 1s all;
+    border: 2px solid transparent;
+    grid-template-columns: 3fr 7fr;
+}
+
+.works box p {
+    font-size: 15px;
+    font-weight: 500;
+    transition: 1s all;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+}
+
+.works box p:first-child {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    display: block;
+    align-self: center;
+}
+
+.works box p:last-child {
+    letter-spacing: 3px;
+}
+
+.works box:hover {
+    cursor: pointer;
+    /*border: 2px solid;*/
+    /*background: linear-gradient(45deg, rgba(250, 247, 244, 0.82), rgba(238, 238, 238, 0.4), #fffffc, #faf7f4);*/
+}
+
+.works box:hover p:nth-child(2) {
+    color: #0097a6;
+    font-weight: 200;
+    letter-spacing: 4px;
 }
