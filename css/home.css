@@ -3,19 +3,15 @@ header {
     background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
 }
 
-/*.menu__face {*/
-/*    background: linear-gradient(125deg, transparent, #787878, #5e5e5e, #272727, #000, transparent);*/
-/*}*/
+.menu__face {
+    transition: 1s all;
+    transition-delay: 0s;
+    background: linear-gradient(120deg, rgba(41, 33, 33, 0.41), #000000, #fffcfc0d, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);
+}
 
 .menu__items {
     line-height: 1.7;
     padding: 20px 30px 20px 30px;
-    /*background: linear-gradient(120deg, rgba(41, 33, 33, 0.41), #000000, #fffcfc0d, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);*/
-}
-
-
-.menu__items::before {
-    /*background: linear-gradient(205deg, rgba(108, 101, 101, 0.36), #000, #302f2d, #000);*/
 }
 
 .menu__items li:first-child {
@@ -23,16 +19,30 @@ header {
 }
 
 .menu__items li a {
-    transition: 1s;
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
+.menu__items li {
+    transition-delay: 0s;
+}
+
 .menu__items {
-    border-radius: 20px;
     box-shadow: none;
+    border-radius: 20px;
     background: linear-gradient(120deg, rgba(41, 33, 33, 0.41), #000000, #fffcfc0d, #666, rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), #000);
+}
+
+.menu__items li:hover a {
+    color: #000;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.menu__face:hover {
+    transform: scaleX(0.94);
 }
 
 
@@ -76,4 +86,5 @@ header {
     .menu__face {
         padding: 0;
     }
+
 }
