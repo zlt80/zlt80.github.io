@@ -4,20 +4,7 @@
     max-width: unset;
     padding-bottom: 5%;
     background-size: cover;
-    /*background: linear-gradient(180deg, transparent, rgba(238, 238, 238, 0.4), #fff 80%, rgba(255, 253, 252, 0.83), transparent);*/
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.69), rgba(255, 255, 255, 0.62), rgba(253, 254, 255, 0.82), rgba(252, 251, 255, 0.62), #fff), url(../assets/work/-back-.jpg);
-}
-
-.works-wrapper {
-    margin: 10% 22%;
-    padding-top: 2%;
-    background: #fff;
-    /*background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.47), rgba(247, 250, 253, 0.62), rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.51), #fff), url(../assets/work/background.jpg);*/
-}
-
-.works-grid {
-    margin: 0 10% 20%;
-    padding: 2% 10% 20%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.69), rgba(255, 255, 255, 0.62), rgba(253, 254, 255, 0.82), rgba(252, 251, 255, 0.62), #fff), url(../assets/work/back.jpg);
 }
 
 .works h3 {
@@ -38,7 +25,18 @@
     padding-top: 15%;
 }
 
-.description {
+.works .works-wrapper {
+    margin: 10% 22%;
+    padding-top: 2%;
+    background: #fff;
+}
+
+.works .works-grid {
+    margin: 0 10% 20%;
+    padding: 2% 10% 20%;
+}
+
+.works .description {
     padding: 4% 7%;
     display: block;
     filter: url(#goo);
@@ -48,7 +46,7 @@
     background: linear-gradient(200deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.57), rgba(247, 250, 253, 0.56), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.51), #fff, transparent), url(../assets/work/background.jpg);
 }
 
-.sticker {
+.works .sticker {
     z-index: 3;
     width: 110px;
     rotate: 180deg;
