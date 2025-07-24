@@ -5,7 +5,7 @@
     padding-bottom: 5%;
     background-size: cover;
     /*background: linear-gradient(180deg, transparent, rgba(238, 238, 238, 0.4), #fff 80%, rgba(255, 253, 252, 0.83), transparent);*/
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.69), rgba(255, 255, 255, 0.62), rgba(253, 254, 255, 0.82), rgba(252, 251, 255, 0.62), #fff), url(../assets/work/1back.jpg);
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.69), rgba(255, 255, 255, 0.62), rgba(253, 254, 255, 0.82), rgba(252, 251, 255, 0.62), #fff), url(../assets/work/-back-.jpg);
 }
 
 .works-wrapper {
