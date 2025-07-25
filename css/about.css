@@ -1,41 +1,40 @@
 .about {
     margin: 0;
+    padding-bottom: 5%;
     width: unset;
-    max-width: unset;
-    background-size: cover;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.37), rgba(254, 254, 254, 0.51), #fff), url(../assets/about/back.png);
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.45), rgba(254, 254, 254, 0.31), #fff), url(../assets/about/back.png);
 }
 
 .about .top {
     gap: 10%;
     display: grid;
-    margin: 5% 20%;
-    padding: 6% 5%;
-    background: #fff;
+    margin: 5% 10% 0;
+    padding: 5%;
+    /*background: linear-gradient(5deg, rgba(255, 254, 250, 0.6), rgba(255, 255, 255, 0.3), transparent);*/
     align-items: center;
     background-size: 100%;
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 4fr 7fr;
 }
 
 .about .middle {
     gap: 0;
     display: grid;
-    margin: 5% 20%;
-    padding: 6% 5%;
-    background: #fff;
+    margin: 0 10%;
+    padding: 0 5% 5%;
+    /*background: linear-gradient(0deg, rgba(252, 255, 254, 0.6), rgba(255, 255, 255, 0.15), rgba(255, 254, 250, 0.6));*/
     align-items: center;
     background-size: 100%;
-    grid-template-columns: 5fr 4fr;
+    grid-template-columns: 5fr 3fr;
 }
 
 .about .bottom {
     display: grid;
-    margin: 5% 20%;
+    margin: 0 10% 10%;
     align-items: end;
-    background: #fff;
-    padding: 5% 10% 5% 5%;
+    /*background: linear-gradient(5deg, #fff, rgba(255, 248, 248, 0.06), rgba(255, 255, 255, 0.66));*/
+    padding: 0 10% 10%;
     background-size: 100%;
-    grid-template-columns: 7fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .about .bottom span {
@@ -57,23 +56,16 @@
 }
 
 .part1 {
-    padding: 10% 0% 10% 15%;
-}
-
-.part2 {
-    padding: 20% 10% 10% 5%;
-}
-
-.part1 {
+    padding: 0 0 0 15%;
     margin-bottom: -10%;
 }
 
-.part3 {
-    padding: 0 5% 0 15%;
+.part2 {
+    padding: 10% 10% 0 5%;
 }
 
-.part4 {
-    padding: 0 0 5% 5%;
+.part3 {
+    padding: 0 15% 0 15%;
 }
 
 .part5 {
@@ -91,23 +83,23 @@
 .top .sticker {
     rotate: 5deg;
     margin-top: -25%;
-    margin-left: -4%;
+    margin-left: 5%;
     filter: saturate(1.6) brightness(1.2) opacity(0.8);
 }
 
 .middle .sticker {
-    width: 285px;
-    margin-left: 5%;
+    width: 280px;
+    margin-left: 15%;
     margin-top: -35%;
     margin-bottom: -38%;
 }
 
 .bottom .sticker {
     width: auto;
-    height: 100px;
+    height: 80px;
     rotate: -25deg;
     margin-left: 5%;
-    margin-top: -35%;
+    margin-top: -40%;
 }
 
 .carousel {
@@ -142,8 +134,8 @@
 
 #bigCarousel .item img {
     padding: 3px;
-    width: 160px;
-    height: 320px;
+    width: 200px;
+    height: 400px;
     margin: 0 auto;
     object-fit: cover;
     background: rgba(220, 227, 244, 0.26);

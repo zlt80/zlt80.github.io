@@ -35,12 +35,12 @@ main {
 }
 
 h1 {
+    margin: 8% 0 0;
+    font-size: 46px;
     font-weight: 200;
     text-align: center;
     letter-spacing: 10px;
     font-family: "Lateef", serif;
-    margin: 8% 0 0;
-    font-size: 46px;
 }
 
 h2 {

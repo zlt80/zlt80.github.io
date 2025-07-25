@@ -4,12 +4,8 @@
     max-width: unset;
     background-size: cover;
     padding-bottom: 20%;
-    background: linear-gradient(175deg, #fff, rgba(250, 255, 255, 0.5), rgba(255, 249, 254, 0.73), #fff), url(../assets/vision/b.jpg);
-
-    /*background-image: linear-gradient(2deg, #fff, rgba(253, 247, 244, 0.74), #fff), url(../assets/vision/b.jpg);*/
-    /*background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.5), rgba(255, 250, 246, 0.66), rgba(255, 254, 244, 0.56), #fff), url(../assets/vision/back.jpg);*/
+    background: linear-gradient(175deg, #fff, rgba(250, 253, 255, 0.65), rgba(253, 255, 252, 0.88), rgba(250, 255, 255, 0.65), #fff), url(../assets/vision/b.png);
 }
-
 
 .sticker {
     z-index: 3;
@@ -31,33 +27,19 @@
 }
 
 .vision .top {
-    gap: 20%;
-    margin: 5% 20% 50px;
-    padding: 150px;
+    gap: 15%;
+    margin: 12% 20% 0;
     display: grid;
     align-items: center;
-    grid-template-columns: 7fr 6fr;
-    background: rgba(255, 255, 255, 0.38);
-    /*background: linear-gradient(180deg, #ffffff3d, rgba(255, 251, 237, 0.84), transparent)*/
-    /*background-image: linear-gradient(5deg, #000, rgba(63, 66, 60, 0.53), rgba(22, 23, 27, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/vision/back.avif);*/
-    /*background: linear-gradient(175deg, rgba(231, 249, 255, 0.62), rgba(255, 255, 255, 0.5)), url(../assets/vision/b.jpg);*/
+    grid-template-columns: 1fr 1fr;
 }
 
 .vision .bottom {
-    padding: 120px 150px;
-    margin: 0 20% 5%;
-    text-align: center;
+    gap: 5%;
+    margin: 0 10%;
     align-items: center;
-    background: rgba(255, 255, 255, 0.38);
-    /*background: linear-gradient(5deg, rgba(178, 207, 167, 0.3), rgba(242, 248, 233, 0.42), rgba(251, 245, 245, 0.55), rgba(255, 255, 255, 0.65)), url(../assets/vision/b.jpg);*/
-}
-
-.vision .bottom .part3 {
-    padding: 0 24%;
-}
-
-.vision .bottom .part4 {
-    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .vision p {
@@ -77,13 +59,13 @@
     line-height: 1.8;
     padding-bottom: 26px;
     letter-spacing: 0.2px;
-    font-size: 13px !important;
+    font-size: 15px !important;
     font-family: "DM Sans", sans-serif;
 }
 
 .vision-english span {
-    font-size: 14px !important;
 }
+
 
 .carousel {
     margin: auto;
@@ -101,18 +83,17 @@
 
 #smallCarousel .item img {
     padding: 3px;
-    width: 180px;
-    height: 280px;
+    width: 250px;
     object-fit: cover;
     object-position: bottom;
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
-    filter: brightness(1.1) contrast(0.8) saturate(1.2) hue-rotate(20deg);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
+    filter: brightness(1.1) contrast(0.8) saturate(1.2) hue-rotate(20deg);
 }
 
 #bigCarousel {
-    margin: 10% 17% 5%;
+    margin: 5%;
     padding: 6px 50px 5px 10px;
     background-image: url("../assets/vision/2/back.jpg");
 }
@@ -122,7 +103,7 @@
     padding: 3px;
     object-fit: cover;
     background: rgba(119, 116, 107, 0.26);
-    filter: brightness(0.98) hue-rotate(12deg);
+    filter: hue-rotate(12deg) saturate(1.5);
     border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
 }
