@@ -96,22 +96,18 @@
 }
 
 .middle .sticker {
-    width: 70px;
-    height: 140px;
-    rotate: 87deg;
-    margin-left: 40%;
-    margin-bottom: -25%;
-    margin-top: -15%;
-    filter: opacity(0.6) contrast(1.1) brightness(1.2);
+    width: 285px;
+    margin-left: 5%;
+    margin-top: -35%;
+    margin-bottom: -38%;
 }
 
 .bottom .sticker {
-    width: 240px;
-    height: 130px;
-    rotate: -5deg;
-    margin-left: 23%;
-    margin-bottom: -12%;
-    filter: brightness(1.25) opacity(0.7) saturate(1.7);
+    width: auto;
+    height: 100px;
+    rotate: -25deg;
+    margin-left: 5%;
+    margin-top: -35%;
 }
 
 .carousel {
@@ -139,15 +135,15 @@
 
 #bigCarousel {
     width: fit-content;
-    padding: 50px 2px 15px 2px;
+    padding: 10px 2px 25px 2px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.18);
     background-image: url("../assets/about/2/back.webp");
 }
 
 #bigCarousel .item img {
     padding: 3px;
-    width: 180px;
-    height: 300px;
+    width: 160px;
+    height: 320px;
     margin: 0 auto;
     object-fit: cover;
     background: rgba(220, 227, 244, 0.26);
