@@ -107,7 +107,7 @@ header {
     justify-items: end;
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    background: linear-gradient(322deg, #ffecec 5%, #fff7f7 15%, #bcbbb1 90%);
+    background: linear-gradient(330deg, rgb(237 237 237 / 51%), #ffffff 5%, #fffdf7 15%, rgba(255, 249, 244, 0.39), #bcbbb1 90%, transparent 100%);
     animation: anime 2s;
     animation-fill-mode: forwards;
     animation-delay: 0.1s;
@@ -125,7 +125,7 @@ header {
     font-weight: 400;
     text-align: right;
     position: relative;
-    padding: 0 20px 0 40px;
+    padding: 0 20px;
 }
 
 .menu__text p {
@@ -161,7 +161,6 @@ header {
     position: absolute;
     visibility: hidden;
     transition: all 1s;
-    padding-right: 32px;
     justify-content: space-between;
 }
 
