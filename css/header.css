@@ -15,12 +15,15 @@ header {
     width: 50%;
     display: grid;
     align-items: center;
+    /*border-top: 5px solid #ffc6cc;*/
+    /*border-bottom: 5px solid #ffecbb;*/
+    /*border-style: dotted;*/
 }
 
 .header-left a {
     height: 45px;
     display: block;
-    font-size: 18px;
+    font-size: 40px;
     /* max-width: 280px; */
     font-weight: 400;
     line-height: 45px;
@@ -33,11 +36,11 @@ header {
     mix-blend-mode: multiply;
     opacity: 0;
     animation: fadein 2s 0.1s ease-in forwards;
-    background-image: url(../assets/1back.png);
+    /*background-image: url(../assets/1back.png);*/
     background-size: 100%;
-    /* -webkit-background-clip: text !important; */
-    /* -webkit-text-fill-color: transparent; */
-    /* background: linear-gradient(to right, #fdfbce 15%, #a4b9ff 85%);*/
+     -webkit-background-clip: text !important;
+     -webkit-text-fill-color: transparent;
+     background: linear-gradient(to right, #fdfbce 5%, #a4b9ff 95%);
 
 }
 
@@ -106,17 +109,32 @@ header {
 }
 
 .menu {
-    font-size: 18px;
+    font-size: 40px;
     position: relative;
     justify-items: end;
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    background: linear-gradient(298deg, rgb(225 214 214 / 66%), #ffffff 5%, #fffdf7 15%, rgba(255, 249, 244, 0.39), #b2b4a62e 90%, #b2b3a5 100%), url(../assets/bbb.png);
+    /*background: linear-gradient(298deg, rgb(225 214 214 / 66%), #ffffff 5%, #fffdf7 15%, rgba(255, 249, 244, 0.39), #b2b4a62e 90%, #b2b3a5 100%), url(../assets/bb.png);*/
+    /*background: linear-gradient(30deg,#b8b4ff, rgba(255, 233, 237, 0.65), rgba(206, 240, 255, 0.8), rgba(252, 255, 242, 0.85), #faffe8, #fff,#fff);*/
+    /*background: linear-gradient(85deg, #fffa63, rgb(239 255 77), #fff);*/
+;
+    color: #fff;
+    background-size: 100%;
     animation: anime 2s;
     animation-fill-mode: forwards;
     animation-delay: 0.1s;
     animation-timing-function: ease-in-out;
+
 }
+
+
+#tape {
+    width: 20vw;
+    object-fit: cover;
+    height: 50px;
+    position: absolute;
+}
+
 
 .menu label:hover,
 .menu__items li:hover {
@@ -159,13 +177,16 @@ header {
     margin: 0;
     opacity: 0;
     z-index: -1;
-    line-height: 1.7;
     padding-right: 20px;
     list-style: none;
     position: absolute;
     visibility: hidden;
     transition: all 1s;
-    justify-content: space-between;
+    justify-content: space-between;    line-height: 0.5;
+}
+
+.menu__items li {
+    line-height: 0.5;
 }
 
 .menu__items li a {
@@ -218,6 +239,7 @@ header {
     width: 15px;
     transition: 0.4s;
     margin-left: 10px;
+    filter: invert(1);
 }
 
 .header-right input,
@@ -232,6 +254,9 @@ header {
 }
 
 @keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
 
     100% {
         opacity: 1;
@@ -292,7 +317,7 @@ header {
     }
 
     .menu__items {
-        top: 80%;
+        top: 80%;    line-height: 0.5;
         transition: all 0s;
     }
 

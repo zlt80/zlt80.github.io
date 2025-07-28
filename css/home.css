@@ -1,8 +1,9 @@
 header {
     height: 100vh;
-    /* background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1, #333333b5); */
-    background-image: linear-gradient(25deg, transparent, rgba(9, 49, 64, 0.48), rgba(21, 21, 20, 0.25), rgba(18, 19, 21, 0.16), rgba(35, 27, 28, 0.15), #1d0303b8, #333333b5), url(../assets/back.png);
+     /*background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1, #333333b5);*/
+    /*background-image: linear-gradient(25deg, transparent, rgba(9, 49, 64, 0.48), rgba(21, 21, 20, 0.25), rgba(18, 19, 21, 0.16), rgba(35, 27, 28, 0.15), #1d0303b8, #333333b5), url(../assets/back.png);*/
     background-size: 100%;
+    background: #000;
     /* border: 20px solid rgba(242, 229, 246, 0.35);
 }
 
@@ -47,6 +48,21 @@ header {
     width: 200px;
     position: absolute;
 }
+
+#web {
+    width: 210px;
+    position: absolute;
+    top: -5%;
+}
+
+#web2 {
+    width: 70px;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    rotate: 31deg;
+}
+
 
 @media screen and (max-width: 780px) {
 
