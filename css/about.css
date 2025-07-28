@@ -1,6 +1,5 @@
 .about {
     margin: 0;
-    padding-bottom: 5%;
     width: unset;
     /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.45), rgba(254, 254, 254, 0.31), #fff), url(../assets/about/back.png);*/
 }
@@ -50,9 +49,6 @@
 .about span {
     display: block;
     line-height: 1.8;
-    letter-spacing: 0.2px;
-    font-size: 14px !important;
-    font-family: "DM Sans", sans-serif;
 }
 
 .part1 {
