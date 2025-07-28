@@ -1,14 +1,13 @@
 footer {
     width: 100%;
     display: flex;
-    line-height: 2.6;
-    font-size: 13px;
-    letter-spacing: 0.4px;
-    padding: 80px 40px 30px;
-    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    padding: 80px;
     font-family: "DM Sans", sans-serif;
     justify-content: space-between;
-    background: linear-gradient(182deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
+    background: #000;
+    /*background: linear-gradient(182deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);*/
 }
 
 .footer-left,
@@ -19,6 +18,11 @@ footer {
 .footer-left li {
     list-style: none;
     font-weight:300;
+    line-height: 3;
+}
+
+.footer-left li a {
+    color: #fff;
 }
 
 .footer-right {
@@ -29,6 +33,7 @@ footer {
     display: block;
     height: 100%;
     align-content: end;
+    color: #fff;
 }
 
 @media screen and (max-width: 500px) {

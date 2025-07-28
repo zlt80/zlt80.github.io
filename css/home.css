@@ -1,13 +1,22 @@
 header {
     height: 100vh;
-    background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
+    /*background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1, #333333b5);*/
+    background-image: url("../assets/b3ack.png");
+    background-size: 100%;
+    border: 25px solid #e8e2e2ab;
+}
+
+.header-left a {
+    /*color: white;*/
 }
 
 .menu__face {
     transition: 1s all;
+    /*color: #fff;*/
     transition-delay: 0s;}
 
 .menu__items {
+    /*color: #fff;*/
     line-height: 1.7;
 }
 
