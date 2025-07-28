@@ -6,8 +6,7 @@ footer {
     padding: 80px;
     font-family: "DM Sans", sans-serif;
     justify-content: space-between;
-    background: #000;
-    /*background: linear-gradient(182deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);*/
+    background: linear-gradient(182deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
 }
 
 .footer-left,
@@ -22,7 +21,6 @@ footer {
 }
 
 .footer-left li a {
-    color: #fff;
 }
 
 .footer-right {
@@ -33,7 +31,6 @@ footer {
     display: block;
     height: 100%;
     align-content: end;
-    color: #fff;
 }
 
 @media screen and (max-width: 500px) {

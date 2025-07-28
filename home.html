@@ -10,6 +10,8 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+
 
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/footer.css" rel="stylesheet">
@@ -47,18 +49,27 @@
             </label>
 
             <ul class="menu__items">
-                <li><a href="https://zlt80.github.io/about">about ◈</a></li>
-                <li><a href="https://zlt80.github.io/profile">profile ◈</a></li>
-                <li><a href="https://zlt80.github.io/software">software ◈</a></li>
-                <li><a href="https://zlt80.github.io/works">works ◈</a></li>
-                <li><a href="https://zlt80.github.io/vision">vision ◈</a></li>
-                <li><a href="https://zlt80.github.io/contact">contact ◈</a></li>
+                <li><a href="https://zlt80.github.io/about">about</a></li>
+                <li><a href="https://zlt80.github.io/profile">profile</a></li>
+                <li><a href="https://zlt80.github.io/software">software</a></li>
+                <li><a href="https://zlt80.github.io/works">works</a></li>
+                <li><a href="https://zlt80.github.io/vision">vision</a></li>
+                <li><a href="https://zlt80.github.io/contact">contact</a></li>
             </ul>
         </div>
 
-
+        <svg>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"/>
+                <feColorMatrix in="blur" result="goo" type="matrix"
+                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 187"/>
+                <feBlend in="SourceGraphic" in2="goo"/>
+            </filter>
+        </svg>
 
     </div>
+
+    <img src="./assets/stars.jpg" id="stars">
 
 </header>
 

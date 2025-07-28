@@ -21,20 +21,24 @@ header {
     height: 45px;
     display: block;
     font-size: 18px;
-    /*max-width: 280px;*/
+    /* max-width: 280px; */
     font-weight: 400;
     line-height: 45px;
     position: relative;
     transition: all 2s;
     padding: 1px 0 1px 20px;
     text-transform: uppercase;
-    color: #fff;
-    background-color: #000;
+     color: #fff;
+    /* background-color: #000; */
     mix-blend-mode: multiply;
     opacity: 0;
     animation: fadein 2s 0.1s ease-in forwards;
-    background-image: url("../assets/1back.png");
+    background-image: url(../assets/1back.png);
     background-size: 100%;
+    /* -webkit-background-clip: text !important; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background: linear-gradient(to right, #fdfbce 15%, #a4b9ff 85%);*/
+
 }
 
 @keyframes fadein {
@@ -107,7 +111,7 @@ header {
     justify-items: end;
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    background: linear-gradient(330deg, rgb(237 237 237 / 51%), #ffffff 5%, #fffdf7 15%, rgba(255, 249, 244, 0.39), #bcbbb1 90%, transparent 100%);
+    background: linear-gradient(298deg, rgb(225 214 214 / 66%), #ffffff 5%, #fffdf7 15%, rgba(255, 249, 244, 0.39), #b2b4a62e 90%, #b2b3a5 100%), url(../assets/bbb.png);
     animation: anime 2s;
     animation-fill-mode: forwards;
     animation-delay: 0.1s;
@@ -122,15 +126,14 @@ header {
 .menu__face,
 .menu__items {
     z-index: 5;
-    font-weight: 400;
+    font-weight: 500;
     text-align: right;
     position: relative;
     padding: 0 20px;
+    letter-spacing: 0.3px;
 }
 
 .menu__text p {
-
-
     animation: anime 2s;
     animation-fill-mode: forwards;
     animation-delay: 0.1s;
@@ -157,6 +160,7 @@ header {
     opacity: 0;
     z-index: -1;
     line-height: 1.7;
+    padding-right: 20px;
     list-style: none;
     position: absolute;
     visibility: hidden;
