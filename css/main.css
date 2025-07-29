@@ -42,6 +42,9 @@ main {
     /*background-size: cover;*/
     /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.75), rgba(254, 254, 254, 0.5), #fff), url(../assets/back.jpg);*/
     /*background-size: 50%;*/
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(254, 254, 254, 0.84), #fff), url(../assets/back.jpg);*/
+    /*background: linear-gradient(0deg, #fff, rgba(221, 227, 211, 0.84), #fff), url(../assets/1back.png);*/
+    /*background-size:70%;*/
 }
 
 .wrapper {
