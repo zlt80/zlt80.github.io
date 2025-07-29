@@ -69,7 +69,7 @@
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.34);
 }
 
-#smallCarousel {
+#carousel-01 {
     margin: 0;
     width: fit-content;
     background-size: 150%;
@@ -78,7 +78,7 @@
     background-image: url("../assets/vision/1/back.png");
 }
 
-#smallCarousel .item img {
+#carousel-01 .item img {
     padding: 3px;
     width: 250px;
     object-fit: cover;
@@ -89,13 +89,13 @@
     filter: brightness(1.1) contrast(0.8) saturate(1.2) hue-rotate(20deg);
 }
 
-#bigCarousel {
+#carousel-03 {
     margin: 5%;
     padding: 6px 50px 5px 10px;
     background-image: url("../assets/vision/2/back.jpg");
 }
 
-#bigCarousel .item img {
+#carousel-03 .item img {
     margin: 0;
     padding: 3px;
     object-fit: cover;
@@ -130,11 +130,11 @@
     color: #000;
 }
 
-#bigCarousel .carousel-control.left {
+#carousel-03 .carousel-control.left {
     left: -60px;
 }
 
-#bigCarousel .carousel-control.right {
+#carousel-03 .carousel-control.right {
     right: -60px;
 }
 
@@ -155,7 +155,7 @@
     background: rgba(255, 255, 255, 0.27);
 }
 
-#bigCarousel .num {
+#carousel-03 .num {
     margin-top: 10px;
     background: rgba(250, 255, 223, 0.78);
 }
@@ -194,12 +194,12 @@
         padding: 5% 25%;
     }
 
-    #bigCarousel {
+    #carousel-03 {
         margin: 0;
         padding: 4px 5px 2px 15px;
     }
 
-    #bigCarousel .num {
+    #carousel-03 .num {
         color: #fff;
         background: linear-gradient(45deg, rgba(113, 126, 113, 0.3), rgba(99, 79, 43, 0.51));
     }

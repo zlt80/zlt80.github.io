@@ -7,7 +7,6 @@
 .profile .top,
 .profile .bottom {
     gap: 10%;
-    padding: 5%;
     display: grid;
     margin: 0 20% 0;
     background-size: 100%;
@@ -173,12 +172,9 @@
 
 .profile .timeline p {
     display: flex;
-    font-size: 13px;
     line-height: 1.7;
-    font-weight: 400;
     margin-bottom: 10%;
     align-items: center;
-    letter-spacing: 0.6px;
 }
 
 .profile .timeline p.timeline__item.time {
@@ -202,7 +198,7 @@
     margin: 20% auto;
 }
 
-.profile #bigCarousel {
+.profile #carousel-03 {
     margin-top: -12%;
     padding: 45px 6px 10px 7px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
@@ -210,7 +206,7 @@
     background-size: 100%;
 }
 
-.profile #bigCarousel .item img {
+.profile #carousel-03 .item img {
     width: 100%;
     padding: 3px;
     height: 200px;
@@ -220,7 +216,7 @@
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
 }
 
-.profile #midCarousel {
+.profile #carousel-02 {
     width: fit-content;
     margin: -5% 0 0 10%;
     padding: 52px 5px 10px 7px;
@@ -230,7 +226,7 @@
     background-position: center;
 }
 
-.profile #midCarousel .item img {
+.profile #carousel-02 .item img {
     padding: 3px;
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
