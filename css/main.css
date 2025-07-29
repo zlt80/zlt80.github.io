@@ -36,17 +36,23 @@ main {
     padding: 0 0 15% 0;
     /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.61), rgba(254, 254, 254, 0.66), #fff), url(../assets/about/b.jpg);*/
     /*background-size: 40%;*/
+    /*background: linear-gradient(0deg, #fff, rgba(252, 255, 251, 0.65), rgba(248, 251, 247, 0.9), #fff), url(../assets/bb.jpg);*/
+    /*background-size: 30%;*/
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), #fff), url(../assets/1back.png);*/
+    /*background-size: cover;*/
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.75), rgba(254, 254, 254, 0.5), #fff), url(../assets/back.jpg);*/
+    /*background-size: 50%;*/
 }
 
 .wrapper {
-    gap: 20%;
+    gap: 17%;
     display: grid;
     padding: 5% 15% 15%;
     align-items: center;
 }
 
 h1 {
-    margin: 0;
+    margin: 100px 0 0 0;
     color: #616161;
     font-size: 27px;
     font-weight: 200;
@@ -72,15 +78,16 @@ p {
 
 span {
     line-height: 2;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.7px;
     font-family: "DM Sans", sans-serif;
 }
 
 span.eng {
+    font-size: 14.5px;
     font-weight: 400;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.3px;
 }
 
 
