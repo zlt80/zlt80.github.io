@@ -4,6 +4,8 @@
     /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(254, 254, 254, 0.84), #fff), url(../assets/back.jpg);*/
     /*background: linear-gradient(0deg, #fff, rgba(221, 227, 211, 0.84), #fff), url(../assets/1back.png);*/
     /*background-size:70%;*/
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.15), rgba(248, 255, 251, 0.61), rgba(254, 254, 254, 0.66), #fff), url(../assets/about/b.jpg);
+    background-size: 40%;
 }
 
 .wrapper {
@@ -39,7 +41,6 @@
     align-items: end;
     text-align: right;
     grid-template-columns: 2fr 1fr;
-    margin-top: 8%;
     /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.75), rgba(254, 254, 254, 0.5), #fff), url(../assets/back.jpg);*/
     /*background-size: 50%;*/
 }
@@ -138,7 +139,7 @@
 }
 
 #carousel-03 {
-    padding: 4px 30px 4px 50px;
+    padding: 4px 20px 4px 50px;
     background-image: url("../assets/about/3/back.jpg");
     background-size: cover;
     background-position: center;
@@ -150,7 +151,7 @@
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
-    filter: hue-rotate(10deg) brightness(0.95);
+    filter: brightness(1.1);
 }
 
 .carousel-control {
