@@ -1,7 +1,12 @@
 .about {
     margin: 0;
     width: unset;
-    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.45), rgba(254, 254, 254, 0.31), #fff), url(../assets/about/back.jpg);*/
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(254, 254, 254, 0.84), #fff), url(../assets/back.jpg);*/
+    /*background: linear-gradient(0deg, #fff, rgba(221, 227, 211, 0.84), #fff), url(../assets/1back.png);*/
+    /*background-size:70%;*/
+}
+
+.wrapper {
 
 }
 
@@ -10,7 +15,7 @@
 }
 
 .part2 {
-    margin-top: 5%;
+    margin-top: 20%;
 }
 
 .part4 {
@@ -19,28 +24,29 @@
 
 .about .top {
     align-items: center;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 2fr;
+    /*background: linear-gradient(0deg, #fff, rgba(252, 255, 251, 0.65), rgba(248, 251, 247, 0.9), #fff), url(../assets/bb.jpg);*/
+    /*background-size: 30%;*/
 }
 
 .about .middle {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), #fff), url(../assets/1back.png);*/
+    /*background-size: cover;*/
 }
 
 .about .bottom {
     align-items: end;
     text-align: right;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 8%;
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.75), rgba(254, 254, 254, 0.5), #fff), url(../assets/back.jpg);*/
+    /*background-size: 50%;*/
 }
 
 .about:after,
 .about:before {
     display: none;
-}
-
-.about span {
-    display: block;
-    line-height: 1.8;
 }
 
 .sticker {
@@ -68,6 +74,28 @@
     margin: -20% 80% -5% 0;
     filter: contrast(1.3) hue-rotate(-15deg) brightness(1.3) saturate(1.3);
 }
+
+.about .part2 a {
+    top: 50px;
+    display: block;
+    margin: 12px auto;
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    padding: 5px 25px;
+    background-color: rgba(248, 248, 248, 0.94);
+    border: 2px solid #ddd;
+    position: relative;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    color: #666;
+    text-transform: uppercase;
+}
+.about .part2 a:hover {
+    background: #000;
+    color: #fff
+}
+
 
 .carousel {
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.24);

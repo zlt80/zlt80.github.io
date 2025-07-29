@@ -34,16 +34,15 @@ main {
 
 .container {
     padding: 0 0 15% 0;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(254, 254, 254, 0.81), #fff), url(../assets/about/back.jpg);
-    background-size: 60%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.61), rgba(254, 254, 254, 0.66), #fff), url(../assets/about/b.jpg);
+    background-size: 40%;
 }
 
 .wrapper {
     gap: 20%;
     display: grid;
-    padding: 3% 22%;
+    padding: 5% 15% 15%;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 h1 {
@@ -72,14 +71,15 @@ p {
 }
 
 span {
-    font-size: 13px;
+    line-height: 2;
+    font-size: 15px;
     font-weight: 400;
-    letter-spacing: 0.6px;
+    letter-spacing: 1.7px;
     font-family: "DM Sans", sans-serif;
 }
 
 span.eng {
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.7px;
 }
 
