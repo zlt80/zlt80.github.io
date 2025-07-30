@@ -1,15 +1,12 @@
 .about {
     margin: 0;
     width: unset;
-     background: linear-gradient(0deg, #fff, rgba(243, 240, 236, 0.84), #fff), url(../assets/1back.png);
+    background: linear-gradient(0deg, #fff, rgba(243, 240, 236, 0.84), #fff), url(../assets/1back.png);
     background-size: 100%;
 }
 
 .part1 {
     margin-bottom: -60%;
-}
-
-.part2 {
 }
 
 .part4 {

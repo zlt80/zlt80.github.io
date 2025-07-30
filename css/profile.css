@@ -15,11 +15,12 @@
 
 .profile .top {
     margin-top: 5%;
+    border-bottom: 1px solid #ddd;
 }
 
 .profile .middle {
-    padding: 0 8%;
-    margin: 0 20% 0;
+    padding: 0 10%;
+    margin: 5% 20% 7%;
 }
 
 .profile .middle .part4 {
@@ -28,7 +29,8 @@
 
 .profile .bottom {
     gap: 10%;
-    margin-top: 5%;
+    padding-top: 5%;
+    border-top: 1px solid #ddd;
     grid-template-columns: 1fr 2fr;
 }
 
@@ -70,20 +72,22 @@
 }
 
 .profile .tape1 {
-    margin-left: 10%;
-    margin-bottom: 10%;
+    margin-left: 15%;
+    margin-bottom: 14%;
 }
 
 .profile .tape3 {
-    width: 220px;
+    width: 200px;
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
 
 .profile .tape2 {
-    width: 270px;
+    width: 260px;
     rotate: 1deg;
-    height: 120px;
+    height: 90px;
     display: block;
-    margin: 0 auto 10%;
+    margin: 0 auto 5%;
     position: relative;
 }
 
@@ -91,14 +95,14 @@
     z-index: 3;
     color: #fff;
     display: block;
-    font-size: 35px;
+    font-size: 32px;
     position: relative;
-    margin: -23% auto 0;
+    margin: -17% auto 0;
     text-align: center;
     letter-spacing: -2px;
     text-transform: uppercase;
     font-family: "Finger Paint", sans-serif;
-    background: linear-gradient(to right, #ff9952 15%, #fff1dd, #5fff54 85%);
+    background: linear-gradient(to right, #e6e1ff 35%, #ecdcff 45%, #ffe8f0 50%, #ffb2c0 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -122,11 +126,11 @@
     margin-top: -42%;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #fdfbce 15%, #a4b9ff 85%);
+    background: linear-gradient(to right, #c3eaff 15%, #fcffe0 60%, #667fff 85%);
 }
 
 .profile .part5 h3 {
-    background: linear-gradient(to right, #ffbccc 15%, #fffef4, #f0c1ff 85%);
+    background: linear-gradient(to right, #ffe0c7 20%, #fff7dd 40%, #e3ffc0 60%, #ffed38 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
