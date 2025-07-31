@@ -2,35 +2,36 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background: linear-gradient(0deg, #fff, rgba(249, 251, 255, 0.74), rgba(248, 253, 255, 0.64), #fff), url(../assets/profile/back.jpg);
-    background-size: 6%;
+    background: linear-gradient(0deg, #fff, rgba(255, 249, 251, 0.8), rgba(250, 246, 255, 0.76), rgba(252, 250, 255, 0.79), #fff), url(../assets/profile/back.jpg);
+    background-size: 30%;
 }
 
 .profile .top,
 .profile .bottom {
-    gap: 10%;
+    gap: 8%;
     display: grid;
-    margin: 0 20% 0;
     background-size: 100%;
-    grid-template-columns: 3fr 2fr;
 }
 
 .profile .top {
-    margin-top: 5%;
+    padding: 5% 15% 0;
+    grid-template-columns: 3fr 2fr;
 }
 
 .profile .middle {
-    padding: 0 10%;
-    margin: 5% 20% 7%;
+    gap: 10%;
+    padding: 5% 25% 1%;
 }
 
 .profile .middle .part4 {
-    margin-top: 20%;
+    padding: 15% 8% 12%;
+    background: linear-gradient(40deg, rgba(214, 213, 207, 0.8), rgba(251, 254, 255, 0.95), rgba(253, 255, 255, 0.84), rgba(251, 247, 247, 0.9), rgba(211, 211, 211, 0.82)), url("../assets/profile/2/back.jpg");
+    background-size: 100%;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .profile .bottom {
-    gap: 10%;
-    padding-top: 5%;
+    padding: 10% 20% 5%;
     grid-template-columns: 1fr 2fr;
 }
 
@@ -57,7 +58,7 @@
 
 .profile .timeline img {
     width: auto;
-    height: 22px;
+    height: 25px;
     margin: 0 0 20px;
 }
 
@@ -65,30 +66,37 @@
 .profile .tape2,
 .profile .tape3 {
     z-index: 2;
-    width: 160px;
+    width: 150px;
     position: relative;
+    left: 10px;
 }
 
 .profile .tape1 {
-    margin-left: 20%;
-    margin-bottom: 37%;
+    height: 74px;
+    margin-left: 26%;
+    margin-bottom: 45%;
     margin-top: 5%;
-}
-
-.profile .tape3 {
-    width: 200px;
-    height: 80px;
-    margin-left: 12%;
-    margin-bottom: 10%;
+    rotate: 1deg;
+    filter: brightness(0.9);
 }
 
 .profile .tape2 {
-    width: 260px;
-    rotate: 1deg;
-    height: 90px;
+    left: 1%;
+    height: 96px;
+    width: 270px;
+    rotate: -1deg;
     display: block;
-    margin: 0 auto 9%;
+    margin: 0 auto;
     position: relative;
+    filter: brightness(0.9);
+}
+
+.profile .tape3 {
+    width: 182px;
+    height: 90px;
+    margin-left: 15%;
+    margin-bottom: 12%;
+    filter: brightness(0.8);
 }
 
 .profile h3 {
@@ -96,8 +104,9 @@
     color: #fff;
     display: block;
     font-size: 30px;
+    font-weight: 500;
     position: relative;
-    margin: -20% auto 0;
+    margin: -9% auto -2%;
     text-align: center;
     letter-spacing: -2px;
     text-transform: uppercase;
@@ -107,38 +116,23 @@
     -webkit-text-fill-color: transparent;
 }
 
-.profile .part5 h3,
-.profile .part2 h3 {
-    z-index: 3;
-    color: #fff;
-    rotate: -2deg;
-    margin-top: -35%;
-    font-weight: 500;
-    position: relative;
-    font-family: "Finger Paint", sans-serif;
-}
-
-.profile .part5 {
-    margin-top: -10%;
-}
-
-.profile .part6 {
-    margin-top: 5%;
-}
-
 .profile .part2 {
     padding: 5% 10% 5% 0;
 }
 
+.profile .part6 {
+    margin-top: 10%;
+}
+
 .profile .part2 h3 {
-    margin-top: -59%;
-    margin-bottom: 5%;
+    margin-top: -61%;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #c3eaff 15%, #fcffe0 60%, #667fff 85%);
 }
 
 .profile .part5 h3 {
+    margin-top: -35%;
     background: linear-gradient(to right, #ffe0c7 20%, #fff7dd 40%, #e3ffc0 60%, #ffed38 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,7 +164,7 @@
 }
 
 .profile .timeline .ba {
-    height: 25px;
+    height: 20px;
     margin-top: 10px;
 }
 
@@ -186,7 +180,7 @@
 .profile .timeline p {
     display: flex;
     line-height: 1.7;
-    margin-bottom: 10%;
+    margin-bottom: 30px;
     align-items: center;
 }
 
@@ -212,10 +206,10 @@
 }
 
 .profile #carousel-01 {
-    margin-top: -15%;
-    padding: 45px 2px 5px 2px;
+    margin-top: -5%;
+    padding: 30px 2px 10px 2px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
-    background-image: linear-gradient(30deg, rgba(61, 76, 124, 0.52), rgba(154, 214, 172, 0.11), rgba(253, 229, 227, 0.25), rgba(151, 147, 102, 0.37)), url("../assets/profile/1/back.jpg");
+    background-image: linear-gradient(60deg, rgba(4, 34, 58, 0.7), rgba(19, 17, 34, 0.5), rgba(254, 255, 230, 0.51), rgba(51, 78, 147, 0.85)), url("../assets/profile/1/back.jpg");
     background-size: 100%;
 }
 
@@ -224,8 +218,8 @@
     padding: 3px;
     height: 200px;
     object-fit: cover;
-    background: rgba(220, 227, 244, 0.26);
-    border: 2px solid rgba(159, 169, 202, 0.25);
+    background: rgba(238, 242, 255, 0.37);
+    border: 2px solid rgba(31, 45, 138, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
 }
 
@@ -234,7 +228,7 @@
     margin: -5% 0 0 10%;
     padding: 52px 3px 20px 3px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.18);
-    background-image: linear-gradient(50deg, rgba(255, 185, 240, 0.41), rgba(249, 251, 255, 0.25), rgba(176, 231, 255, 0.18), rgba(255, 223, 188, 0.27)), url(../assets/profile/3/back.jpg);
+    background-image: linear-gradient(50deg, rgba(149, 95, 119, 0.41), rgba(138, 227, 170, 0.25), rgba(249, 253, 255, 0.75), rgba(243, 217, 48, 0.24)), url(../assets/profile/3/back.jpg);
     background-size: 100%;
 }
 
@@ -259,11 +253,11 @@
 }
 
 .profile .carousel-control.left {
-    left: -35px;
+    left: -15%;
 }
 
 .profile .carousel-control.right {
-    right: -35px;
+    right: -15%;
 }
 
 .profile .carousel-control:hover,
