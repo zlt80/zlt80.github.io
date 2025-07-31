@@ -2,6 +2,8 @@
     margin: 0;
     width: unset;
     max-width: unset;
+    background: linear-gradient(0deg, #fff, rgba(249, 251, 255, 0.74), rgba(248, 253, 255, 0.64), #fff), url(../assets/profile/back.jpg);
+    background-size: 6%;
 }
 
 .profile .top,
@@ -10,12 +12,11 @@
     display: grid;
     margin: 0 20% 0;
     background-size: 100%;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
 .profile .top {
     margin-top: 5%;
-    border-bottom: 1px solid #ddd;
 }
 
 .profile .middle {
@@ -30,12 +31,10 @@
 .profile .bottom {
     gap: 10%;
     padding-top: 5%;
-    border-top: 1px solid #ddd;
     grid-template-columns: 1fr 2fr;
 }
 
-.profile .part1,
-.profile .part5 {
+.profile .part1 {
     padding: 15% 0;
 }
 
@@ -62,24 +61,25 @@
     margin: 0 0 20px;
 }
 
-.profile .tape2,
 .profile .tape1,
+.profile .tape2,
 .profile .tape3 {
     z-index: 2;
     width: 160px;
-    rotate: -5deg;
     position: relative;
 }
 
 .profile .tape1 {
-    margin-left: 15%;
-    margin-bottom: 14%;
+    margin-left: 20%;
+    margin-bottom: 37%;
+    margin-top: 5%;
 }
 
 .profile .tape3 {
     width: 200px;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    height: 80px;
+    margin-left: 12%;
+    margin-bottom: 10%;
 }
 
 .profile .tape2 {
@@ -87,7 +87,7 @@
     rotate: 1deg;
     height: 90px;
     display: block;
-    margin: 0 auto 5%;
+    margin: 0 auto 9%;
     position: relative;
 }
 
@@ -95,9 +95,9 @@
     z-index: 3;
     color: #fff;
     display: block;
-    font-size: 32px;
+    font-size: 30px;
     position: relative;
-    margin: -17% auto 0;
+    margin: -20% auto 0;
     text-align: center;
     letter-spacing: -2px;
     text-transform: uppercase;
@@ -111,11 +111,19 @@
 .profile .part2 h3 {
     z-index: 3;
     color: #fff;
-    rotate: -4deg;
-    margin-top: -37%;
+    rotate: -2deg;
+    margin-top: -35%;
     font-weight: 500;
     position: relative;
     font-family: "Finger Paint", sans-serif;
+}
+
+.profile .part5 {
+    margin-top: -10%;
+}
+
+.profile .part6 {
+    margin-top: 5%;
 }
 
 .profile .part2 {
@@ -123,7 +131,8 @@
 }
 
 .profile .part2 h3 {
-    margin-top: -42%;
+    margin-top: -59%;
+    margin-bottom: 5%;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #c3eaff 15%, #fcffe0 60%, #667fff 85%);
@@ -202,15 +211,15 @@
     margin: 20% auto;
 }
 
-.profile #carousel-03 {
-    margin-top: -12%;
-    padding: 45px 6px 10px 7px;
+.profile #carousel-01 {
+    margin-top: -15%;
+    padding: 45px 2px 5px 2px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
-    background-image: linear-gradient(45deg, rgba(255, 253, 252, 0.86), rgba(255, 255, 255, 0.75), rgba(246, 253, 253, 0.73)), url("../assets/profile/1/back.webp");
+    background-image: linear-gradient(30deg, rgba(61, 76, 124, 0.52), rgba(154, 214, 172, 0.11), rgba(253, 229, 227, 0.25), rgba(151, 147, 102, 0.37)), url("../assets/profile/1/back.jpg");
     background-size: 100%;
 }
 
-.profile #carousel-03 .item img {
+.profile #carousel-01 .item img {
     width: 100%;
     padding: 3px;
     height: 200px;
@@ -220,21 +229,21 @@
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
 }
 
-.profile #carousel-02 {
+.profile #carousel-03 {
     width: fit-content;
     margin: -5% 0 0 10%;
-    padding: 52px 5px 10px 7px;
+    padding: 52px 3px 20px 3px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.18);
-    background-image: linear-gradient(242deg, rgb(199 183 162 / 17%), rgb(231 212 212 / 25%), rgb(169 160 149 / 18%)), url(../assets/profile/3/back.png);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(50deg, rgba(255, 185, 240, 0.41), rgba(249, 251, 255, 0.25), rgba(176, 231, 255, 0.18), rgba(255, 223, 188, 0.27)), url(../assets/profile/3/back.jpg);
+    background-size: 100%;
 }
 
-.profile #carousel-02 .item img {
+.profile #carousel-03 .item img {
     padding: 3px;
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
+    filter: contrast(0.9);
 }
 
 .profile .carousel-control {
