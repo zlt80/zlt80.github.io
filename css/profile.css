@@ -101,12 +101,12 @@
 
 .profile .ribbon {
     position: absolute;
-    rotate: 68deg;
-    width: 170px;
+    rotate: 3deg;
+    width: 120px;
     z-index: 3;
     margin-top: 2%;
-    margin-left: -1%;
-    filter: hue-rotate(254deg) saturate(1.2) opacity(0.8) contrast(1.3);
+    margin-left: 4%;
+    filter: hue-rotate(247deg) saturate(1.2) brightness(0.9) contrast(1.4);
 }
 
 .profile h3 {
