@@ -2,33 +2,31 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.91), #fff), url(../assets/profile/back.jpg);
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.91), #fff), url(../assets/profile/back.jpg);
     background-size: 40%;
 }
 
 .profile .wrapper {
     display: grid;
+    padding: 0;
+    gap: 15%;
     padding-bottom: 5%;
 }
 
 .profile .top {
-    width: 1300px;
-    gap: 13%;
+    width: 70%;
     margin: 5% auto 0;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 2fr;
 }
 
 .profile .middle {
-    width: 1500px;
-    margin: 0 auto;
-    gap: 15%;
-    grid-template-columns: 1fr 4fr;
+    width: 80%;
+    margin: 2% auto 0;
+    grid-template-columns: 1fr 5fr;
 }
 
 .profile .bottom {
-    width: 800px;
-    gap: 15%;
-    padding: 5% 0;
+    width: 70%;
     margin: 0 auto;
     grid-template-columns: 3fr 1fr;
 }
@@ -38,7 +36,7 @@
 }
 
 .profile .time {
-    width: auto;
+    width: max-content;
     font-weight: 500;
     text-align: right;
     letter-spacing: 1px;
@@ -139,7 +137,7 @@
 }
 
 .profile .part3 h3 {
-    margin-top: 5px;
+    margin-top: 1px;
     margin-left: 25px;
     background: linear-gradient(to right, #6e1657 35%, #ffa739 50%, #e82448 65%);
     -webkit-background-clip: text;
@@ -163,11 +161,11 @@
 }
 
 .profile box {
-    gap: 30px;
+    gap: 20px;
     display: grid;
     margin-bottom: 10%;
     align-items: start;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .profile box.title {
@@ -209,8 +207,9 @@
 
 .profile .timeline p {
     display: flex;
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 1.7;
+    letter-spacing: 0.4px;
     margin-bottom: 30px;
     align-items: center;
 }
@@ -255,7 +254,7 @@
 }
 
 .profile #carousel-02 {
-    padding: 40px 2px 10px 2px;
+    padding: 40px 4px 10px 4px;
     background: url("../assets/profile/2/back.jpg");
     background-size: cover;
 }
@@ -295,11 +294,11 @@
 }
 
 .profile .carousel-control.left {
-    left: -25%;
+    left: -15%;
 }
 
 .profile .carousel-control.right {
-    right: -25%;
+    right: -15%;
 }
 
 .profile .carousel-control:hover,
