@@ -14,7 +14,7 @@
 .profile .top {
     width: 1300px;
     gap: 13%;
-    margin: 10% auto 0;
+    margin: 5% auto 0;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -135,7 +135,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .profile .part2 h3 {
     margin-top: -61%;
     -webkit-background-clip: text !important;
@@ -200,6 +199,7 @@
 
 .profile .timeline p {
     display: flex;
+    font-size: 14px;
     line-height: 1.7;
     margin-bottom: 30px;
     align-items: center;
