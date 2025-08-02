@@ -104,7 +104,7 @@
     width: 55px;
     z-index: 3;
     margin-top: 0.5%;
-    margin-left: 4%;
+    margin-left: -1%;
     filter: hue-rotate(54deg) saturate(0.5);
 }
 
@@ -122,29 +122,34 @@
     z-index: 3;
     color: #fff;
     display: block;
-    font-size: 30px;
+    font-size: 22px;
+    padding-bottom: 10px;
     font-weight: 500;
-    position: relative;
-    margin: -9% auto -2%;
+    position: absolute;
     text-align: center;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     text-transform: uppercase;
     font-family: "Finger Paint", sans-serif;
-    background: linear-gradient(to right, #e6e1ff 35%, #ecdcff 45%, #ffe8f0 50%, #ffb2c0 65%);
+}
+
+.profile .part2 h3 {;
+    background: linear-gradient(to right, #0b61bd 15%, #786cdd 60%, #667fff 85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.profile .part2 h3 {
-    margin-top: -61%;
-    -webkit-background-clip: text !important;
+.profile .part3 h3 {
+    margin-top: 5px;
+    margin-left: 25px;
+    background: linear-gradient(to right, #6e1657 35%, #ffa739 50%, #e82448 65%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #c3eaff 15%, #fcffe0 60%, #667fff 85%);
 }
 
-.profile .part5 h3 {
-    margin-top: -35%;
-    background: linear-gradient(to right, #ffe0c7 20%, #fff7dd 40%, #e3ffc0 60%, #ffed38 80%);
+.profile .part6 h3 {
+
+    margin-top: 5px;
+    background: linear-gradient(to right, #f19f5f 20%, #7fbd33 60%, #03c5a1 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -163,6 +168,11 @@
     margin-bottom: 10%;
     align-items: start;
     grid-template-columns: 1fr 3fr;
+}
+
+.profile box.title {
+    display: block;
+    padding-bottom: 20px;
 }
 
 .profile box:last-child {
@@ -285,11 +295,11 @@
 }
 
 .profile .carousel-control.left {
-    left: -15%;
+    left: -25%;
 }
 
 .profile .carousel-control.right {
-    right: -15%;
+    right: -25%;
 }
 
 .profile .carousel-control:hover,
