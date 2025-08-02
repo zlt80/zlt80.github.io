@@ -2,46 +2,33 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background: linear-gradient(0deg, #fff, rgba(255, 249, 251, 0.8), rgba(250, 246, 255, 0.76), rgba(252, 250, 255, 0.79), #fff), url(../assets/profile/back.jpg);
-    background-size: 30%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.88), #fff), url(../assets/profile/back.jpg);
+    background-size: 40%;
 }
 
-.profile .top,
-.profile .bottom {
-    gap: 8%;
+.profile .wrapper {
+    gap: 10%;
     display: grid;
-    background-size: 100%;
+    padding-bottom: 5%;
+    align-content: center;
 }
 
 .profile .top {
-    padding: 5% 15% 0;
-    grid-template-columns: 3fr 2fr;
+    width: 1300px;
+    margin: 10% auto 0;
+    grid-template-columns: 2fr 1fr;
 }
 
 .profile .middle {
-    gap: 10%;
-    padding: 5% 25% 1%;
-}
-
-.profile .middle .part4 {
-    padding: 15% 8% 12%;
-    background: linear-gradient(40deg, rgba(214, 213, 207, 0.8), rgba(251, 254, 255, 0.95), rgba(253, 255, 255, 0.84), rgba(251, 247, 247, 0.9), rgba(211, 211, 211, 0.82)), url("../assets/profile/2/back.jpg");
-    background-size: 100%;
-    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);
+    width: 1500px;
+    grid-template-columns: 3fr 11fr;
 }
 
 .profile .bottom {
-    padding: 10% 20% 5%;
-    grid-template-columns: 1fr 2fr;
-}
-
-.profile .part1 {
-    padding: 15% 0;
-}
-
-.profile .part2,
-.profile .part6 {
-    align-content: center;
+    width: 700px;
+    padding: 5% 0;
+    margin: 0 auto;
+    grid-template-columns: 3fr 1fr;
 }
 
 .profile .logo {
@@ -73,9 +60,9 @@
 
 .profile .tape1 {
     height: 74px;
-    margin-left: 16%;
+    margin-left: 13%;
     margin-bottom: 45%;
-    margin-top: 5%;
+    margin-top: 6%;
     rotate: 1deg;
     filter: brightness(0.9);
 }
@@ -99,14 +86,34 @@
     filter: brightness(0.8);
 }
 
-.profile .ribbon {
+.profile .pin {
     position: absolute;
     rotate: 3deg;
-    width: 120px;
+    width: 50px;
     z-index: 3;
     margin-top: 2%;
+    margin-left: 10%;
+    filter: brightness(0.8) contrast(1.5);
+}
+
+.profile .pin2 {
+    position: absolute;
+    rotate: 3deg;
+    width: 60px;
+    z-index: 3;
+    margin-top: 1%;
     margin-left: 4%;
-    filter: hue-rotate(247deg) saturate(1.2) brightness(0.9) contrast(1.4);
+    filter: hue-rotate(54deg) saturate(0.5);
+}
+
+.profile .pin3 {
+    z-index: 3;
+    width: 100px;
+    rotate: 5deg;
+    margin-top: -1%;
+    margin-left: 3%;
+    position: absolute;
+    filter: saturate(0.6) contrast(1.2) brightness(1.4) hue-rotate(120deg) opacity(0.9);
 }
 
 .profile h3 {
@@ -162,6 +169,7 @@
 
 .profile .middle box {
     grid-template-columns: 1fr 5fr;
+    margin-bottom: 5%;
 }
 
 .profile .timeline .sb {
@@ -213,33 +221,44 @@
 
 .profile .carousel {
     margin: 20% auto;
+    height: fit-content;
+    background: linear-gradient(120deg, #fff, rgba(241, 248, 248, 0.92));
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
 }
 
 .profile #carousel-01 {
-    margin-top: -5%;
     padding: 30px 2px 10px 2px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
-    background-image: linear-gradient(60deg, rgba(4, 34, 58, 0.7), rgba(19, 17, 34, 0.5), rgba(254, 255, 230, 0.51), rgba(51, 78, 147, 0.85)), url("../assets/profile/1/back.jpg");
-    background-size: 100%;
+    background: url("../assets/profile/1/back.jpg");
+    background-size: cover;
 }
 
 .profile #carousel-01 .item img {
     width: 100%;
     padding: 3px;
-    height: 200px;
     object-fit: cover;
     background: rgba(238, 242, 255, 0.37);
-    border: 2px solid rgba(31, 45, 138, 0.25);
+    border: 2px solid rgba(159, 169, 202, 0.25);
+    box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
+}
+
+.profile #carousel-02 {
+    padding: 50px 2px 20px 2px;
+    background: url("../assets/profile/2/back.jpg");
+    background-size: cover;
+}
+
+.profile #carousel-02 .item img {
+    padding: 3px;
+    object-fit: cover;
+    background: rgba(220, 227, 244, 0.26);
+    border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
 }
 
 .profile #carousel-03 {
-    width: fit-content;
-    margin: -5% 0 0 10%;
-    padding: 52px 3px 20px 3px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.18);
-    background-image: linear-gradient(50deg, rgba(149, 95, 119, 0.41), rgba(138, 227, 170, 0.25), rgba(249, 253, 255, 0.75), rgba(243, 217, 48, 0.24)), url(../assets/profile/3/back.jpg);
-    background-size: 100%;
+    padding: 50px 3px 20px 3px;
+    background: url("../assets/profile/3/back.jpg");
+    background-size: cover;
 }
 
 .profile #carousel-03 .item img {
