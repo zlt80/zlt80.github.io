@@ -7,7 +7,6 @@
 }
 
 .profile .wrapper {
-    gap: 10%;
     display: grid;
     padding-bottom: 5%;
     align-content: center;
@@ -15,17 +14,21 @@
 
 .profile .top {
     width: 1300px;
+    gap: 13%;
     margin: 10% auto 0;
     grid-template-columns: 2fr 1fr;
 }
 
 .profile .middle {
-    width: 1500px;
+    width: 1400px;
+    margin: 0 auto;
+    gap: 12%;
     grid-template-columns: 3fr 11fr;
 }
 
 .profile .bottom {
-    width: 700px;
+    width: 800px;
+    gap: 15%;
     padding: 5% 0;
     margin: 0 auto;
     grid-template-columns: 3fr 1fr;
@@ -89,9 +92,9 @@
 .profile .pin {
     position: absolute;
     rotate: 3deg;
-    width: 50px;
+    width: 45px;
     z-index: 3;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 10%;
     filter: brightness(0.8) contrast(1.5);
 }
@@ -111,7 +114,7 @@
     width: 100px;
     rotate: 5deg;
     margin-top: -1%;
-    margin-left: 3%;
+    margin-left: 4%;
     position: absolute;
     filter: saturate(0.6) contrast(1.2) brightness(1.4) hue-rotate(120deg) opacity(0.9);
 }
@@ -256,7 +259,7 @@
 }
 
 .profile #carousel-03 {
-    padding: 50px 3px 20px 3px;
+    padding: 40px 3px 10px 3px;
     background: url("../assets/profile/3/back.jpg");
     background-size: cover;
 }
