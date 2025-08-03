@@ -7,11 +7,16 @@
     background-size: 100%;
 }
 
-.vision .top {
+.vision .wrapper {
     gap: 15%;
-    margin: 10% 20% 0;
+    padding: 0;
+    margin: 10% 20% 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.bottom {
+    align-items: center;
 }
 
 .vision span {
@@ -22,6 +27,41 @@
 
 .vision-english span {
     line-height: 1.6;
+}
+
+#carousel-01 {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#carousel-01 .item img {
+    width: fit-content;
+}
+
+.carousel-control {
+    text-shadow: none;
+    background: none !important;
+}
+
+.carousel-control {
+    top: 42%;
+    color: #4e4132;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.carousel-control.left {
+    left: -12%;
+}
+
+.carousel-control.right {
+    right: -12%;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #000;
 }
 
 @media screen and (max-width: 780px) {
