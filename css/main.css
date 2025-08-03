@@ -14,10 +14,11 @@ a {
 }
 
 a:hover {
-    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
-    /*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
+    cursor: pointer;
+    /*mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
+    /*!*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*!*/
+    /*-webkit-mask-size: 200%;*/
+    /*animation: shine 2s infinite;*/
 }
 
 @-webkit-keyframes shine {
@@ -143,14 +144,13 @@ header {
     justify-items: end;
 }
 
-.menu label:hover,
-.menu__items li:hover {
-    cursor: pointer;
-    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
-    /*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-}
+/*.menu label:hover {*/
+/*    cursor: pointer;*/
+/*    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
+/*    !*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*!*/
+/*    -webkit-mask-size: 200%;*/
+/*    animation: shine 2s infinite;*/
+/*}*/
 
 .menu__face {
     margin: 0;
@@ -160,6 +160,10 @@ header {
     text-transform: uppercase;
     font-family: "DM Sans", sans-serif;
     transition: all 2s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+}
+
+.menu__face:hover {
+    cursor: pointer;
 }
 
 .menu__items {
@@ -178,10 +182,6 @@ header {
 
 .menu__items li {
     margin-left: 20px;
-}
-
-.menu__items li a {
-    transition: 1s;
 }
 
 .menu__text {
@@ -209,7 +209,7 @@ header {
 .menu__arrow img {
     width: 9px;
     transition: 0.4s;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-bottom: 1.5px;
 }
 
@@ -222,8 +222,9 @@ header {
     opacity: 1;
     visibility: visible;
     top: calc(100% + 7px);
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(3px);
 }
-
 
 /* footer start */
 footer {
@@ -323,22 +324,5 @@ footer {
 
 @media screen and (min-width: 781px) {
 
-    .menu__face:hover {
-        transition: 3s all;
-    }
-
-    .menu__face:hover img {
-        opacity: 0.8;
-        transition: all 7s;
-        transform: scale(0.8);
-    }
-
-    .menu__items li:hover a {
-        color: #fff;
-    }
-
-    .menu__items li a {
-        transition: all 0.7s;
-    }
 
 }
