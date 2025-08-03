@@ -1,8 +1,16 @@
+.software {
+    margin: 0;
+    width: unset;
+    max-width: unset;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
+    background-size: 100%;
+}
+
 .software .grid {
     --min: 110px;
     display: grid;
     grid-gap: 1rem;
-    padding: 10% 24% 5%;
+    padding: 10% 22% 5%;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
@@ -13,8 +21,8 @@
 }
 
 .software .item img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: inline-block;
 }
 
@@ -22,7 +30,7 @@
     font-size: 13.5px;
     font-weight: 300;
     margin-bottom: 50%;
-    letter-spacing: 0.9px;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 780px) {
