@@ -108,8 +108,11 @@ span.eng {
 header {
     width: 100%;
     display: flex;
-    padding: 20px 30px;
-    position: relative;
+    position: fixed;
+    background: linear-gradient(0deg, transparent, rgba(195, 195, 195, 0.26));
+    backdrop-filter: blur(3px);
+    top: 0;
+    padding: 10px 30px;
     font-optical-sizing: auto;
     justify-content: space-between;
     font-family: "DM Sans", sans-serif;
