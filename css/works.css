@@ -51,11 +51,11 @@
 
 .works .sticker {
     z-index: 3;
-    width: 110px;
-    margin-left: 43%;
+    width: 240px;
+    margin-left: 34%;
     position: relative;
-    margin-bottom: -18%;
-    filter: brightness(1.2);
+    margin-bottom: -24%;
+    filter: brightness(1.3) saturate(0.3);
 }
 
 .works p,
