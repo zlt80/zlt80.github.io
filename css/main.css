@@ -203,10 +203,10 @@ header {
 }
 
 .menu__arrow img {
-    width: 12px;
+    width: 9px;
     transition: 0.4s;
-    margin-left: 6px;
-    margin-top: -4px;
+    margin-left: 2px;
+    margin-bottom: 1.5px;
 }
 
 .header-right input,
@@ -217,7 +217,7 @@ header {
 .menu input:checked ~ .menu__items {
     opacity: 1;
     visibility: visible;
-    top: calc(100% + 15px);
+    top: calc(100% + 7px);
 }
 
 
