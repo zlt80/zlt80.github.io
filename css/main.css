@@ -112,6 +112,7 @@ header {
     background: linear-gradient(0deg, transparent, rgba(195, 195, 195, 0.26));
     backdrop-filter: blur(3px);
     top: 0;
+    z-index: 9;
     padding: 10px 30px;
     font-optical-sizing: auto;
     justify-content: space-between;
