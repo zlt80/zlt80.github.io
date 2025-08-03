@@ -5,9 +5,11 @@
     background-size: 100%;
 }
 
-h1 {
+.about h1 {
+    margin: 0;
+    padding-right: 15%;
+    padding-bottom: 10%;
     text-align: right;
-    margin-right: 15%;
 }
 
 .part1 {
@@ -129,11 +131,6 @@ h1 {
     justify-content: space-between;
     gap: 10px;
     margin: 10px 0;
-}
-
-.about h1 {
-    margin: 0;
-    padding-bottom: 10%;
 }
 
 .about .part2 {
