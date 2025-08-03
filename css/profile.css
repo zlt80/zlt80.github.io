@@ -2,8 +2,8 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.91), #fff), url(../assets/profile/back.jpg);
-    background-size: 40%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
+    background-size: 100%;
 }
 
 .profile .wrapper {

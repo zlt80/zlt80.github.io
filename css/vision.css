@@ -3,8 +3,8 @@
     width: unset;
     max-width: unset;
     padding-bottom: 20%;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.81), rgba(255, 255, 255, 0.82), #fff), url(../assets/vision/back.jpg);
-    background-size: 40%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
+    background-size: 100%;
 }
 
 .vision .top {
