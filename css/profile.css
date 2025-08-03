@@ -1,3 +1,8 @@
+main {
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.94), rgb(255 255 255 / 91%), rgb(255 255 255 / 94%), #fff), url(../assets/back.jpg);
+    background-size: 135%;
+}
+
 .profile {
     margin: 0;
     width: unset;
@@ -6,9 +11,8 @@
 
 .profile .wrapper {
     gap: 15%;
-    padding: 0;
     display: grid;
-    padding-bottom: 10%;
+    padding: 5% 0;
 }
 
 .profile h1 {

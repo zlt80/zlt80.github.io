@@ -175,8 +175,8 @@ header {
 }
 
 .menu__dropdown li a {
-    line-height: 2;
     font-size: 13px;
+    line-height: 2.1;
     text-transform: uppercase;
 }
 
