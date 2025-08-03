@@ -2,17 +2,17 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
-    background-size: 100%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
+    background-size: cover;
     display: grid;
     grid-auto-columns: 10fr 1fr;
 }
 
 .software .grid {
-    --min: 120px;
+    --min: 100px;
     display: grid;
     grid-gap: 1rem;
-    padding: 10% 20% 5%;
+    padding: 5% 10%;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
