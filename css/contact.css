@@ -1,0 +1,13 @@
+.contact .wrapper {
+    gap: 5%;
+    display: grid;
+    margin-top: 5%;
+    padding: 5% 20%;
+    align-items: start;
+    grid-template-columns: 5fr 2fr;
+}
+
+.contact h1 {
+    margin-bottom: 10%;
+    text-align: left;
+}
