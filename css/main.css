@@ -50,17 +50,6 @@ main {
 
 .container {
     padding: 0 0 15% 0;
-    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.61), rgba(254, 254, 254, 0.66), #fff), url(../assets/about/b.jpg);*/
-    /*background-size: 40%;*/
-    /*background: linear-gradient(0deg, #fff, rgba(252, 255, 251, 0.65), rgba(248, 251, 247, 0.9), #fff), url(../assets/bb.jpg);*/
-    /*background-size: 30%;*/
-    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), #fff), url(../assets/1back.png);*/
-    /*background-size: cover;*/
-    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.75), rgba(254, 254, 254, 0.5), #fff), url(../assets/back.jpg);*/
-    /*background-size: 50%;*/
-    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(254, 254, 254, 0.84), #fff), url(../assets/back.jpg);*/
-    /*background: linear-gradient(0deg, #fff, rgba(221, 227, 211, 0.84), #fff), url(../assets/1back.png);*/
-    /*background-size:70%;*/
 }
 
 .wrapper {
@@ -71,7 +60,7 @@ main {
 }
 
 h1 {
-    margin: 100px 0 0 0;
+    padding-top: 180px;
     color: #616161;
     font-size: 27px;
     font-weight: 200;

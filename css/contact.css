@@ -1,10 +1,19 @@
+main {
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.97), rgb(255 255 255 / 91%), #fff), url(../assets/back.jpg);
+    background-size: 90%;
+}
+
 .contact .wrapper {
     gap: 5%;
     display: grid;
     margin-top: 5%;
-    padding: 5% 20%;
+    padding: 5% 15%;
     align-items: start;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 2fr;
+}
+
+img {
+    filter: hue-rotate(10deg) contrast(1.1) saturate(0.9);
 }
 
 .contact h1 {
