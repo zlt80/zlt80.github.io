@@ -13,6 +13,11 @@
     padding-bottom: 5%;
 }
 
+.profile h1 {
+    text-align: left;
+    padding-left: 20%;
+}
+
 .profile .top {
     width: 70%;
     margin: 5% auto 0;
