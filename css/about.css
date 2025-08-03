@@ -5,6 +5,11 @@
     background-size: 100%;
 }
 
+h1 {
+    text-align: right;
+    margin-right: 15%;
+}
+
 .part1 {
     margin-bottom: -40%;
 }
@@ -126,8 +131,13 @@
     margin: 10px 0;
 }
 
+.about h1 {
+    margin: 0;
+    padding-bottom: 10%;
+}
+
 .about .part2 {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .about .part2 a {
