@@ -3,8 +3,6 @@
     width: unset;
     max-width: unset;
     padding-bottom: 5%;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.82), #fff), url(../assets/software/back.jpg);
-    background-size: 100%;
 }
 
 .works h3 {

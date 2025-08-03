@@ -5,8 +5,6 @@
     padding: 5% 20%;
     align-items: start;
     grid-template-columns: 2fr 1fr;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
-    background-size: 100%;
 }
 
 .contact h1 {

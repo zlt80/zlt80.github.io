@@ -29,12 +29,13 @@
         <div class="menu">
             <input id="menu" type="checkbox">
 
-            <label class="menu__face" for="menu">
-                <span class="menu__text" style="display: flex">Portfolio</span>
-                <span class="menu__arrow"><img alt="svg" src="./svg/menu.svg"></span>
+            <label class="menu__button" for="menu">
+                <span class="menu__text">portfolio</span>
+                <span class="menu__svg"><img alt="svg" src="./svg/menu.svg"></span>
             </label>
 
-            <ul class="menu__items">
+            <ul class="menu__dropdown">
+                <li><a href="https://zlt80.github.io/home">home</a></li>
                 <li><a href="https://zlt80.github.io/about">about</a></li>
                 <li><a href="https://zlt80.github.io/profile">profile</a></li>
                 <li><a href="https://zlt80.github.io/software">software</a></li>
@@ -42,21 +43,12 @@
                 <li><a href="https://zlt80.github.io/vision">vision</a></li>
                 <li><a href="https://zlt80.github.io/contact">contact</a></li>
             </ul>
-        </div>
 
-        <svg>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"/>
-                <feColorMatrix in="blur" result="goo" type="matrix"
-                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 187"/>
-                <feBlend in="SourceGraphic" in2="goo"/>
-            </filter>
-        </svg>
+        </div>
 
     </div>
 
 </header>
-
 
 <main role="main">
 
@@ -69,13 +61,7 @@
     </div>
 
 
-
-
-
-
-
 </main>
-
 
 
 <footer>

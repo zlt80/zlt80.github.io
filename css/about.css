@@ -1,9 +1,6 @@
 .about {
     margin: 0;
     width: unset;
-    /*background: linear-gradient(0deg, #fff, rgba(243, 240, 236, 0.84), #fff), url(../assets/about/back.png);*/
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.67), #fff), url(../assets/software/back.jpg);
-    background-size: 100%;
 }
 
 .about h1 {

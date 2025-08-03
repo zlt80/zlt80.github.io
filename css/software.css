@@ -2,8 +2,6 @@
     margin: 0;
     width: unset;
     max-width: unset;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.85), #fff), url(../assets/software/back.jpg);
-    background-size: cover;
     display: grid;
     grid-auto-columns: 10fr 1fr;
 }
