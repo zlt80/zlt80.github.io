@@ -14,9 +14,19 @@ a {
 }
 
 a:hover {
-    color: #fff;
-    text-decoration: none;
-    transition: 1s all;
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+    /*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
 }
 
 ul, li {
@@ -124,11 +134,6 @@ header {
     letter-spacing: 1px;
 }
 
-.header-left a:hover {
-    color: #ddd;
-    transition: 3s all;
-}
-
 .menu {
     position: relative;
     justify-items: end;
@@ -137,6 +142,10 @@ header {
 .menu label:hover,
 .menu__items li:hover {
     cursor: pointer;
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+    /*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
 }
 
 .menu__face {
@@ -213,7 +222,6 @@ header {
 
 
 /* footer start */
-
 footer {
     width: 100%;
     display: flex;

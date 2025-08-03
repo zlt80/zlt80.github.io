@@ -91,9 +91,3 @@
     align-self: center;
     letter-spacing: 0.3px;
 }
-
-.works item a:hover {
-    cursor: pointer;
-    font-weight: 500;
-    letter-spacing: 3px;
-}
