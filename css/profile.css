@@ -230,7 +230,7 @@ main {
 }
 
 .profile .timeline p.timeline__item:nth-child(2),
-.profile .timeline p.timeline__item:nth-child(5),
+.profile .timeline p.timeline__item:nth-child(4),
 .profile .timeline p.timeline__item:nth-child(8) {
     margin-bottom: 10px;
 }
