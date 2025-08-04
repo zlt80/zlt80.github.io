@@ -257,7 +257,7 @@ main {
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
-    filter: contrast(0.9);
+    filter: contrast(0.9) saturate(1.2);
 }
 
 .profile .carousel-control {

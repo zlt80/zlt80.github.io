@@ -182,7 +182,7 @@
     padding: 2px 1px;
     object-fit: cover;
     width: fit-content;
-    filter: brightness(1.05) contrast(0.95) hue-rotate(20deg) sepia(0.25) saturate(0.95);
+    filter: brightness(1.05) contrast(0.95) hue-rotate(20deg) sepia(0.25) saturate(1.4);
     object-position: bottom;
     background: rgba(198, 205, 207, 0.4);
     border: 2px solid rgba(184, 178, 176, 0.25);
@@ -203,7 +203,7 @@
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
-    filter: brightness(1.2) contrast(0.95) saturate(0.95) hue-rotate(5deg);
+    filter: brightness(1.2) contrast(0.95) saturate(1.1) hue-rotate(5deg);
 }
 
 #carousel-03 {
@@ -219,7 +219,7 @@
     background: rgba(220, 227, 244, 0.26);
     border: 2px solid rgba(159, 169, 202, 0.25);
     box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
-    filter: hue-rotate(12deg) contrast(0.8) brightness(1.2) saturate(1.2);
+    filter: hue-rotate(12deg) contrast(0.9) brightness(1.2) saturate(1.4);
 }
 
 .carousel-control {
