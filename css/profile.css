@@ -22,12 +22,12 @@ main {
 
 .profile .top {
     width: 60%;
-    margin: 0 auto;
+    margin: 10% auto 0;
     grid-template-columns: 5fr 2fr;
 }
 
 .profile .middle {
-    width: 75%;
+    width: 80%;
     margin: 2% auto 0;
     grid-template-columns: 1fr 4fr;
 }
@@ -35,7 +35,11 @@ main {
 .profile .bottom {
     width: 50%;
     margin: 0 auto;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 7fr 3fr;
+}
+
+.profile .bottom box {
+    gap: 40px;
 }
 
 .profile .logo {
@@ -43,9 +47,8 @@ main {
 }
 
 .profile .time {
-    width: max-content;
     font-weight: 500;
-    text-align: right;
+    width: 110px;
     letter-spacing: 1px;
     font-family: 'DM Sans', sans-serif;
 }
@@ -59,18 +62,18 @@ main {
 .profile .tape1,
 .profile .tape2,
 .profile .tape3 {
+    left: 10px;
     z-index: 2;
     width: 150px;
     position: relative;
-    left: 10px;
 }
 
 .profile .tape1 {
+    rotate: 1deg;
     height: 74px;
+    margin-top: 6%;
     margin-left: 13%;
     margin-bottom: 45%;
-    margin-top: 6%;
-    rotate: 1deg;
     filter: brightness(0.9);
 }
 
@@ -94,22 +97,22 @@ main {
 }
 
 .profile .pin {
-    position: absolute;
-    rotate: 3deg;
-    width: 45px;
     z-index: 3;
+    width: 45px;
+    rotate: 3deg;
     margin-top: 2%;
     margin-left: 11%;
+    position: absolute;
     filter: brightness(0.8) contrast(1.5);
 }
 
 .profile .pin2 {
-    position: absolute;
-    rotate: 3deg;
-    width: 55px;
     z-index: 3;
+    width: 65px;
+    rotate: 3deg;
     margin-top: 7%;
     margin-left: -1%;
+    position: absolute;
     filter: hue-rotate(54deg) saturate(0.5);
 }
 
@@ -117,8 +120,8 @@ main {
     z-index: 3;
     width: 100px;
     rotate: 5deg;
-    margin-top: 1%;
-    margin-left: 5%;
+    margin-top: 0;
+    margin-left: 7%;
     position: absolute;
     filter: saturate(0.6) contrast(1.2) brightness(1.4) hue-rotate(220deg) opacity(0.9);
 }
@@ -128,11 +131,11 @@ main {
     color: #fff;
     display: block;
     font-size: 32px;
-    padding-right: 5px;
     font-weight: 600;
-    position: absolute;
     text-align: center;
-    letter-spacing: -3px;
+    position: absolute;
+    padding-right: 5px;
+    letter-spacing: -2px;
     text-transform: uppercase;
     font-family: "Finger Paint", sans-serif;
 }
@@ -145,14 +148,14 @@ main {
 
 .profile .part3 h3 {
     margin-top: 4%;
-    background: linear-gradient(to right, #3f0073 35%, #ff397f 50%, #e45f00 85%);
+    background: linear-gradient(to right, #3f0073 10%, #ff0098 50%, #ff9900 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .profile .part6 h3 {
-    margin-top: 5px;
-    background: linear-gradient(to right, #ff7aed 20%, #11e3ff 60%, #03c5a1 80%);
+    margin-top: 6px;
+    background: linear-gradient(to right, #ff83e6 20%, #00d6d6 70%, #6fd600 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -183,7 +186,7 @@ main {
 }
 
 .profile .middle box {
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     margin-bottom: 5%;
 }
 
@@ -259,7 +262,7 @@ main {
 }
 
 .profile #carousel-02 {
-    margin: 55% auto 20%;
+    margin: 50% auto 20%;
     padding: 30px 2px 10px 2px;
     background: url("../assets/profile/2/back.jpg");
     background-size: cover;
@@ -274,7 +277,7 @@ main {
 }
 
 .profile #carousel-03 {
-    margin: 35% auto 20%;
+    margin: 25% auto 20%;
     padding: 40px 3px 10px 3px;
     background: url("../assets/profile/3/back.jpg");
     background-size: cover;
