@@ -27,8 +27,8 @@ main {
 }
 
 .profile .middle {
-    width: 80%;
-    margin: 2% auto 0;
+    width: 70%;
+    margin: 5% auto 0;
     grid-template-columns: 1fr 4fr;
 }
 
@@ -147,15 +147,15 @@ main {
 }
 
 .profile .part3 h3 {
-    margin-top: 4%;
-    background: linear-gradient(to right, #3f0073 10%, #ff0098 50%, #ff9900 95%);
+    margin-top: 3%;
+    background: linear-gradient(to right, #3f0073 10%, #ff0062 50%, #ff9900 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .profile .part6 h3 {
     margin-top: 6px;
-    background: linear-gradient(to right, #ff83e6 20%, #00d6d6 70%, #6fd600 90%);
+    background: linear-gradient(to right, #ffbe46 20%, #ffbeed 50%, #00f1ce 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -186,8 +186,8 @@ main {
 }
 
 .profile .middle box {
-    grid-template-columns: 1fr 6fr;
     margin-bottom: 5%;
+    grid-template-columns: 1fr 6fr;
 }
 
 .profile .timeline .sb {
@@ -241,7 +241,7 @@ main {
 
 .profile .carousel {
     height: fit-content;
-    margin: 25% auto 20%;
+    margin: 27% auto 20%;
     background: linear-gradient(120deg, #fff, rgba(241, 248, 248, 0.92));
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
 }
