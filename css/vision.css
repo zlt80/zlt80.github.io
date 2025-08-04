@@ -27,14 +27,38 @@
     line-height: 1.6;
 }
 
+.vision .part3 {
+    padding: 5%;
+}
+
+.vision .star {
+    z-index: 3;
+    width: 75px;
+    rotate: 70deg;
+    margin-left: 7%;
+    margin-top: -2.5%;
+    position: absolute;
+    filter: contrast(1.4) brightness(1.4) opacity(0.9);
+}
+
 #carousel-01 {
-    width: 70%;
+    width: 60%;
+    margin: 0 auto 5%;
     position: relative;
-    margin: 0 auto;
+    padding: 35px 1px 15px 1px;
+    background-image: url("../assets/vision/1/back.jpg");
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.24);
+    background-size: 100%;
 }
 
 #carousel-01 .item img {
+    padding: 3px;
+    object-fit: cover;
     width: fit-content;
+    background: rgba(220, 227, 244, 0.26);
+    border: 2px solid rgba(159, 169, 202, 0.25);
+    box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
+    filter: brightness(1.1) sepia(0.2) saturate(0.8) contrast(1.2);
 }
 
 .carousel-control {
@@ -50,11 +74,11 @@
 }
 
 .carousel-control.left {
-    left: -12%;
+    left: -20%;
 }
 
 .carousel-control.right {
-    right: -12%;
+    right: -20%;
 }
 
 .carousel-control:hover,
