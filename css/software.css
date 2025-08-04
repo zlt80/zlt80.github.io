@@ -1,3 +1,8 @@
+main {
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.97), rgb(255 255 255 / 91%), #fff), url(../assets/back.jpg);
+    background-size: 100% 75%;
+}
+
 .software {
     margin: 0;
     width: unset;
@@ -10,7 +15,7 @@
     --min: 100px;
     display: grid;
     grid-gap: 1rem;
-    padding: 5% 10%;
+    padding: 5% 10% 0;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
