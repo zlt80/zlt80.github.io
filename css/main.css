@@ -70,6 +70,19 @@ h1 {
     font-family: "DM Sans", sans-serif;
 }
 
+h2 {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    font-family: "DM Sans", sans-serif;
+}
+
+h4 {
+    text-align: center;
+}
 
 p {
     font-size: 13px;
@@ -122,6 +135,7 @@ header {
     position: relative;
     transition: all 2s;
     letter-spacing: 1px;
+    width: fit-content;
     text-transform: uppercase;
 }
 
@@ -189,8 +203,6 @@ header {
     right: 30px;
     visibility: visible;
     top: calc(100% - 2px);
-    backdrop-filter: blur(3px);
-    background: rgba(255, 255, 255, 0.18);
 }
 
 /* footer start */
