@@ -1,0 +1,43 @@
+main {
+    margin: 0;
+    width: unset;
+}
+
+.work h1 {
+    text-align: left;
+}
+
+.work .part1 {
+    margin-top: 10%;
+}
+
+.work .top {
+    display: flex;
+    padding: 5% 0;
+    align-items: start;
+}
+
+.work .phone-frame {
+    width: 270px;
+    border-radius: 40px;
+    border: 3px solid #b5b5b5;
+    background: linear-gradient(75deg, #000000, #1c1922, #c5c6be, #000, #1c1922, #000);
+}
+
+.work .phone-frame .phone-screen {
+    margin: 50px 0 65px;
+}
+
+.work .phone-frame .phone-screen .preview {
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.work .brand {
+    width: 200px;
+    height: 130px;
+    display: block;
+    object-fit: cover;
+}
