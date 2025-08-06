@@ -7,7 +7,7 @@ main {
 .works {
     background: linear-gradient(0deg, #fff, rgba(249, 249, 255, 0.7), rgba(249, 250, 252, 0.69), rgba(255, 251, 255, 0.69), #fff), url("../assets/work/back.png");
     background-size: 20%;
-    margin-bottom: 10%;
+    padding: 5% 20% 10%;
 }
 
 .works h1 {
@@ -27,10 +27,13 @@ main {
     font-weight: 400;
 }
 
-.works h2 {
-    text-align: center;
-    margin-top: 7%;
+h2 {
+    font-size: 13px;
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
 }
+
 
 .works h4 {
     line-height: 2;
@@ -42,38 +45,26 @@ main {
     font-family: "DM Sans", sans-serif;
 }
 
-.works .works-grid {
-    width: 70%;
-    margin: 5% auto 5%;
-}
-
-.work .works-grid item {
-    display: block;
-}
-
 .works .grid {
-    margin: 0 auto;
     display: grid;
-    align-content: center;
-    width: fit-content;
 }
 
 .works .border {
     display: block;
-    margin: 0 45%;
+    width: 5%;
+    margin: 5% 0;
     border-top: 3px solid #787878;
 }
 
-.works .border2 {
-    display: block;
-    height: 300px;
-    margin: 0 15% 3%;
-    border-left: 3px solid #787878;
+.description {
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 15%;
 }
 
-.description {
-    margin: 0 0 10%;
-    text-align: center;
+.works .works-grid {
+    width: fit-content;
+    padding: 10% 0 2%;
 }
 
 .works .works-img {
@@ -87,101 +78,156 @@ main {
     text-align: center;
 }
 
-.works .sticker {
-    z-index: 3;
-    width: 210px;
-    margin-left: 5%;
-    margin-top: -14%;
-    position: relative;
-    margin-bottom: -25%;
-    rotate: 75deg;
-    filter: saturate(0.8) contrast(1.3) hue-rotate(-10deg) brightness(1.1);
-}
-
 .works item {
-    padding: 0 10%;
-    font-weight: 500;
-    line-height: 1.7;
-    text-align: center;
+    line-height: 3;
     display: flex;
-}
-
-.works a {
-    opacity: 0.8;
-    letter-spacing: 1.2px;
-    transition: 1s all;
-    text-transform: capitalize;
-}
-
-.work .part1 a {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    line-height: 2;
 }
 
 .works item p,
 .works item a {
-    line-height: 2;
-    padding-bottom: 1%;
-    letter-spacing: 1px;
     width: 100%;
     display: block;
-    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 2%;
+}
+
+.works a,
+.works a span {
+    font-size: 13px;
+    letter-spacing: 0.4px;
     font-weight: 400;
-    text-transform: uppercase;
+    transition: 1s all;
+    text-transform: capitalize;
+    /*background: linear-gradient(to right, transparent 10%, rgba(255, 255, 255, 0) 50%, rgba(245, 255, 253, 0.8) 53%, #f6f8ff 70%, rgba(255, 255, 255, 0.84) 80%, transparent 100%);*/
+    /*background-size: 200%;*/
+    /*background-position: 0 0;*/
+    /*display: inline;*/
 }
 
 .works item p {
-    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
     font-size: 11px;
-    letter-spacing: 2px;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    width: fit-content;
+    line-height: 2;
+    margin-right: 10px;
     text-align: center;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    transition: 1s all;
 }
 
-.works .sticker {
-    right: 15%;
-    margin-top: 5%;
-    width: 120px;
-    rotate: -20deg;
-    position: absolute;
-    filter: contrast(1.5) brightness(1.6) opacity(0.9);
-}
-
-.works item p:after {
-    content: ">>>";
-    margin-left: 10px;
+.works item a:after {
+    opacity: 0.2;
+    content: ">>";
+    margin-left: 5px;
     transition: 2s all;
 }
 
-.works item:hover p,
 .works item:hover a {
-    opacity: 1;
-    color: #000;
+    color: #0e0827;
     transition: 2s all;
     mask-image: linear-gradient(-75deg, rgba(255, 52, 136, 0.94) 30%, rgba(22, 103, 0, 0.49) 50%, rgba(7, 93, 255, 0.84) 70%);
     /*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
+    /*background-position: -100% 0;*/
 }
 
-.works item:hover p:after {
-    display: block;
+.works a span {
+    background: none;
+    box-sizing: border-box;
+}
+
+.works item:hover a span {
+    font-weight: 600;
+    background: linear-gradient(
+            100deg,
+            #ffffaf00 1%,
+            #fdffd2 2.5%,
+            rgba(253, 255, 246, 0.71) 5.7%,
+            rgb(241, 253, 255) 93%,
+            rgba(253, 255, 202, 0.71) 95%,
+            #ffffaf00 98%
+    ),
+    linear-gradient(182deg, #ffffaf00, #ffffaf4d 8%, #ffffaf00 15%);
+}
+
+.works item:nth-child(1):hover a span,
+.works item:nth-child(2):hover a span {
+    background: linear-gradient(
+            100deg,
+            #ffffaf00 1%,
+            #ddeeff 2.5%,
+            rgba(232, 246, 255, 0.71) 5.7%,
+            rgb(242, 242, 255) 93%,
+            rgba(231, 237, 255, 0.71) 95%,
+            #ffffaf00 98%
+    ),
+    linear-gradient(182deg, #ffffaf00, rgba(175, 198, 255, 0.3) 8%, #ffffaf00 15%);
+}
+
+.works item:nth-child(3):hover a span,
+.works item:nth-child(4):hover a span {
+    background: linear-gradient(
+            100deg,
+            #ffffaf00 1%,
+            #ffe6f6 2.5%,
+            rgba(255, 246, 246, 0.71) 5.7%,
+            rgb(253, 248, 255) 93%,
+            rgba(255, 231, 238, 0.71) 95%,
+            #ffffaf00 98%
+    ),
+    linear-gradient(182deg, #ffffaf00, rgba(255, 182, 175, 0.3) 8%, #ffffaf00 15%);
+}
+
+.works item:hover p {
+    background: linear-gradient(
+            100deg,
+            #ffffaf00 1%,
+            rgba(0, 0, 0, 0.49) 2.5%,
+            rgba(204, 218, 234, 0.71) 5.7%,
+            rgb(242, 255, 252) 93%,
+            rgba(0, 0, 0, 0.71) 95%,
+            #ffffaf00 98%
+    );
+    font-weight: 600;
+}
+
+.works item:nth-child(3):hover p,
+.works item:nth-child(4):hover p {
+    background: linear-gradient(
+            100deg,
+            #ffffaf00 1%,
+            rgba(0, 0, 0, 0.49) 2.5%,
+            rgba(255, 214, 228, 0.71) 5.7%,
+            rgba(255, 242, 244, 0.76) 93%,
+            rgba(0, 0, 0, 0.71) 95%,
+            #ffffaf00 98%
+    );
+}
+
+.works item:nth-child(5):hover p,
+.works item:nth-child(6):hover p,
+.works item:nth-child(7):hover p {
+    background: linear-gradient(
+            100deg,
+            #ffffaf00 1%,
+            rgba(0, 0, 0, 0.49) 2.5%,
+            rgba(240, 255, 214, 0.71) 5.7%,
+            rgba(251, 255, 242, 0.76) 93%,
+            rgba(0, 0, 0, 0.71) 95%,
+            #ffffaf00 98%
+    );
+}
+
+.works item:hover a:after {
     transition: 2s all;
+    opacity: 1;
 }
 
 .work h1 {
     text-align: left;
-}
-
-.work h2 {
-    font-size: 12px;
-    text-align: left;
-    font-weight: 400;
-    margin: 0;
 }
 
 .work .part1 {
