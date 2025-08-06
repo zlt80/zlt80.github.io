@@ -139,8 +139,15 @@ header {
     text-transform: uppercase;
 }
 
+.header-left {
+    display: flex;
+    gap: 20px;
+}
+
 .header-right {
-    justify-items: end;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
 }
 
 .menu__button {
@@ -177,10 +184,71 @@ header {
     text-transform: uppercase;
 }
 
+.menu2 .menu__dropdown {
+    margin: 0;
+    padding: 3%;
+    color: #fff;
+    right: 160px;
+    border-top: 2px solid;
+    border-right: 1px solid;
+    width: calc(100vw - 160px);
+    backdrop-filter: blur(10px) brightness(0.1);
+}
+
+.menu2 ul li {
+    margin-top: 1%;
+}
+
+.menu2 .menu__dropdown li span,
+.menu2 .menu__dropdown li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.menu2 .menu__dropdown h3,
+.menu2 .menu__dropdown p {
+    margin: 4px 0;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.menu2 .menu__dropdown li,
+.menu2 .menu__dropdown .description {
+    gap: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.menu2 .menu__dropdown .description,
+.menu2 .menu__dropdown li:nth-child(3) {
+    padding-top: 10%;
+}
+
+.menu2 .menu__dropdown .description {
+    margin: 0;
+}
+
 .menu__text {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
+}
+
+.menu2 .menu__button:hover {
+    /*mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*/
+    /*!*-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);*!*/
+    /*-webkit-mask-size: 200%;*/
+    /*animation: shine 2s infinite;*/
+}
+
+.menu2 .menu__text {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
 }
 
 .menu__svg {
@@ -189,10 +257,13 @@ header {
 }
 
 .menu__svg img {
-    width: 19px;
-    margin-left: 5px;
+    width: 12px;
+    margin-left: 4px;
+    margin-top: -0.5px;
+    filter: saturate(0.1) brightness(1.6);
 }
 
+.header-left input,
 .header-right input,
 .header-right svg {
     display: none;
@@ -205,13 +276,17 @@ header {
     top: calc(100% - 2px);
 }
 
+.menu2 input:checked ~ .menu__dropdown {
+    right: 160px;
+}
+
 /* footer start */
 footer {
     width: 100%;
     display: flex;
+    align-items: start;
     padding: 10px 30px;
     justify-content: space-between;
-    align-items: start;
 }
 
 .footer-left,

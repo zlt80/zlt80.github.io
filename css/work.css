@@ -3,12 +3,9 @@ main {
     width: unset;
 }
 
+
 .work h1 {
     text-align: left;
-}
-
-.work .part1 {
-    margin-top: 10%;
 }
 
 .work .top {
