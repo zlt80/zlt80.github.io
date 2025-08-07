@@ -3,9 +3,31 @@ main {
     width: unset;
 }
 
-
 .work h1 {
     text-align: left;
+}
+
+.work h2 {
+    font-size: 12px;
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+}
+
+.work .part1 span {
+    display: block;
+}
+
+.work .part1 p {
+    margin: 0;
+}
+
+.work h2:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.work .part1 .work__text {
+    margin-bottom: 50px;
 }
 
 .work .top {
