@@ -52,6 +52,11 @@ main {
     padding: 0 0 15% 0;
 }
 
+.container:after,
+.container:before {
+    display: none;
+}
+
 .wrapper {
     gap: 17%;
     display: grid;
@@ -97,6 +102,10 @@ span {
     font-weight: 400;
     letter-spacing: 1.4px;
     font-family: "DM Sans", sans-serif;
+}
+
+span.uppercase {
+    text-transform: uppercase;
 }
 
 span.eng {

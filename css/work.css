@@ -1,50 +1,98 @@
 main {
     margin: 0;
     width: unset;
+    background: none;
+}
+
+.container {
+    width: unset;
+    padding: 0 5%;
+}
+
+.wrapper {
+    padding: 10% 20% 15%;
+}
+
+.part1 {
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.part2 {
+    padding: 0 10% 10% 0;
+    border-right: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #fff, #ff7bac, #8c9ae3, #0c212e);
+    border-image-slice: 1;
+}
+
+.work .top {
+    gap: 5%;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 5fr 2fr;
+    padding-bottom: 0;
 }
 
 .work h1 {
+    margin: 0;
     text-align: left;
+    padding: 0 0 15% 0;
 }
 
 .work h2 {
-    font-size: 12px;
+    margin: 0;
+    font-size: 11px;
     text-align: left;
     font-weight: 500;
-    margin: 0;
 }
 
-.work .part1 span {
-    display: block;
+.work span {
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.work h2 light,
+.work span light {
+    color: #707070;
+    font-size: 12px;
+    letter-spacing: 0.2px;
 }
 
 .work .part1 p {
     margin: 0;
 }
 
+.work .screenshot {
+    gap: 30px;
+    display: none;
+}
+
+.work .work__logo {
+    height: 45px;
+    width: 110px;
+    display: block;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
 .work h2:nth-child(2) {
     margin-bottom: 10px;
 }
 
-.work .part1 .work__text {
-    margin-bottom: 50px;
-}
-
-.work .top {
-    display: flex;
-    padding: 5% 0;
-    align-items: start;
+.work .work__text {
+    margin-bottom: 20px;
 }
 
 .work .phone-frame {
-    width: 270px;
-    border-radius: 40px;
+    width: 200px;
+    border-radius: 20px;
     border: 3px solid #b5b5b5;
     background: linear-gradient(75deg, #000000, #1c1922, #c5c6be, #000, #1c1922, #000);
 }
 
 .work .phone-frame .phone-screen {
-    margin: 50px 0 65px;
+    margin: 20px 0 35px;
 }
 
 .work .phone-frame .phone-screen .preview {
@@ -54,9 +102,12 @@ main {
     border-right: 2px solid #000;
 }
 
+.work .work__brand {
+}
+
 .work .brand {
-    width: 200px;
-    height: 130px;
+    width: 300px;
+    height: 120px;
     display: block;
     object-fit: cover;
 }
