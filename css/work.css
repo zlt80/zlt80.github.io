@@ -1,7 +1,7 @@
 main {
     margin: 0;
     width: unset;
-    background: none;
+    background-size: 100% 170%;
 }
 
 .container {
@@ -21,19 +21,19 @@ main {
 }
 
 .part1 {
-    width: 70%;
     gap: 20px;
     padding: 0;
-    margin: 5% 0;
+    width: 70%;
     display: flex;
+    margin: 55px 0;
     align-items: start;
     /*overflow-x: scroll;*/
 }
 
 .part2 {
     width: 30%;
-    padding: 20px 3vw;
-    margin: 70px 3vw;
+    padding: 0;
+    margin: 70px 5vw;
 }
 
 .work > * {
@@ -129,11 +129,12 @@ main {
     width: 20vw;
     display: block;
     border-radius: 30px;
-    border: 3px solid #b5b5b5;
-    background: linear-gradient(75deg, #000000, #1c1922, #51514b, #000, #1c1922, #000);
+    border: 2px solid #b5b5b5;
+    background: linear-gradient(9deg, #000000, #b1afb5, #75756e, #454444, #3a3e3e, #000);
 }
 
 .work .phone-frame .phone-screen {
+    border: 1px solid #ffffff61;
     margin: 40px 0 65px;
     padding: 2px;
 }
