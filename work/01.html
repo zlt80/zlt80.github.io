@@ -128,33 +128,44 @@
     <div class="container work">
 
         <div class="wrapper part1">
-            <div class="screenshot">
-                <div class="item">
-                    <div class="phone-frame work1-03">
-                        <div class="phone-screen">
-                            <img alt="work" src="../assets/work/01/screen3.png"/>
+
+            <div class="workarea__switches">
+                <button class="workarea__switch" data-switch="work01">1</button>
+                <button class="workarea__switch" data-switch="work02">2</button>
+                <button class="workarea__switch" data-switch="work03">3</button>
+            </div>
+
+            <div class='work__screenshot'>
+                <div class='steel_band'>
+                    <div class='mute_rocker'></div>
+                    <div class='volume up'></div>
+                    <div class='volume down'></div>
+                    <div class='sleep_wake'></div>
+                    <div class='plastic_band'>
+                        <div class='glass_face'>
+                            <div class='camera'></div>
+                            <div class='speaker'></div>
+                            <div class='home_button'></div>
+                            <div class='gloss'></div>
+                            <div class='screen'>
+
+                                <div class="workarea__slide workarea__slide--typo active" id="work01">
+                                    <img alt="preview" src="../assets/work/01/screen3.png"/>
+                                </div>
+                                <div class="workarea__slide workarea__slide--rwd" id="work02">
+                                    <img alt="preview" src="../assets/work/01/screen4.png"/>
+                                </div>
+                                <div class="workarea__slide workarea__slide--ux" id="work03">
+                                    <img alt="preview" src="../assets/work/01/screen1.png">
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="screenshot">
-                <div class="item">
-                    <div class="phone-frame work1-04">
-                        <div class="phone-screen">
-                            <img alt="work" src="../assets/work/01/screen4.png"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="screenshot">
-                <div class="item active">
-                    <div class="phone-frame work1-01">
-                        <div class="phone-screen">
-                            <img alt="preview" src="../assets/work/01/screen1.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
         <div class="wrapper part2">
             <div class="work__text">
@@ -237,6 +248,8 @@
     </div>
 
 </footer>
+
+<script src="../js/slide.js"></script>
 
 </body>
 </html>
