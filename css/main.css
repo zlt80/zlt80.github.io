@@ -390,8 +390,8 @@ header {
 }
 
 .menu2 input:checked ~ .menu__dropdown {
-    right: 160px;
-    padding: 20px 20px 50px;
+    right: 120px;
+    padding: 20px 60px 60px;
 }
 
 /* footer start */
