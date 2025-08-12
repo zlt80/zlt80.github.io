@@ -1,22 +1,23 @@
 main {
     margin: 0;
     width: unset;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.89), rgb(255 255 255 / 94%), #fff), url(../assets/work/back.jpg);
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.76), rgb(255 255 255 / 94%), #fff), url(../assets/work/back.jpg);
     background-size: 10%;
 }
 
 .container {
     margin: 0;
     display: flex;
-    padding: 0 15%;
+    padding: 0 12% 10%;
     width: 100%;
     gap: 5%;
+    align-items: end;
     /*backdrop-filter: blur(1px) brightness(1.05);*/
 }
 
 .wrapper {
-    margin: 60px 0;
     padding: 0;
+    margin: 60px 0;
     display: block;
 }
 
@@ -82,14 +83,14 @@ main {
 }
 
 .work .grid {
-    gap: 20px;
+    gap: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .work__buttons item {
-    padding: 10px 10px 3px 10px;
-    border: 2px solid #d8d8d8;
+    padding: 10px;
+    /*border: 2px solid #d8d8d8;*/
     border-radius: 8px;
     height: fit-content;
     background: #fff;
@@ -123,11 +124,10 @@ main {
 }
 
 .work .work__logo {
-    height: 32px;
+    height: 38px;
     width: 100%;
     display: block;
     margin-top: 3px;
-    margin-bottom: 5px;
     object-fit: cover;
 }
 
@@ -136,7 +136,7 @@ main {
 }
 
 .work .work__text {
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 .work .work__text h2 {
@@ -144,7 +144,7 @@ main {
 }
 
 .work .phone-frame {
-    width: 20vw;
+    width: 100%;
     display: block;
     border-radius: 35px;
     border: 2px solid #b5b5b5;
@@ -172,6 +172,11 @@ main {
 .work .work__brand {
     gap: 20px;
     /*display: flex;*/
+}
+
+.work .work__brand box {
+    display: block;
+    margin-bottom: 20px;
 }
 
 .work .brand {
@@ -473,7 +478,7 @@ main {
 
 
 .workarea__switches {
-    gap: 5px;
+    gap: 8px;
     width: 100%;
     display: flex;
     margin: 0 0 10px;
@@ -481,43 +486,44 @@ main {
 
 .workarea__switch {
     outline: 0;
-    color: #fff;
+    color: #000;
     height: 30px;
     width: inherit;
     cursor: pointer;
     font-size: 14px;
     border-radius: 4px;
     transition: 0.6s all;
-    border: 3px solid rgb(252 238 238 / 77%);
+    border: 2px solid rgb(252 238 238 / 77%);
     background-color: rgb(0, 0, 0);
 }
 
 .workarea__switch:hover {
-    color: #000;
-    border: 3px solid #b8b8b8;
+    color: #fff;
 }
 
 #switch-01 {
-    background: #f6b3cb;
+    background: #ffeff3;
+    /*border: 2px solid #ffb2c1;*/
 }
 
 #switch-01:hover {
-    background: #ffeff3;
+    background: #fd6f92;
 }
 
 #switch-02 {
-    background: #abbff8;
+    background: #eae9ff;
+    /*border: 2px solid #7f87bc;*/
 }
 
 #switch-02:hover {
-    color: #4664b6;
-    background: #eae9ff;
+    background: #8594c8;
 }
 
 #switch-03 {
-    background: #f48ca0;
+    background: #ffe6fb;
+    /*border: 2px solid #ffa6cc;*/
 }
 
 #switch-03:hover {
-    background: #ff2e56;
+    background: #f48ca0;
 }
