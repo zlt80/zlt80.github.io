@@ -197,11 +197,10 @@ header {
 .menu2 .menu__dropdown {
     margin: 0;
     right: 165px;
+    background: #eee;
     padding: 1% 1% 2%;
     width: fit-content;
     border-right: 1.5px solid;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.78), rgb(255 255 255 / 94%), #fff), url(../assets/back.jpg);
-    background-size: 100% 190%;
 }
 
 .menu2 ul li {
