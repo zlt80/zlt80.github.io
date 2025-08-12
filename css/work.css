@@ -1,15 +1,17 @@
 main {
     margin: 0;
     width: unset;
-    background-size: 100% 170%;
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.89), rgb(255 255 255 / 94%), #fff), url(../assets/work/back.jpg);
+    background-size: 10%;
 }
 
 .container {
     margin: 0;
     display: flex;
-    padding: 0 15% 15%;
+    padding: 0 15%;
     width: 100%;
     gap: 5%;
+    /*backdrop-filter: blur(1px) brightness(1.05);*/
 }
 
 .wrapper {
@@ -133,7 +135,7 @@ main {
 .work .phone-frame {
     width: 20vw;
     display: block;
-    border-radius: 50px;
+    border-radius: 45px;
     border: 2px solid #b5b5b5;
     /*background: linear-gradient(9deg, #000000, #b1afb5, #75756e, #454444, #3a3e3e, #000);*/
     background: linear-gradient(35deg, #dcd9d9, #e6e4ea, #f1f1f1, #ffffff, #d4c8cd, #fcfcfc);
@@ -183,9 +185,9 @@ main {
     background: -moz-linear-gradient(left, #dcdbda, #ebeae9);
     background: -webkit-linear-gradient(left, #dcdbda, #ebeae9);
     background: linear-gradient(to right, #dcdbda, #ebeae9);
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
-    border-radius: 45px;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
     -moz-box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
     -webkit-box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
     box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
@@ -193,9 +195,9 @@ main {
 
 .work__screenshot .plastic_band {
     width: fit-content;
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
+    -moz-border-radius: 36px;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
     background: #2b2b2b;
     -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
@@ -210,9 +212,9 @@ main {
     background: -moz-linear-gradient(#000000, #090909);
     background: -webkit-linear-gradient(#000000, #090909);
     background: linear-gradient(#000000, #090909);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
+    -moz-border-radius: 36px;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
     -moz-box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
@@ -460,9 +462,10 @@ main {
 
 
 .workarea__switches {
-    gap: 10px;
+    gap: 3px;
     width: 30px;
     display: flex;
+
 }
 
 .workarea__switch {
@@ -474,7 +477,7 @@ main {
     font-size: 1rem;
     margin: 0 10px;
     outline: 0;
-    padding: 4px 8px;
+    padding: 7px 12px;
 }
 
 .workarea__switch:hover {
