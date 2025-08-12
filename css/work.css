@@ -77,23 +77,34 @@ main {
     line-height: 2;
     font-size: 13px;
     padding-left: 2px;
-    letter-spacing: 1px;
+    padding-bottom: 4px;
+    letter-spacing: 1.5px;
 }
 
 .work .grid {
     gap: 20px;
     display: grid;
-    margin-bottom: 5%;
     grid-template-columns: 1fr 1fr;
 }
 
-.work ul {
+.work__buttons item {
+    padding: 10px 10px 3px 10px;
+    border: 2px solid #d8d8d8;
+    border-radius: 8px;
+    height: fit-content;
+    background: #fff;
+}
+
+.work__buttons item box {
+    margin: 10px;
+    display: block;
 }
 
 .work ul li {
-    font-size: 13px;
-    line-height: 1.8;
+    font-size: 12px;
+    line-height: 2.5;
     padding-left: 20px;
+    letter-spacing: 1px;
 }
 
 .work h2 light,
@@ -135,7 +146,7 @@ main {
 .work .phone-frame {
     width: 20vw;
     display: block;
-    border-radius: 45px;
+    border-radius: 35px;
     border: 2px solid #b5b5b5;
     /*background: linear-gradient(9deg, #000000, #b1afb5, #75756e, #454444, #3a3e3e, #000);*/
     background: linear-gradient(35deg, #dcd9d9, #e6e4ea, #f1f1f1, #ffffff, #d4c8cd, #fcfcfc);
@@ -185,9 +196,9 @@ main {
     background: -moz-linear-gradient(left, #dcdbda, #ebeae9);
     background: -webkit-linear-gradient(left, #dcdbda, #ebeae9);
     background: linear-gradient(to right, #dcdbda, #ebeae9);
-    -moz-border-radius: 42px;
-    -webkit-border-radius: 42px;
-    border-radius: 42px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border-radius: 35px;
     -moz-box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
     -webkit-box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
     box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
@@ -195,9 +206,9 @@ main {
 
 .work__screenshot .plastic_band {
     width: fit-content;
-    -moz-border-radius: 36px;
-    -webkit-border-radius: 36px;
-    border-radius: 36px;
+    -moz-border-radius: 32px;
+    -webkit-border-radius: 32px;
+    border-radius: 32px;
     background: #2b2b2b;
     -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
@@ -212,9 +223,9 @@ main {
     background: -moz-linear-gradient(#000000, #090909);
     background: -webkit-linear-gradient(#000000, #090909);
     background: linear-gradient(#000000, #090909);
-    -moz-border-radius: 36px;
-    -webkit-border-radius: 36px;
-    border-radius: 36px;
+    -moz-border-radius: 32px;
+    -webkit-border-radius: 32px;
+    border-radius: 32px;
     -moz-box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
@@ -348,11 +359,11 @@ main {
     height: 600px;
     overflow-y: hidden;
     border-radius: 5px;
-    box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px rgba(112, 109, 109, 0.67);
 }
 
 .work__screenshot .screen img {
     object-fit: contain;
+    box-shadow: -1px -0.5px 3px #979595, 1px -0.5px 1px rgba(112, 109, 109, 0.67);
 }
 
 .work__screenshot .stage {
@@ -462,24 +473,51 @@ main {
 
 
 .workarea__switches {
-    gap: 3px;
-    width: 30px;
+    gap: 5px;
+    width: 100%;
     display: flex;
-
+    margin: 0 0 10px;
 }
 
 .workarea__switch {
-    background-color: rgb(0, 0, 0);
-    border: 0;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    margin: 0 10px;
     outline: 0;
-    padding: 7px 12px;
+    color: #fff;
+    height: 30px;
+    width: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.6s all;
+    border: 3px solid rgb(252 238 238 / 77%);
+    background-color: rgb(0, 0, 0);
 }
 
 .workarea__switch:hover {
-    background-color: rgba(0, 0, 0, .4);
+    color: #000;
+    border: 3px solid #b8b8b8;
+}
+
+#switch-01 {
+    background: #f6b3cb;
+}
+
+#switch-01:hover {
+    background: #ffeff3;
+}
+
+#switch-02 {
+    background: #abbff8;
+}
+
+#switch-02:hover {
+    color: #4664b6;
+    background: #eae9ff;
+}
+
+#switch-03 {
+    background: #f48ca0;
+}
+
+#switch-03:hover {
+    background: #ff2e56;
 }
