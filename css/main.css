@@ -124,7 +124,7 @@ header {
     position: fixed;
     padding: 10px 30px;
     font-optical-sizing: auto;
-    backdrop-filter: blur(2px);
+    /*backdrop-filter: blur(2px);*/
     justify-content: space-between;
     font-family: "DM Sans", sans-serif;
 }

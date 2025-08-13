@@ -1,5 +1,5 @@
-var switchButtons = document.querySelectorAll('.workarea__switch');
-var slides = document.querySelectorAll('.workarea__slide');
+var switchButtons = document.querySelectorAll('.work__switch');
+var slides = document.querySelectorAll('.work__slide');
 
 for (var switchButton of switchButtons) {
     var targetElementId = switchButton.dataset.switch;
