@@ -9,7 +9,7 @@ main {
 .container {
     margin: 0;
     display: flex;
-    padding: 2% 12% 0;
+    padding: 3% 12% 0;
     width: 100%;
     gap: 5%;
     align-items: center;
@@ -24,7 +24,7 @@ main {
 
 .part1 {
     gap: 10px;
-    width: 20%;
+    width: 17%;
     padding: 0;
     display: block;
     margin: 50px 0 0;
@@ -216,7 +216,6 @@ main {
     -webkit-border-radius: 32px;
     border-radius: 32px;
     background: #2b2b2b;
-    padding-top: 40px;
     overflow: hidden;
     -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
@@ -233,9 +232,8 @@ main {
 }
 
 .work__screenshot .glass_face::-webkit-scrollbar {
-    width: 9px;
+    width: 5px;
     padding: 2px;
-    display: none;
 }
 
 .work__screenshot .glass_face::-webkit-scrollbar-track {
@@ -384,7 +382,7 @@ main {
 
 .work__screenshot .screen {
     padding: 1px;
-    height: 450px;
+    height: 70vh;
 }
 
 .work__screenshot .screen img {
@@ -475,62 +473,45 @@ main {
 .work__slide {
     height: 100%;
     display: none;
-    background: #2b2b2b;
     pointer-events: none;
+    padding-top: 50px;
     transition: opacity .5s linear;
 }
 
 .work__slide span {
-    font-size: 14px;
+    font-size: 11px;
     text-align: center;
-    letter-spacing: 0.1px;
+    padding: 5px 0;
+    margin: 0 auto;
+    letter-spacing: 1px;
     transition: 0.6s all;
-    line-height: 1.2;
+    line-height: 3;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding-bottom: 5px;
     position: absolute;
     z-index: 3;
-    bottom: -20px;
-    right: -20px;
+    bottom: -32px;
     align-items: center;
-    height: 80px;
-    width: 80px;
-    background: rgba(220, 214, 214, 0.62);
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.24);
-}
-
-.glass_face:hover .work__slide span {
-    opacity: 1;
+    height: 28px;
+    width: 96%;
+    color: #fff;
+    background: rgba(27, 24, 24, 0.85);
+    border-radius: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.14);
 }
 
 .work__slide span img {
     width: 12px;
     box-shadow: none !important;
-    /*filter: invert(1);*/
+    filter: invert(1);
 }
 
 .work__slide.active {
     display: block;
 }
 
-.work__slide#work01 {
-    /*color: #ff8090;*/
-    padding-top: 10px;
-}
-
-.work__slide#work02 {
-    color: #576fff;
-    border: 1px solid #cad1e8;
-}
-
-.work__slide#work03 {
-    color: #ff49aa;
-    border: 1px solid #f4cde7;
-}
 
 .work__slide h1 {
     font-size: 3rem;
@@ -546,42 +527,44 @@ main {
 
 .work__switch {
     outline: 0;
-    color: #000;
+    color: #3a3a3a;
     height: 30px;
-    background: #fff;
-    line-height: 30px;
+    line-height: 2;
+    text-transform: uppercase;
     width: inherit;
     cursor: pointer;
     font-size: 10px;
+    transition: 1s all;
     border: 2px solid rgb(252 238 238 / 77%);
+    background: linear-gradient(20deg, rgba(244, 243, 242, 0.85), #eee, #fff);
 }
+
+.work__slide#work01 {
+    background: linear-gradient(0deg, #ffeef6 90%, rgb(243, 203, 216) 95%);
+}
+
+.work__slide#work02 {
+    background: linear-gradient(0deg, #e4e9ff 90%, rgb(178, 179, 232) 95%);
+}
+
+.work__slide#work03 {
+    background: linear-gradient(0deg, rgba(246, 150, 168, 0.94) 90%, rgb(255, 186, 207) 95%);
+}
+
+/*#switch-01 {*/
+/*    background: linear-gradient(0deg, #ffeff3, rgb(255, 182, 205));*/
+/*}*/
+
+/*#switch-02 {*/
+/*    background: linear-gradient(0deg, #eae9ff, rgba(156, 176, 225, 0.71));*/
+/*}*/
+
+/*#switch-03 {*/
+/*    background: linear-gradient(0deg, #fff6fb, rgba(255, 186, 221, 0.71));*/
+/*}*/
 
 .work__switch:hover {
     color: #fff;
-}
-
-#switch-01 {
-    border: 1px solid #f4d2d7;
-}
-
-#switch-01:hover {
-    background: linear-gradient(0deg, #ffeff3, rgb(255, 182, 205));
-}
-
-#switch-02 {
-    border: 1px solid #cad1e8;
-}
-
-#switch-02:hover {
-    background: #8594c8;
-    background: linear-gradient(0deg, #eae9ff, rgba(156, 175, 225, 0.71));
-}
-
-#switch-03 {
-    border: 1px solid #f4cde7;
-}
-
-#switch-03:hover {
-    /*background: #fd6f92;*/
-    background: linear-gradient(0deg, #fff6fb, rgba(255, 186, 221, 0.71));
+    border: 1px solid #ddd;
+    background: #000;
 }
