@@ -1,0 +1,39 @@
+.software .grid {
+    --min: 100px;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 10% 25% 5%;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.software .item {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.software .item img {
+    width: 60px;
+    display: inline-block;
+}
+
+.software .item p {
+    font-size: 0.7rem;
+    margin-bottom: 60%;
+    letter-spacing: 0.1em;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .software .grid {
+        --min: 50px;
+        padding: 25% 0 0;
+    }
+
+    .software .item img {
+        width: 40px;
+    }
+
+}

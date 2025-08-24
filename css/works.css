@@ -1,0 +1,99 @@
+.works {
+    margin: 0;
+    width: unset;
+    max-width: unset;
+    padding-bottom: 5%;
+    background-size: cover;
+    /*background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.69), rgba(255, 255, 255, 0.62), rgba(253, 254, 255, 0.82), rgba(252, 251, 255, 0.62), #fff), url(../assets/work/back.jpg);*/
+}
+
+.works h3 {
+    width: 100%;
+    display: block;
+    line-height: 2;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-shadow: 2px 1px 15px #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.works h3:first-child {
+    font-size: 18px;
+    padding-top: 15%;
+}
+
+.works .works-wrapper {
+    margin: 10% 22%;
+    padding-top: 2%;
+    background: #fff;
+}
+
+.works .works-grid {
+    margin: 0 10% 20%;
+    padding: 2% 10% 20%;
+}
+
+.works .description {
+    padding: 4% 7%;
+    display: block;
+    filter: url(#goo);
+    margin: 5% auto 3%;
+    width: fit-content;
+    background-size: 100%;
+    background: linear-gradient(200deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.57), rgba(247, 250, 253, 0.56), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.51), #fff, transparent), url(../assets/work/background.jpg);
+}
+
+.works .sticker {
+    z-index: 3;
+    width: 110px;
+    rotate: 180deg;
+    margin-left: 62%;
+    position: relative;
+    margin-bottom: -14%;
+}
+
+.works p,
+.works a {
+    font-size: 13px;
+    line-height: 2.4;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 2px 1px 15px #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.works item {
+    gap: 40px;
+    width: 100%;
+    padding: 5% 0;
+    display: grid;
+    font-weight: 500;
+    transition: 1s all;
+    border: 2px solid transparent;
+    grid-template-columns: 3fr 7fr;
+}
+
+.works a {
+    line-height: 2;
+    font-size: 15px;
+    transition: 3s all;
+    text-transform: capitalize;
+}
+
+.works item p {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    align-self: center;
+    letter-spacing: 0.3px;
+}
+
+.works item a:hover {
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
