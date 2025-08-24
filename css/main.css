@@ -44,8 +44,6 @@ img {
 
 main {
     min-height: 96vh;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.78), rgb(255 255 255 / 94%), #fff), url(../assets/back.jpg);
-    background-size: 100% 50%;
 }
 
 .container {
