@@ -8,7 +8,7 @@ main {
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .works h1 {
@@ -97,9 +97,9 @@ article {
 
 .part1 {
     gap: 10px;
+    padding: 0;
     display: block;
     align-items: start;
-    padding: 100px 50px;
 }
 
 .work h2 {
@@ -148,7 +148,7 @@ article {
     display: block;
     border-radius: 8px;
     width: fit-content;
-    /*background: rgba(255, 255, 255, 0.81);*/
+    background: rgba(255, 255, 255, 0.81);
 }
 
 .work__buttons item box {
@@ -234,14 +234,17 @@ article {
 
 .work__screenshot {
     display: inline-block;
+}
+
+.work__screenshot {
     position: relative;
 }
 
 .work__screenshot .steel_band {
-    width: 14vw;
+    width: 20vw;
     height: fit-content;
     padding: 3px;
-    margin: auto;
+    margin: 5% auto;
     position: relative;
     background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #dcdbda), color-stop(100%, #ebeae9));
     background: -moz-linear-gradient(left, #dcdbda, #ebeae9);
@@ -580,15 +583,15 @@ article {
 }
 
 .work__slide#work01 {
-    background: linear-gradient(0deg, #ffeef6 30%, rgb(255, 238, 241) 95%);
+    background: linear-gradient(0deg, #ffeef6 90%, rgb(243, 203, 216) 95%);
 }
 
 .work__slide#work02 {
-    background: linear-gradient(0deg, #e4e9ff 20%, rgb(227, 164, 157) 95%);
+    background: linear-gradient(0deg, #e4e9ff 90%, rgb(178, 179, 232) 95%);
 }
 
 .work__slide#work03 {
-    background: linear-gradient(0deg, rgba(255, 147, 166, 0.94) 20%, rgb(219, 106, 130) 95%);
+    background: linear-gradient(0deg, rgba(246, 150, 168, 0.94) 90%, rgb(255, 186, 207) 95%);
 }
 
 /*#switch-01 {*/
