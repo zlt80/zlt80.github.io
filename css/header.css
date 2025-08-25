@@ -1,301 +1,110 @@
 header {
     width: 100%;
     display: flex;
-    filter: url(#goo);
-    padding: 25px 20px;
-    letter-spacing: 0.15em;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+    padding: 22px 40px;
+    letter-spacing: 7px;
     font-optical-sizing: auto;
+    text-transform: uppercase;
     justify-content: space-between;
-    font-family: "Lateef", serif;
-    position: relative;
-    /*background: linear-gradient(30deg, #fff, #ddd, transparent, rgba(236, 236, 236, 0.25), #fffffc, rgba(248, 247, 244, 0.53), rgba(221, 221, 221, 0.58), #eee);*/
-    /*background: linear-gradient(25deg, transparent, #fff, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);*/
-    /*background: linear-gradient(300deg, #ddd, transparent, #ffffff, rgba(251, 249, 247, 0.88), transparent, rgba(232, 230, 228, 0.76));*/
-    /*border-bottom: 1px solid #eee;*/
-    /*background: linear-gradient(266deg, #ffffff, #e7e7e7, transparent, rgba(236, 236, 236, 0.25), #cfcfcf8f, rgb(0 0 0 / 53%), rgba(221, 221, 221, 0.58), #eee);*/
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(358deg, transparent, #fff, #fffffc, rgba(241, 240, 238, 0.6), #ececec);
 }
 
-.header-left,
-.header-right {
-    z-index: 3;
-    width: 50%;
-    display: grid;
-    align-items: center;
+header .header-right input,
+header .header-right svg {
+    display: none;
 }
 
-.header-left a {
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    height: 45px;
-    line-height: 45px;
-    max-width: 280px;
-    letter-spacing: 0.17em;
-    filter: url(#goo);
-    position: relative;
-    transition: all 2s;
-    padding: 1px 0 1px 35px;
-    text-transform: capitalize;
-    text-shadow: 5px 1px 13px #fff;
-    border-radius: 35px 45px 40px 50px;
-    /*background: linear-gradient(75deg, #ddd, #fff, #f8f6f3, transparent, rgba(250, 248, 246, 0.63), rgba(238, 238, 238, 0.46), #fff, transparent, #c5c1c1);*/
-    background: linear-gradient(300deg, #ddd, transparent, #ffffff, rgba(251, 249, 247, 0.88), transparent, rgba(232, 230, 228, 0.76));
-}
-
-
-.header-left a:hover {
+header .header-left a:hover {
     color: #ddd;
     transition: 3s all;
 }
 
-.menu {
-    filter: url(#goo);
+header .menu {
     position: relative;
     justify-items: end;
 }
 
-.menu label:hover,
-.menu__items li:hover {
+header .menu label:hover,
+header .menu__items li:hover {
     cursor: pointer;
 }
 
-.menu__face,
-.menu__items {
+header .menu__face,
+header .menu__items {
     z-index: 5;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    filter: url(#goo);
     text-align: right;
     position: relative;
     letter-spacing: 0.1em;
-    padding: 0 20px 0 40px;
-    border-radius: 35px 50px 50px 40px;
-    background-color: rgba(66, 67, 71, 0.85);
 }
 
-.menu__face {
+header .menu__text {
+    margin-right: -5px;
+}
+
+header .menu__face {
     margin: 0;
-    height: 40px;
-    display: flex;
-    min-width: 30px;
-    line-height: 1.5;
-    position: relative;
-    transition-delay: 3s;
-    justify-content: space-around;
-    border-radius: 55px 65px 20px 54px;
-    transition: all 2s cubic-bezier(0.93, 0.88, 0.1, 0.8);
-    background: linear-gradient(80deg, transparent, rgba(255, 255, 255, 0.71), rgba(197, 192, 188, 0.62), rgb(184 183 182 / 46%), #2324276b, #130e0cc4, #292828, #000, #2d2d2dad, rgba(29, 25, 32, 0.42), transparent);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 6px;
 }
 
-.menu__text {
-    font-size: 20px;
-    filter: url(#goo);
-    text-align: center;
-    letter-spacing: 5px;
-    padding: 5px 25px 5px 80px;
-}
-
-.menu__items {
+header .menu__items {
     right: 0;
-    top: 55%;
+    top: 50%;
     margin: 0;
     opacity: 0;
-    z-index: -1;
-    line-height: 1.7;
+    z-index: 3;
+    line-height: 2.2;
     list-style: none;
     position: absolute;
     visibility: hidden;
     transition: all 1s;
-    padding: 40px 30px 50px 30px;
-    justify-content: space-between;
-    border-radius: 40px 50px 40px 20px;
-    background: linear-gradient(40deg, rgba(0, 0, 0, 0.78), rgba(227, 227, 227, 0.29), rgba(255, 255, 255, 0.16), #f1f1f1, #f8f8f8, #ffffff, transparent, #eee, #666);
+    padding: 5px 2px 50px 50px;
 }
 
-.menu__items li a {
+header .menu__items li a {
     transition: 1s;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 3px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
-.menu__items::before {
-    content: "";
-    right: 20%;
-    width: 20px;
-    height: 40px;
-    bottom: 100%;
-    position: absolute;
-    border-radius: 30px;
-    transition-delay: 0.2s;
-    transition: all 5s;
-    /*background: linear-gradient(205deg, rgba(108, 101, 101, 0.36), #000, #302f2d, #000);*/
-    /*background: linear-gradient(20deg, transparent, #000, #333332, rgb(36 33 33 / 42%), rgba(63, 66, 71, 0.82), #272727, #000, transparent);*/
-    background: linear-gradient(20deg, #939292, rgba(41, 33, 33, 0.41), rgba(108, 105, 103, 0.25), #292828, #272727, #000, rgba(29, 25, 32, 0.42), transparent);
-}
-
-.menu__arrow {
-    display: contents;
-}
-
-.menu__arrow img {
-    width: 12px;
+header .menu__arrow {
+    width: 13px;
+    opacity: 0.6;
     transition: 0.4s;
-    filter: invert(1);
-    margin-right: 35px;
+    margin-top: -3px;
+    margin-left: 5px;
+    filter: contrast(1.5) brightness(1.5);
 }
 
-.header-right input,
-.header-right svg {
-    display: none;
-}
-
-.menu input:checked ~ .menu__items {
+header .menu input:checked ~ .menu__items {
     opacity: 1;
-    text-align: center;
     visibility: visible;
-    top: calc(100% + 25px);
+    top: calc(100% + 5px);
 }
-
 
 @media screen and (min-width: 481px) {
 
-    .menu__face:hover {
+    header .menu__face:hover {
         transition: 3s all;
     }
 
-    .menu__face:hover img {
+    header .menu__face img:hover {
         opacity: 0.8;
         transition: all 7s;
         transform: scale(0.8);
     }
 
-    .menu__items {
-        box-shadow: 5px 2px 20px rgba(104, 104, 104, 0.25);
-    }
-
-    .menu__items li:hover a {
-        color: #fff;
-        transition-delay: 0.2s;
-    }
-
-    .menu__items li a {
+    header .menu__items li a:hover {
+        color: #dcdcdc;
+        cursor: pointer;
         transition: all 0.7s;
     }
 
-}
-
-@media screen and (max-width: 180px) {
-
-    header {
-        background: linear-gradient(166deg, transparent, #fffffc, rgba(248, 247, 244, 0.53), rgba(223, 222, 217, 0.72), #c5c1c1);
-    }
-
-    .header-left,
-    .header-right {
-        padding: 10px 0;
-    }
-
-    .header-left {
-        padding-left: 20px;
-    }
-
-    .header-right {
-        padding: 0 20px 0 40px;
-    }
-
-    .menu__face,
-    .menu__items,
-    .header-left a {
-        padding: 0
-    }
-
-    header .header-left a,
-    header .menu__face,
-    header .menu__items {
-        text-align: left;
-        font-size: 16px;
-        letter-spacing: 0.1em;
-    }
-
-    .menu__items {
-        top: 80%;
-        transition: all 0s;
-    }
-
-    .menu__items li {
-        font-size: 16px;
-    }
-
-    .menu__items li a {
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-    .header-left a {
-        transition: none;
-        padding-left: 10px;
-        background: transparent;
-    }
-
-    .menu__text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 2.4;
-        padding: 2px 20px;
-        letter-spacing: 0.1em;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: end;
-    }
-
-    .menu__arrow img {
-        width: 10px;
-        filter: none;
-        margin-right: 0;
-    }
-
-    .menu__items::before {
-        display: none;
-    }
-
-    .menu input:checked ~ .menu__items {
-        top: 30px;
-        left: 20px;
-        width: 100%;
-        color: #000;
-        border-top: none;
-        padding: 15px 25px 10px;
-    }
-
-
-    .header-left a {
-        font-size: 18px;
-        padding: 1px 0 1px 5px;
-    }
-
-    .menu {
-        margin: 0;
-    }
-
-    .menu__text {
-        font-size: 19px;
-        line-height: 1.6;
-        padding: 5px 30px;
-        letter-spacing: 4px;
-    }
-
-    .menu__face {
-        padding: 0;
-    }
-}
-
-
-@media screen and (max-width: 780px) {
-    header {
-        background: linear-gradient(30deg, #ddd, transparent, #ffffff, rgba(251, 249, 247, 0.88), transparent, rgba(232, 230, 228, 0.76));
-    }
 }

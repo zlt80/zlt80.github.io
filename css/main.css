@@ -1,5 +1,3 @@
-/* reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +9,19 @@ a {
     text-decoration: none;
 }
 
+
 a:hover {
     text-decoration: none;
+    color: #000;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
 }
 
 ul, li {
@@ -24,8 +33,6 @@ img {
     max-width: 100%;
 }
 
-/* reset end */
-
 main {
     min-height: 96vh;
 }
@@ -36,11 +43,13 @@ main {
 
 h1 {
     margin: 8% 0 0;
-    font-size: 46px;
+    font-size: 26px;
+    color: #65615d;
     font-weight: 200;
     text-align: center;
-    letter-spacing: 10px;
-    font-family: "Lateef", serif;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-family: "DM Sans", sans-serif;
 }
 
 h2 {
@@ -74,6 +83,21 @@ h2 {
         background: linear-gradient(to right, #fdfbce 15%, #384263 85%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+}
+
+@media screen and (min-width: 781px) {
+
+    a:hover {
+        color: #000;
+        cursor: pointer;
+        transition: 0.3s all;
+        text-decoration: none;
+        mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 2s infinite;
     }
 
 }
