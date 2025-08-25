@@ -14,102 +14,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/work.css" rel="stylesheet">
 
 </head>
 
 <body>
-
 <header>
+
     <div class="header-left">
-        <a href="https://zlt80.github.io/home">Jihyung Yoo</a>
+        <a href="">Jihyung Yoo</a>
     </div>
+
     <div class="header-right">
-        <div class="menu menu2">
 
-            <input id="menu2" type="checkbox">
-
-            <label class="menu__button" for="menu2">
-                <span class="menu__text">Works</span>
-                <span class="menu__svg">
-                    <img alt="svg" src="../assets/work/menu.svg">
-                </span>
-            </label>
-
-            <ul class="menu__dropdown">
-
-                <h3>자사 브랜드 스토어 웹 개발</h3>
-                <h3>private label brand stores web development</h3>
-
-                <li>
-                    <p>01</p>
-                    <a href="http://zlt80.github.io/work/01">
-                        초기 구축 - <span>자사몰 | initial construction B2B store</span>
-                    </a>
-                </li>
-                <li>
-                    <p>02</p>
-                    <a href="http://zlt80.github.io/work/02">
-                        초기 구축 - <span>자사몰 관리자 시스템 | initial
-                        construction B2B admin</span>
-                    </a>
-                </li>
-                <li>
-                    <p>03</p>
-                    <a href="http://zlt80.github.io/work/03">
-                        전체 리뉴얼 - <span>쇼피파이 웹 스토어 | renewal shopify store</span>
-                    </a>
-                </li>
-                <li>
-                    <p>04</p>
-                    <a href="http://zlt80.github.io/work/04">
-                        전체 리뉴얼- <span>쇼피파이 웹 스토어 관리자 시스템 | renewal shopify
-                        admin</span>
-                    </a>
-                </li>
-                <li>
-                    <p>05</p>
-                    <a href="http://zlt80.github.io/work/05">
-                        유지 보수, 운영 / 시스템 관리- <span>카페24 웹 스토어 | MRO , SM
-                            cafe24 tore</span>
-                    </a>
-                </li>
-                <li>
-                    <p>06</p>
-                    <a href="http://zlt80.github.io/work/06">
-                        유지 보수, 운영 / 시스템 관리 - <span>쇼피파이 웹 스토어 | MRO , SM
-                        shopify store</span>
-                    </a>
-                </li>
-                <li>
-                    <p>07</p>
-                    <a href="http://zlt80.github.io/work/03">
-                        유지 보수, 운영 / 시스템 관리- <span>쇼피파이 웹 스토어 관리자 시스템 |
-                        MRO , SM shopify admin</span>
-                    </a>
-                </li>
-
-                <div class="description">
-                    <p>유지 (Maintenance) - M</p>
-                    <p>보수 (Repair) - R</p>
-                    <p>운영 (Operation) - O</p>
-                    <p>관리 (System Management) - SM</p>
-                </div>
-
-            </ul>
-        </div>
         <div class="menu">
             <input id="menu" type="checkbox">
 
-            <label class="menu__button" for="menu">
+            <label class="menu__face" for="menu">
                 <span class="menu__text">Portfolio</span>
-                <span class="menu__svg">
-                    <img alt="svg" src="../assets/work/menu.svg">
-                </span>
+                <span class="menu__arrow"><img alt="svg" src="../svg/menu.svg"></span>
             </label>
 
-            <ul class="menu__dropdown">
+            <ul class="menu__items">
                 <li><a href="https://zlt80.github.io/home">home</a></li>
                 <li><a href="https://zlt80.github.io/about">about</a></li>
                 <li><a href="https://zlt80.github.io/profile">profile</a></li>
@@ -118,121 +47,77 @@
                 <li><a href="https://zlt80.github.io/vision">vision</a></li>
                 <li><a href="https://zlt80.github.io/contact">contact</a></li>
             </ul>
-
         </div>
+
+        <svg>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"/>
+                <feColorMatrix in="blur" result="oo" type="matrix"
+                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+                <feBlend in="SourceGraphic" in2="oo"/>
+            </filter>
+        </svg>
+
     </div>
+
 </header>
 
 <main role="main">
 
-    <div class="container work">
-
-        <div class='work__screenshot'>
-            <div class='steel_band'>
-                <div class='mute_rocker'></div>
-                <div class='volume up'></div>
-                <div class='volume down'></div>
-                <div class='sleep_wake'></div>
-                <div class='plastic_band'>
-
-                    <div class='camera'></div>
-                    <div class='speaker'></div>
-                    <div class='home_button'></div>
-                    <div class='gloss'></div>
-
-                    <div class='glass_face'>
-                        <div class='screen'>
-                            <div class="work__slide active" id="work01">
-                                <img alt="preview" src="../assets/work/01/screen3.png"/>
-                                <!--                                <span>scroll <img src="../assets/work/scroll.svg"></span>-->
-                            </div>
-                            <div class="work__slide" id="work02">
-                                <img alt="preview" src="../assets/work/01/screen1.png">
-                                <!--                                <span>scroll <img src="../assets/work/scroll.svg"></span>-->
-                            </div>
-                            <div class="work__slide" id="work03">
-                                <img alt="preview" src="../assets/work/01/screen4.png"/>
-                                <!--                                <span>scroll <img src="../assets/work/scroll.svg"></span>-->
-                            </div>
-                        </div>
-                    </div>
+    <div class="part1">
+        <div class="item active">
+            <div class="phone-frame work1-01">
+                <div class="phone-screen">
+                    <img alt="preview" src="../assets/work/01/screen1.png">
                 </div>
             </div>
         </div>
-
-        <div class="wrapper part1">
-            <div class="work__text">
-                <h2>work 01</h2>
-                <span>자사몰 초기 구축</span>
-            </div>
-            <div class="work__text">
-                <h2>work details</h2>
-                <div class="grid">
-                    <item>
-                        <box>
-                            <span>브랜드 프로모션 오픈˙마감</span>
-                            <ul>
-                                <li>└ <span>new</span> 제품</li>
-                                <li>└ <span>new</span> 컬렉션</li>
-                                <li>└ <span>new</span> 장바구니 사은품 증정</li>
-                                <li>└ <span>new</span> 팝업창 디스플레이</li>
-                                <li>└ <span>new</span> 광고 디자인물 노출</li>
-                            </ul>
-                            <div class="work__switches">
-                                <button class="work__switch" data-switch="work03" id="switch-03">preview 3</button>
-                            </div>
-                        </box>
-                    </item>
-                    <item>
-                        <box>
-                            <span>고객 프로필 마이페이지 생성</span>
-                            <ul>
-                                <li>└ UI/UX 디자인˙구현</li>
-                            </ul>
-                            <div class="work__switches">
-                                <button class="work__switch" data-switch="work01" id="switch-01">preview 1</button>
-                                <button class="work__switch" data-switch="work02" id="switch-02">preview 2</button>
-                            </div>
-                        </box>
-                    </item>
-                </div>
-
-            </div>
-            <div class="work__text">
-                <h2>language</h2>
-                <span class="uppercase">vue scss</span>
-            </div>
-            <div class="work__text">
-                <h2>platform/tool</h2>
-                <span>Github Webstorm</span>
-            </div>
-            <div class="work__text">
-                <h2>work period</h2>
-                <span>2022-2023</span>
-            </div>
-            <div class="work__text">
-                <h2>website brand</h2>
-                <div class="work__brand">
-                    <box>
-                        <img alt="logo" class="work__logo" src="../assets/work/logo/hap.png">
-                        <img class="brand" src="../assets/work/01/brand1.png"/>
-                    </box>
-                    <box>
-                        <img alt="logo" class="work__logo" src="../assets/work/logo/chu4.png"
-                             style="filter: brightness(1.6)">
-                        <img class="brand" src="../assets/work/01/brand2.png"/>
-                    </box>
+        <div class="item">
+            <div class="phone-frame work1-02">
+                <div class="phone-screen">
+                    <img alt="work" src="../assets/work/01/screen2.jpeg"/>
                 </div>
             </div>
-            <div class="work__text">
-                <h2>website category</h2>
-                <span>컨텍트렌즈</span>
-                <span>뷰티˙생활용품</span>
+        </div>
+        <div class="item">
+            <div class="phone-frame work1-04">
+                <div class="phone-screen">
+                    <img alt="work" src="../assets/work/01/screen4.png"/>
+                </div>
             </div>
         </div>
-        <div class="wrapper part2">
+        <div class="item">
+            <div class="phone-frame work1-03">
+                <div class="phone-screen">
+                    <img alt="work" src="../assets/work/01/screen3.png"/>
+                </div>
+            </div>
         </div>
+    </div>
 
+    <div class="part2">
+
+        <h3>상품/이벤트 오픈-종료</h3>
+        <div class="details">
+            <h4>┗ 상품</h4>
+            <h4>┗ 컬렉션</h4>
+            <h4>┗ 증정 사은품</h4>
+            <h4>┗ 이미지 배너</h4>
+        </div>
+        <h3>고객 마이페이지 생성, 구현</h3>
+
+    </div>
+
+    <div class="part3">
+    </div>
+
+    <div class="part4">
+        <div class="item active">
+            <img class="brand" src="../assets/work/01/brand1.png"/>
+        </div>
+        <div class="item">
+            <img class="brand" src="../assets/work/01/brand2.png"/>
+        </div>
     </div>
 
 </main>
@@ -249,6 +134,7 @@
             <li><a href="https://zlt80.github.io/vision">vision</a></li>
             <li><a href="https://zlt80.github.io/contact">contact</a></li>
         </ul>
+
     </div>
 
     <div class="footer-right">
@@ -257,7 +143,6 @@
 
 </footer>
 
-<script src="../js/slide.js"></script>
 
 </body>
 </html>

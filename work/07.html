@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JIHYUNG PORTFOLIO | work 01</title>
+    <title>JIHYUNG PORTFOLIO | work 07</title>
     <link href="../assets/favicon.ico" rel="icon" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -14,102 +14,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/work.css" rel="stylesheet">
 
 </head>
-
 <body>
-
 <header>
+
     <div class="header-left">
-        <a href="https://zlt80.github.io/home">Jihyung Yoo</a>
+        <a href="">Jihyung Yoo</a>
     </div>
+
     <div class="header-right">
-        <div class="menu menu2">
 
-            <input id="menu2" type="checkbox">
-
-            <label class="menu__button" for="menu2">
-                <span class="menu__text">Works</span>
-                <span class="menu__svg">
-                    <img alt="svg" src="../assets/work/menu.svg">
-                </span>
-            </label>
-
-            <ul class="menu__dropdown">
-
-                <h3>자사 브랜드 스토어 웹 개발</h3>
-                <h3>private label brand stores web development</h3>
-
-                <li>
-                    <p>01</p>
-                    <a href="http://zlt80.github.io/work/01">
-                        초기 구축 - <span>자사몰 | initial construction B2B store</span>
-                    </a>
-                </li>
-                <li>
-                    <p>02</p>
-                    <a href="http://zlt80.github.io/work/02">
-                        초기 구축 - <span>자사몰 관리자 시스템 | initial
-                        construction B2B admin</span>
-                    </a>
-                </li>
-                <li>
-                    <p>03</p>
-                    <a href="http://zlt80.github.io/work/03">
-                        전체 리뉴얼 - <span>쇼피파이 웹 스토어 | renewal shopify store</span>
-                    </a>
-                </li>
-                <li>
-                    <p>04</p>
-                    <a href="http://zlt80.github.io/work/04">
-                        전체 리뉴얼- <span>쇼피파이 웹 스토어 관리자 시스템 | renewal shopify
-                        admin</span>
-                    </a>
-                </li>
-                <li>
-                    <p>05</p>
-                    <a href="http://zlt80.github.io/work/05">
-                        유지 보수, 운영 / 시스템 관리- <span>카페24 웹 스토어 | MRO , SM
-                            cafe24 tore</span>
-                    </a>
-                </li>
-                <li>
-                    <p>06</p>
-                    <a href="http://zlt80.github.io/work/06">
-                        유지 보수, 운영 / 시스템 관리 - <span>쇼피파이 웹 스토어 | MRO , SM
-                        shopify store</span>
-                    </a>
-                </li>
-                <li>
-                    <p>07</p>
-                    <a href="http://zlt80.github.io/work/03">
-                        유지 보수, 운영 / 시스템 관리- <span>쇼피파이 웹 스토어 관리자 시스템 |
-                        MRO , SM shopify admin</span>
-                    </a>
-                </li>
-
-                <div class="description">
-                    <p>유지 (Maintenance) - M</p>
-                    <p>보수 (Repair) - R</p>
-                    <p>운영 (Operation) - O</p>
-                    <p>관리 (System Management) - SM</p>
-                </div>
-
-            </ul>
-        </div>
         <div class="menu">
             <input id="menu" type="checkbox">
 
-            <label class="menu__button" for="menu">
+            <label class="menu__face" for="menu">
                 <span class="menu__text">Portfolio</span>
-                <span class="menu__svg">
-                    <img alt="svg" src="../assets/work/menu.svg">
-                </span>
+                <span class="menu__arrow"><img alt="svg" src="../svg/menu.svg"></span>
             </label>
 
-            <ul class="menu__dropdown">
+            <ul class="menu__items">
                 <li><a href="https://zlt80.github.io/home">home</a></li>
                 <li><a href="https://zlt80.github.io/about">about</a></li>
                 <li><a href="https://zlt80.github.io/profile">profile</a></li>
@@ -118,97 +47,67 @@
                 <li><a href="https://zlt80.github.io/vision">vision</a></li>
                 <li><a href="https://zlt80.github.io/contact">contact</a></li>
             </ul>
-
         </div>
+
+        <svg>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"/>
+                <feColorMatrix in="blur" result="oo" type="matrix"
+                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+                <feBlend in="SourceGraphic" in2="oo"/>
+            </filter>
+        </svg>
+
     </div>
+
 </header>
 
 <main role="main">
 
-    <div class="container work">
-
-        <div class="wrapper part1">
-            <div class="screenshot">
-                <div class="item">
-                    <div class="phone-frame work1-03">
-                        <div class="phone-screen">
-                            <img alt="work" src="../assets/work/01/screen3.png"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="screenshot">
-                <div class="item">
-                    <div class="phone-frame work1-04">
-                        <div class="phone-screen">
-                            <img alt="work" src="../assets/work/01/screen4.png"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="screenshot">
+    <div class="part1">
+        <div class="carousel slide" data-ride="carousel" id="bigCarousel">
+            <div class="num"></div>
+            <div class="carousel-inner">
                 <div class="item active">
-                    <div class="phone-frame work1-01">
+                    <div class="phone-frame work7-01">
                         <div class="phone-screen">
-                            <img alt="preview" src="../assets/work/01/screen1.png">
+                            <img alt="preview" src="../assets/work/07/screen1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="phone-frame work7-02">
+                        <div class="phone-screen">
+                            <img alt="work" src="../assets/work/07/screen2.jpeg"/>
                         </div>
                     </div>
                 </div>
             </div>
+            <a class="left carousel-control" data-slide="prev" href="#bigCarousel">‹</a>
+            <a class="right carousel-control" data-slide="next" href="#bigCarousel">›</a>
         </div>
-        <div class="wrapper part2">
-            <div class="work__text">
-                <h2>work 07</h2>
-                <span>자사몰 초기 구축</span>
-            </div>
-            <div class="work__text">
-                <h2>details</h2>
-                <span>➀ 회원 마이페이지 생성˙구현</span>
-                <span>➁ 프로모션 오픈˙종료</span>
-                <ul>
-                    <li>└ 제품˙컬렉션</li>
-                    <li>└ 사은품</li>
-                    <li>└ 이미지 배너</li>
-                </ul>
-            </div>
-            <div class="grid">
-                <div class="work__text">
-                    <h2>language</h2>
-                    <span class="uppercase">vue<br>scss</span>
-                </div>
-                <div class="work__text">
-                    <h2>platform/tool</h2>
-                    <span>Github</span>
-                    <span>Webstorm</span>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="work__text">
-                    <h2>category</h2>
-                    <span>컨텍트렌즈</span>
-                    <span>뷰티˙생활용품</span>
-                </div>
-                <div class="work__text">
-                    <h2>date</h2>
-                    <span>2022-2023</span>
-                </div>
-            </div>
-            <div class="work__text">
-                <h2>brand</h2>
-                <div class="work__brand">
-                    <box>
-                        <img alt="logo" class="work__logo" src="../assets/work/logo/hap.png">
-                        <img class="brand" src="../assets/work/01/brand1.png"/>
-                    </box>
-                    <box>
-                        <img alt="logo" class="work__logo" src="../assets/work/logo/chu4.png"
-                             style="filter: brightness(1.6)">
-                        <img class="brand" src="../assets/work/01/brand2.png"/>
-                    </box>
-                </div>
-            </div>
-        </div>
+    </div>
 
+    <div class="part2">
+    </div>
+
+    <div class="part3">
+    </div>
+
+    <div class="part4">
+        <div class="carousel slide" data-ride="carousel" id="smallCarousel">
+            <div class="num"></div>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="brand" src="../assets/work/07/brand1.png"/>
+                </div>
+                <div class="item">
+                    <img class="brand" src="../assets/work/07/brand2.png"/>
+                </div>
+            </div>
+            <a class="left carousel-control" data-slide="prev" href="#smallCarousel">‹</a>
+            <a class="right carousel-control" data-slide="next" href="#smallCarousel">›</a>
+        </div>
     </div>
 
 </main>
@@ -225,6 +124,7 @@
             <li><a href="https://zlt80.github.io/vision">vision</a></li>
             <li><a href="https://zlt80.github.io/contact">contact</a></li>
         </ul>
+
     </div>
 
     <div class="footer-right">
@@ -232,6 +132,7 @@
     </div>
 
 </footer>
+
 
 </body>
 </html>

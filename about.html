@@ -11,44 +11,55 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <link href="./css/about.css" rel="stylesheet">
 
 </head>
 <body>
 
+
 <header>
 
     <div class="header-left">
-        <a href="https://zlt80.github.io/home">Jihyung Yoo</a>
+        <a href="">jihyung yoo</a>
     </div>
 
-    <div class="header-right menu">
+    <div class="header-right">
 
-        <input id="menu" type="checkbox">
+        <div class="menu">
+            <input id="menu" type="checkbox">
 
-        <label class="menu__button" for="menu">
-            <span class="menu__text">portfolio</span>
-            <span class="menu__svg">
-               <img alt="svg" src="./assets/work/menu.svg">
-            </span>
-        </label>
+            <label class="menu__face" for="menu">
+                <span class="menu__text">Portfolio</span>
+                <span class="menu__arrow"><img alt="svg" src="./svg/menu.svg"></span>
+            </label>
 
-        <ul class="menu__dropdown">
-            <li><a href="https://zlt80.github.io/home">home</a></li>
-            <li><a href="https://zlt80.github.io/about">about</a></li>
-            <li><a href="https://zlt80.github.io/profile">profile</a></li>
-            <li><a href="https://zlt80.github.io/software">software</a></li>
-            <li><a href="https://zlt80.github.io/works">works</a></li>
-            <li><a href="https://zlt80.github.io/vision">vision</a></li>
-            <li><a href="https://zlt80.github.io/contact">contact</a></li>
-        </ul>
+            <ul class="menu__items">
+                <li><a href="https://zlt80.github.io/home">home</a></li>
+                <li><a href="https://zlt80.github.io/about">about</a></li>
+                <li><a href="https://zlt80.github.io/profile">profile</a></li>
+                <li><a href="https://zlt80.github.io/software">software</a></li>
+                <li><a href="https://zlt80.github.io/works">works</a></li>
+                <li><a href="https://zlt80.github.io/vision">vision</a></li>
+                <li><a href="https://zlt80.github.io/contact">contact</a></li>
+            </ul>
+        </div>
+
+        <svg>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"/>
+                <feColorMatrix in="blur" result="oo" type="matrix"
+                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+                <feBlend in="SourceGraphic" in2="oo"/>
+            </filter>
+        </svg>
 
     </div>
 
@@ -58,11 +69,12 @@
 
     <div class="about container">
 
-        <div class="top wrapper">
+        <h1>about</h1>
 
+        <div class="top">
             <div class="part1">
-                <img alt="o" class="tape" src="./assets/about/1/tape.png"/>
-                <div class="carousel slide" data-ride="carousel" id="carousel-01">
+                <img alt="o" class="sticker" src="./assets/about/oo.jpg"/>
+                <div class="carousel slide" data-ride="carousel" id="smallCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
                             <img alt="about" src="./assets/about/1/01.png">
@@ -77,80 +89,44 @@
                             <img alt="about" src="./assets/about/1/04.png"/>
                         </div>
                     </div>
-                    <a class="left carousel-control" data-slide="prev" href="#carousel-01">‹</a>
-                    <a class="right carousel-control" data-slide="next" href="#carousel-01">›</a>
+                    <a class="left carousel-control" data-slide="prev" href="#smallCarousel">‹</a>
+                    <a class="right carousel-control" data-slide="next" href="#smallCarousel">›</a>
                 </div>
-                <img alt="o" class="tape" src="./assets/about/1/tape2.png"/>
-                <img alt="o" class="sticker" src="./assets/about/oo.jpg"/>
             </div>
             <div class="part2">
-
-                <h1>about</h1>
-
                 <div class="about-korean">
-
                     <span>
-                        안녕하세요, <br>
-                        프론트엔드 개발자 / 웹 퍼블리셔 유지형입니다.
+                        안녕하세요.
+                        <br><br>
+                        프론트엔드 개발자/웹 퍼블리셔 유지형입니다.<br>
+                        UI/UX가 회사 매출과 직결되는 글로벌 쇼핑몰에서 국내, 해외 웹사이트 구축과
+                        유지보수 프로젝트에 서브/리드 개발자로 참여했습니다. 웹 사이트를 사용자 친화적으로 만드는 것을 목표로 삼고 있으며,
+                        간단하고 효율적인 프로그래밍 솔루션을 찾아내고자 노력합니다.<br><br>
+                        편리하고 즐거운 사이트를 만들기 위해 고민하고 발전하는 프론트엔드 개발자/웹 퍼블리셔가 되겠습니다. 감사합니다.
                     </span>
-
-
-                    <span>
-                        웹사이트의 UI/UX가 회사 매출과 직결되는 글로벌 쇼핑몰 기업 프로젝트에 서브/리드 개발자로 참여했습니다.
-                        국내 & 해외의 다양한 온라인 스토어 웹 사이트 구축과 유지보수 및 퍼블리싱 직무 경험을 가지고 있습니다.
-                        웹 사이트를 사용자 친화적으로 만드는 것을 목표로 삼고 있으며,
-                        간단하고 효율적인 프로그래밍 솔루션을 찾아내고자 노력합니다.
-                        항상 편리하고 즐거운 사이트를 만들기 위해 고민하고 발전하는  프론트엔드 개발자/웹 퍼블리셔가 되겠습니다.
-                        <br><br>감사합니다.
-                    </span>
-
-                    <div class="about-buttons">
-                        <a href="https://zlt80.github.io/profile">나의 프로필</a>
-                        <a href="https://zlt80.github.io/works">직무 프로젝트</a>
-                        <a href="https://zlt80.github.io/vision">비전 소개</a>
-                        <a href="https://zlt80.github.io/software">소프트웨어 사용목록</a>
-                        <a href="https://zlt80.github.io/contact"></a>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="middle wrapper">
+        <div class="middle">
             <div class="part3">
                 <div class="about-english">
-                    <span class="eng">
+                    <span>
                         Hello.
-                        <br>
-                        I am Jihyung Yoo, a Front-End developer / web publisher.
-                    </span>
-
-                    <span class="eng">
-                        I worked as a sub/lead developer on global online shopping mall projects
-                        where the website's UI/UX directly impacts the company's sales.
-                        I have experienced building, maintaining, and publishing various online store websites,
-                        both domestically and internationally.
+                        <br><br>
+                        I am Jihyung Yoo, a frontend developer / web publisher .<br>
+                        I have participated as a sub/lead developer in website construction and
+                        maintenance projects for global shopping mall where UI/UX directly
+                        impacts the company's revenue, both domestically and internationally.
                         My goal is to make websites user-friendly, and I strive to find simple and
-                        efficient programming solutions.
-                        I aim to become a Front-End developer / web publisher
-                        who constantly thinks and evolves to create convenient and enjoyable websites.
-                        <br><br>Thank you.
+                        efficient programming solutions.<br><br> I aim to become a frontend developer / web publisher
+                        who constantly thinks and evolves to create convenient and enjoyable websites. Thank you.
                     </span>
                 </div>
-
-                <div class="about-buttons">
-                    <a href="https://zlt80.github.io/profile">my profile</a>
-                    <a href="https://zlt80.github.io/works">work projects</a>
-                    <a href="https://zlt80.github.io/vision">vision</a>
-                    <a href="https://zlt80.github.io/software">software</a>
-                    <a href="https://zlt80.github.io/contact"></a>
-                </div>
-
             </div>
             <div class="part4">
-                <img alt="o" class="tape" src="./assets/about/2/tape2.png"/>
-                <img alt="o" class="sticker" src="./assets/about/ooooo.jpg"/>
-                <img alt="o" class="tape" src="./assets/about/2/tape.png"/>
-                <div class="carousel slide" data-ride="carousel" id="carousel-02">
+                <img alt="o" class="sticker" src="./assets/about/o.jpg"/>
+                <div class="carousel slide" data-ride="carousel" id="bigCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
                             <img class="about" src="./assets/about/2/01.png"/>
@@ -164,41 +140,36 @@
                         <div class="item">
                             <img class="about" src="./assets/about/2/04.png"/>
                         </div>
+                        <div class="item">
+                            <img class="about" src="./assets/about/2/05.png"/>
+                        </div>
                     </div>
-                    <a class="left carousel-control" data-slide="prev" href="#carousel-02">‹</a>
-                    <a class="right carousel-control" data-slide="next" href="#carousel-02">›</a>
+                    <a class="left carousel-control" data-slide="prev" href="#bigCarousel">‹</a>
+                    <a class="right carousel-control" data-slide="next" href="#bigCarousel">›</a>
                 </div>
             </div>
         </div>
 
-        <div class="bottom wrapper">
+        <div class="bottom">
             <div class="part5">
-                <img alt="o" class="tape" src="./assets/about/3/tape.png"/>
-                <img alt="o" class="tape" src="./assets/about/3/tape2.png"/>
-                <img alt="o" class="sticker" src="./assets/about/oooo.jpg"/>
-                <div class="carousel slide" data-ride="carousel" id="carousel-03">
+                <img alt="o" class="sticker" src="./assets/about/ooo.jpg"/>
+                <div class="carousel slide" data-ride="carousel" id="midCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="about" src="./assets/about/3/01.jpg"/>
+                            <img class="about" src="./assets/about/3/01.png"/>
                         </div>
                         <div class="item">
-                            <img class="about" src="./assets/about/3/02.jpg"/>
+                            <img class="about" src="./assets/about/3/02.png"/>
                         </div>
                         <div class="item">
-                            <img class="about" src="./assets/about/3/03.jpg"/>
+                            <img class="about" src="./assets/about/3/03.png"/>
                         </div>
                         <div class="item">
-                            <img class="about" src="./assets/about/3/04.jpg"/>
-                        </div>
-                        <div class="item">
-                            <img class="about" src="./assets/about/3/05.jpg"/>
-                        </div>
-                        <div class="item">
-                            <img class="about" src="./assets/about/3/06.jpg"/>
+                            <img class="about" src="./assets/about/3/04.png"/>
                         </div>
                     </div>
-                    <a class="left carousel-control" data-slide="prev" href="#carousel-03">‹</a>
-                    <a class="right carousel-control" data-slide="next" href="#carousel-03">›</a>
+                    <a class="left carousel-control" data-slide="prev" href="#midCarousel">‹</a>
+                    <a class="right carousel-control" data-slide="next" href="#midCarousel">›</a>
                 </div>
             </div>
             <div class="part6">
