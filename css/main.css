@@ -44,12 +44,11 @@ img {
 
 main {
     min-height: 96vh;
-    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.78), rgb(255 255 255 / 94%), #fff), url(../assets/back.jpg);
-    background-size: 100% 50%;
 }
 
 .container {
-    padding: 0 0 15% 0;
+    padding: 0 25% 5%;
+    background: linear-gradient(0deg, transparent, #f2f4f2, #e8e6e2, transparent);
 }
 
 .container:after,
@@ -58,16 +57,15 @@ main {
 }
 
 .wrapper {
-    gap: 17%;
+    gap: 20%;
     display: grid;
-    padding: 5% 15% 15%;
     align-items: center;
 }
 
 h1 {
     padding-top: 180px;
     color: #616161;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 200;
     text-align: center;
     letter-spacing: 8px;
@@ -90,17 +88,17 @@ h4 {
 }
 
 p {
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.9;
     font-weight: 400;
-    letter-spacing: 0.6px
+    letter-spacing: 0.1px;
 }
 
 span {
-    line-height: 1.8;
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: 1.4px;
+    line-height: 2;
+    letter-spacing: 1px;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -109,8 +107,7 @@ span.uppercase {
 }
 
 span.eng {
-    font-size: 14.5px;
-    font-weight: 400;
+    font-size: 13px;
     letter-spacing: 0.6px;
 }
 
@@ -122,9 +119,10 @@ header {
     width: 100%;
     display: flex;
     position: fixed;
-    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.26);
+    padding: 7px 20px;
     font-optical-sizing: auto;
-    /*backdrop-filter: blur(2px);*/
+    backdrop-filter: blur(7px);
     justify-content: space-between;
     font-family: "DM Sans", sans-serif;
 }
@@ -144,7 +142,7 @@ header {
     text-align: left;
     position: relative;
     transition: all 2s;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     width: fit-content;
     text-transform: uppercase;
 }
@@ -347,7 +345,7 @@ header {
 .menu__text {
     font-size: 17px;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
 }
 
 .menu2 .menu__button:hover {
@@ -369,9 +367,8 @@ header {
 }
 
 .menu__svg img {
-    width: 12px;
-    margin-left: 4px;
-    margin-top: -0.5px;
+    width: 20px;
+    margin-left: 2px;
     filter: saturate(0) brightness(1.6) contrast(1.5);
 }
 
