@@ -47,8 +47,8 @@ main {
 }
 
 .container {
-    padding: 0 25% 5%;
-    background: linear-gradient(0deg, transparent, #f2f4f2, #e8e6e2, transparent);
+    padding: 0 27% 5%;
+    /*background: linear-gradient(0deg, transparent, #f2f4f2, #e8e6e2, transparent);*/
 }
 
 .container:after,
@@ -122,7 +122,7 @@ header {
     background: rgba(255, 255, 255, 0.26);
     padding: 7px 20px;
     font-optical-sizing: auto;
-    backdrop-filter: blur(7px);
+    /*backdrop-filter: blur(7px);*/
     justify-content: space-between;
     font-family: "DM Sans", sans-serif;
 }
