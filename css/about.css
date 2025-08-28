@@ -32,9 +32,11 @@
 }
 
 .about .middle {
-    padding-left: 12%;
+    gap: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
     padding-right: 10%;
-    grid-template-columns: 9fr 13fr;
+    grid-template-columns: 4fr 6fr;
 }
 
 .about .bottom {
@@ -86,7 +88,7 @@
 .about .wrapper .icon {
     padding-top: 10%;
     width: 20px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .top .sticker {
@@ -137,7 +139,7 @@
 
 .about p.since {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 20%;
     text-align: right;
 }
 
@@ -205,7 +207,7 @@
 }
 
 #carousel-03 {
-    width: 80%;
+    width: 65%;
     padding: 3px 2px 15px 2px;
     background-image: url("../assets/about/3/back.jpg");
     background-size: cover;
@@ -278,8 +280,8 @@ body.slider__body {
 
 .slider__indicators {
     position: fixed;
-    left: 14%;
-    top: 50%;
+    left: 12%;
+    bottom: 10%;
     z-index: 2;
     margin: 0;
     padding: 0;
@@ -294,7 +296,7 @@ body.slider__body {
     height: 12px;
     margin: 10px 0;
     border-radius: 100px;
-    border: 2px solid rgba(124, 121, 121, 0.36);
+    border: 2px solid rgba(124, 122, 122, 0.27);
     transition: 0.3s all ease-in;
     cursor: default !important;
 }
@@ -312,7 +314,7 @@ body.slider__body {
 }
 
 #slider_one {
-    background: linear-gradient(5deg, #eff5fb, #fcfcff, #f2f4fa, #fff);
+    background: linear-gradient(5deg, #e6f2ff, #f0fcff, #eef2ff, #fff);
 }
 
 #slider_two {
