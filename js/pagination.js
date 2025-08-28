@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
     // ========== Pagination 처리 부분 시작 ==========
     const container = document.querySelector(".container");
     const sections = document.querySelectorAll("section");
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const paginationItems = document.querySelectorAll(".pagination li");
-    const filterColors = ['#f0f2fa', '#fdf0f3', '#ede7df']
+    const filterColors = ['#f0f2fa', '#fbf1ee', '#ede7df']
 
     const observer = new IntersectionObserver(
         (entries) => {
