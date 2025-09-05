@@ -1,0 +1,58 @@
+main {
+    background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.97), rgb(255 255 255 / 91%), #fff), url(../assets/back.jpg);
+    background-size: 100% 97%;
+}
+
+h1 {
+    text-align: right;
+    padding-right: 15%;
+    padding-top: 10%;
+}
+
+.software {
+    margin: 0;
+    width: unset;
+    max-width: unset;
+    display: grid;
+    grid-auto-columns: 10fr 1fr;
+}
+
+.software .grid {
+    --min: 100px;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 6% 10% 0;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.software .item {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.software .item img {
+    width: 55px;
+    height: 55px;
+    filter: hue-rotate(-10deg) sepia(0.1) saturate(0.9) contrast(1.1) brightness(0.97);
+}
+
+.software .item p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 25%;
+    letter-spacing: 1.1px;
+}
+
+@media screen and (max-width: 780px) {
+
+    .software .grid {
+        --min: 50px;
+        padding: 25% 0 0;
+    }
+
+    .software .item img {
+        width: 40px;
+    }
+
+}

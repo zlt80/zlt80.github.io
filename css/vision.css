@@ -1,0 +1,91 @@
+.vision {
+    margin: 0;
+    width: unset;
+    max-width: unset;
+    padding-bottom: 20%;
+}
+
+.vision .wrapper {
+    gap: 15%;
+    padding: 0;
+    margin: 10% 20% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom {
+    align-items: center;
+}
+
+.vision span {
+    display: block;
+    line-height: 1.8;
+    padding-bottom: 26px;
+}
+
+.vision-english span {
+    line-height: 1.6;
+}
+
+.vision .part3 {
+    padding: 5%;
+}
+
+.vision .star {
+    z-index: 3;
+    width: 75px;
+    rotate: 70deg;
+    margin-left: 7%;
+    margin-top: -2.5%;
+    position: absolute;
+    filter: contrast(1.4) brightness(1.4) opacity(0.9);
+}
+
+#carousel-01 {
+    width: 60%;
+    margin: 0 auto 5%;
+    position: relative;
+    padding: 35px 1px 15px 1px;
+    background-image: url("../assets/vision/1/back.jpg");
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.24);
+    background-size: 100%;
+}
+
+#carousel-01 .item img {
+    padding: 3px;
+    object-fit: cover;
+    width: fit-content;
+    background: rgba(220, 227, 244, 0.26);
+    border: 2px solid rgba(159, 169, 202, 0.25);
+    box-shadow: -1px -0.5px 3px #292828, 1px -0.5px 1px #706d6d;
+    filter: brightness(1.1) sepia(0.2) saturate(0.8) contrast(1.2);
+}
+
+.carousel-control {
+    text-shadow: none;
+    background: none !important;
+}
+
+.carousel-control {
+    top: 42%;
+    color: #4e4132;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.carousel-control.left {
+    left: -20%;
+}
+
+.carousel-control.right {
+    right: -20%;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #000;
+}
+
+@media screen and (max-width: 780px) {
+
+}
